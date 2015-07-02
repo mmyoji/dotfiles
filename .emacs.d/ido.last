@@ -1,0 +1,395 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/Users/mmyoji/dev/10sec/server/tw_server/tmp/" . "cache/")
+ ("/Users/mmyoji/dev/10sec/server/tw_server/lib/google_api/" . "schemata/")
+ ("/Users/mmyoji/dev/10sec/server/tw_server/config/locales/" . "views/")
+ ("/Users/mmyoji/dev/10sec/server/tw_server/app/views/v1/" . "users/")
+ ("/Users/mmyoji/dev/10sec/server/tw_server/app/views/" . "v1/")
+ ("/Users/mmyoji/dev/10sec/server/tw_server/spec/requests/" . "v1/")
+ ("/Users/mmyoji/dev/10sec/server/tw_server/spec/" . "cassettes/")
+ ("/Users/mmyoji/dev/10sec/server/tw_server/app/controllers/" . "v1/")
+ ("/Users/mmyoji/dev/10sec/server/tw_server/config/" . "deploy/")
+ ("/Users/mmyoji/dev/10sec/server/tw_server/app/models/" . "user/")
+ ("/Users/mmyoji/dev/10sec/server/tw_server/app/" . "models/")
+ ("/Users/mmyoji/dev/10sec/server/tw_server/db/" . "migrate/")
+ ("/Users/mmyoji/dev/10sec/server/tw_server/lib/" . "google_api/")
+ ("/Users/mmyoji/dev/10sec/server/tw_server/" . "spec/")
+ ("/Users/mmyoji/dev/10sec/server/playbook/spec/" . "localhost/")
+ ("/Users/mmyoji/dev/10sec/server/playbook/roles/dbtier/" . "tasks/")
+ ("/Users/mmyoji/dev/10sec/server/playbook/roles/bower/" . "tasks/")
+ ("/Users/mmyoji/dev/10sec/server/playbook/galaxy_roles/rvm_io.rvm1-ruby/" . "tasks/")
+ ("/Users/mmyoji/dev/10sec/server/playbook/galaxy_roles/" . "rvm_io.rvm1-ruby/")
+ ("/Users/mmyoji/dev/10sec/server/playbook/roles/rvm_io.rvm1-ruby/" . "tasks/")
+ ("/Users/mmyoji/dev/10sec/server/playbook/roles/utility/" . "tasks/")
+ ("/Users/mmyoji/dev/10sec/server/playbook/roles/environment/" . "tasks/")
+ ("/Users/mmyoji/dev/10sec/server/playbook/roles/users/" . "tasks/")
+ ("/Users/mmyoji/dev/10sec/server/playbook/roles/" . "dbtier/")
+ ("/Users/mmyoji/dev/10sec/server/playbook/" . "spec/")
+ ("/Users/mmyoji/Downloads/" . "BigQuery/")
+ ("/Users/mmyoji/dev/10sec/server/embulktest/" . "chef_repo/")
+ ("/Users/mmyoji/dev/10sec/opsworks_tensec/logrotate/templates/" . "default/")
+ ("/Users/mmyoji/dev/10sec/opsworks_tensec/logrotate/" . "recipes/")
+ ("/Users/mmyoji/dev/10sec/server/embulktest/chef_repo/cookbooks/emacs/" . "recipes/")
+ ("/Users/mmyoji/dev/10sec/server/embulktest/chef_repo/cookbooks/" . "emacs/")
+ ("/Users/mmyoji/dev/10sec/server/embulktest/chef_repo/" . "site-cookbooks/")
+ ("/Users/mmyoji/dev/10sec/server/embulktest/chef_repo/site-cookbooks/embulk/" . "attributes/")
+ ("/Users/mmyoji/dev/10sec/server/embulktest/chef_repo/site-cookbooks/" . "embulk/")
+ ("/Users/mmyoji/dev/10sec/server/server/app/models/" . "user/")
+ ("/Users/mmyoji/dev/10sec/server/server/spec/requests/" . "v1/")
+ ("/Users/mmyoji/dev/10sec/server/server/app/views/v1/" . "users/")
+ ("/Users/mmyoji/dev/10sec/server/server/app/views/" . "v1/")
+ ("/Users/mmyoji/dev/10sec/server/server/spec/" . "requests/")
+ ("/Users/mmyoji/dev/10sec/server/server/config/" . "initializers/")
+ ("/Users/mmyoji/dev/10sec/server/server/app/controllers/" . "v1/")
+ ("/Users/mmyoji/dev/10sec/server/server/app/" . "controllers/")
+ ("/Users/mmyoji/dev/10sec/server/server/db/" . "migrate/")
+ ("/Users/mmyoji/dev/10sec/server/server/" . "db/")
+ ("/Users/" . "mmyoji/")
+ ("/Users/mmyoji/Documents/lyrics/" . "en/")
+ ("/Users/mmyoji/dev/10sec/test/test-chef/" . "site-cookbooks/")
+ ("/Users/mmyoji/dev/ruby/rails/test_rails/db/" . "migrate/")
+ ("/Users/mmyoji/dev/Startouts/petnote/app/views/admin/" . "posts/")
+ ("/Users/mmyoji/dev/Startouts/petnote/app/assets/javascripts/" . "admin/")
+ ("/Users/mmyoji/dev/Startouts/petnote/app/assets/" . "javascripts/")
+ ("/Users/mmyoji/dev/Startouts/petnote/app/views/kaminari/" . "posts/")
+ ("/Users/mmyoji/dev/Startouts/petnote/spec/" . "factories/")
+ ("/Users/mmyoji/Documents/hatena/2015/05/" . "19/")
+ ("/Users/mmyoji/dev/10sec/server/chef-repo/chef-repo/site-cookbooks/users/" . "recipes/")
+ ("/Users/mmyoji/dev/10sec/server/chef-repo/roles/users/" . "tasks/")
+ ("/Users/mmyoji/dev/10sec/server/chef-repo/roles/environment/" . "tasks/")
+ ("/Users/mmyoji/dev/10sec/server/chef-repo/roles/utility/" . "tasks/")
+ ("/Users/mmyoji/dev/10sec/server/chef-repo/roles/" . "users/")
+ ("/Users/mmyoji/dev/10sec/server/chef-repo/chef-repo/site-cookbooks/utility/" . "recipes/")
+ ("/Users/mmyoji/dev/10sec/server/chef-repo/spec/" . "local/")
+ ("/Users/mmyoji/dev/10sec/server/chef-repo/chef-repo/site-cookbooks/iptables/" . "recipes/")
+ ("/Users/mmyoji/dev/10sec/server/chef-repo/chef-repo/site-cookbooks/git/" . "recipes/")
+ ("/Users/mmyoji/dev/10sec/server/chef-repo/chef-repo/site-cookbooks/" . "users/")
+ ("/Users/mmyoji/dev/10sec/server/chef-repo/chef-repo/" . "nodes/")
+ ("/Users/mmyoji/dev/10sec/server/chef-repo/" . "spec/")
+ ("/Users/mmyoji/dev/ruby/rails/test_rails/app/" . "models/")
+ ("/Users/mmyoji/dev/ruby/rails/test_rails/" . "app/")
+ ("/Users/mmyoji/dev/ruby/rails/blocking/" . "config/")
+ ("/Users/mmyoji/dev/Startouts/petnote/app/controllers/" . "admin/")
+ ("/Users/mmyoji/dev/Startouts/petnote/db/" . "migrate/")
+ ("/Users/mmyoji/dev/Startouts/petnote/app/views/" . "admin/")
+ ("/Users/mmyoji/dev/Startouts/petnote/app/models/" . "concerns/")
+ ("/Users/mmyoji/dev/Startouts/petnote/app/" . "assets/")
+ ("/Users/mmyoji/dev/Startouts/whats/" . "config/")
+ ("/Users/mmyoji/dev/Startouts/petnote/" . "app/")
+ ("/Users/mmyoji/dev/ruby/rails/doorkeeper_sample/db/" . "migrate/")
+ ("/Users/mmyoji/dev/ruby/rails/doorkeeper_sample/app/" . "controllers/")
+ ("/Users/mmyoji/dev/ruby/rails/doorkeeper_sample/config/" . "initializers/")
+ ("/Users/mmyoji/dev/ruby/rails/doorkeeper_sample/" . "app/")
+ ("/Users/mmyoji/dev/Xcode/10sec/iOS/src/TenSec iOS/TenSec iOS/classes/model/" . "rating/")
+ ("/Users/mmyoji/dev/Xcode/10sec/iOS/src/TenSec iOS/TenSec iOS/classes/" . "model/")
+ ("/Users/mmyoji/dev/Xcode/10sec/iOS/src/TenSec iOS/TenSec iOS/" . "classes/")
+ ("/Users/mmyoji/dev/Xcode/10sec/iOS/src/TenSec iOS/" . "TenSec iOS/")
+ ("/Users/mmyoji/dev/js/" . "React/")
+ ("/Users/mmyoji/Documents/daily-reports/2015/" . "06/")
+ ("/Users/mmyoji/Documents/daily-reports/" . "2015/")
+ ("/Users/mmyoji/Documents/memo/2015/" . "02/")
+ ("/Users/mmyoji/Documents/memo/" . "2015/")
+ ("/Users/mmyoji/dev/Startouts/gameking/app/assets/javascripts/admins/" . "models/")
+ ("/Users/mmyoji/dev/Startouts/gameking/app/controllers/" . "admins/")
+ ("/Users/mmyoji/dev/Startouts/gameking/app/views/admins/" . "posts/")
+ ("/Users/mmyoji/dev/Startouts/gameking/spec/" . "models/")
+ ("/Users/mmyoji/dev/Startouts/gameking/db/" . "migrate/")
+ ("/Users/mmyoji/dev/ruby/rails/acad_sample/app/assets/" . "javascripts/")
+ ("/Users/mmyoji/Documents/" . "lyrics/")
+ ("/Users/mmyoji/dev/10sec/server/.vagrant/machines/default/" . "virtualbox/")
+ ("/Users/mmyoji/dev/10sec/server/.vagrant/machines/" . "default/")
+ ("/Users/mmyoji/dev/10sec/server/.vagrant/" . "machines/")
+ ("/Users/mmyoji/dev/10sec/server/" . "tw_server/")
+ ("/Users/mmyoji/dev/10sec/" . "server/")
+ ("/Users/mmyoji/dev/ruby/rails/acad_sample/app/views/" . "layouts/")
+ ("/Users/mmyoji/dev/ruby/rails/acad_sample/app/" . "assets/")
+ ("/Users/mmyoji/dev/ruby/rails/acad_sample/db/" . "migrate/")
+ ("/Users/mmyoji/dev/ruby/rails/acad_sample/" . "app/")
+ ("/Users/mmyoji/dev/ruby/rails/" . "doorkeeper_sample/")
+ ("/Users/mmyoji/dev/ruby/sinatra/" . "sinatra_sample/")
+ ("/Users/mmyoji/dev/ruby/" . "single_files/")
+ ("/Users/mmyoji/dev/Startouts/gameking/app/views/" . "admins/")
+ ("/Users/mmyoji/dev/Startouts/gameking/app/assets/javascripts/" . "admins/")
+ ("/Users/mmyoji/dev/Startouts/gameking/app/assets/" . "javascripts/")
+ ("/Users/mmyoji/dev/Startouts/gameking/app/" . "models/")
+ ("/Users/mmyoji/dev/Startouts/gameking/" . "app/")
+ ("/Users/mmyoji/dev/Startouts/" . "petnote/")
+ ("/Users/mmyoji/dev/" . "10sec/")
+ ("/Users/mmyoji/" . "dev/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/Users/mmyoji/dev/10sec/server/tw_server/"
+ "/Users/mmyoji/dev/10sec/server/tw_server/config/"
+ "/Users/mmyoji/dev/10sec/server/tw_server/app/models/"
+ "/Users/mmyoji/dev/10sec/server/tw_server/config/deploy/"
+ "/Users/mmyoji/dev/10sec/server/tw_server/app/controllers/v1/"
+ "/Users/mmyoji/dev/10sec/server/tw_server/tmp/"
+ "/Users/mmyoji/dev/10sec/server/tw_server/lib/google_api/"
+ "/Users/mmyoji/dev/10sec/server/tw_server/lib/tasks/"
+ "/Users/mmyoji/dev/10sec/server/tw_server/lib/google_api/schemata/"
+ "/Users/mmyoji/dev/10sec/server/tw_server/spec/models/"
+ "/Users/mmyoji/dev/10sec/server/tw_server/config/locales/"
+ "/Users/mmyoji/dev/10sec/server/tw_server/db/"
+ "/Users/mmyoji/dev/10sec/server/tw_server/app/views/v1/users/"
+ "/Users/mmyoji/dev/10sec/server/tw_server/app/uploaders/"
+ "/Users/mmyoji/dev/10sec/server/tw_server/spec/requests/v1/"
+ "/Users/mmyoji/dev/10sec/server/tw_server/app/helpers/"
+ "/Users/mmyoji/dev/10sec/server/tw_server/app/views/v1/items/"
+ "/Users/mmyoji/dev/10sec/server/tw_server/app/views/v1/comments/"
+ "/Users/mmyoji/dev/10sec/server/tw_server/app/notifiers/"
+ "/Users/mmyoji/dev/10sec/server/tw_server/db/migrate/"
+ "/Users/mmyoji/dev/10sec/server/tw_server/app/models/concerns/"
+ "/Users/mmyoji/dev/10sec/server/tw_server/spec/factories/"
+ "/Users/mmyoji/"
+ "/Users/mmyoji/dev/10sec/server/tw_server/spec/"
+ "/Users/mmyoji/dev/10sec/server/tw_server/app/validators/"
+ "/Users/mmyoji/dev/10sec/server/tw_server/app/models/user/"
+ "/Users/mmyoji/dev/10sec/server/tw_server/config/initializers/"
+ "/Users/mmyoji/dev/10sec/server/tw_server/app/views/v1/messages/"
+ "/Users/mmyoji/dev/10sec/server/tw_server/app/controllers/"
+ "/Users/mmyoji/dev/10sec/server/tw_server/app/views/items/"
+ "/Users/mmyoji/dev/10sec/server/tw_server/app/views/layouts/"
+ "/Users/mmyoji/dev/10sec/server/tw_server/app/decorators/"
+ "/Users/mmyoji/dev/10sec/server/tw_server/spec/support/"
+ "/Users/mmyoji/dev/10sec/server/tw_server/app/views/v1/activities/"
+ "/Users/mmyoji/dev/10sec/server/tw_server/app/views/v1/shared/"
+ "/Users/mmyoji/dev/10sec/server/tw_server/app/views/v1/activity_threads/"
+ "/Users/mmyoji/dev/10sec/server/tw_server/config/settings/"
+ "/Users/mmyoji/dev/10sec/server/tw_server/bin/"
+ "/Users/mmyoji/dev/10sec/server/tw_server/lib/constraint/"
+ "/Users/mmyoji/dev/10sec/server/tw_server/deploy/"
+ "/Users/mmyoji/dev/ruby/single_files/"
+ "/Users/mmyoji/dev/10sec/server/playbook/"
+ "/Users/mmyoji/dev/10sec/server/playbook/spec/"
+ "/Users/mmyoji/dev/10sec/server/playbook/vars/"
+ "/Users/mmyoji/dev/10sec/server/playbook/spec/localhost/"
+ "/Users/mmyoji/dev/10sec/server/chef-repo/"
+ "/Users/mmyoji/dev/10sec/server/chef-repo/spec/"
+ "/Users/mmyoji/dev/10sec/server/playbook/galaxy_roles/rvm_io.rvm1-ruby/tasks/"
+ "/Users/mmyoji/dev/10sec/server/playbook/roles/dbtier/tasks/"
+ "/Users/mmyoji/dev/10sec/server/playbook/roles/utility/tasks/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ ".gitignore"
+ "apn.pem"
+ "user.rb"
+ "Capfile"
+ "redis.yml"
+ "Gemfile"
+ "maintenance.yml"
+ "deploy.rb"
+ "ec2.yml"
+ "production.rb"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/Users/mmyoji/" (21909 15208 0 0) "VirtualBox VMs/" "tmp_users.csv" "Public/" "projects/" "playbook.retry" "Pictures/" "Music/" "Movies/" "mbox" "Library/" "Downloads/" "Documents/" "dev/" "Desktop/" "Applications/" ".zshrc-e" ".zshrc" ".zsh_history" ".zsh-update" ".zcompdump-明神将也’s MacBook Pro-5.0.7" ".zcompdump-明神将也’s MacBook Pro-5.0.5" ".viminfo" ".vim/" ".vagrant.d/" ".Trash/" ".terraform.d/" ".subversion/" ".ssh/" ".rubocop.yml" ".rnd" ".railsrc" ".pyenv/" ".pry_history" ".packer.d/" ".oh-my-zsh/" ".npm/" ".node-gyp/" ".mysql_history" ".local/" ".lesshst" ".guard_history" ".gitignore_global" ".gitconfig" ".gemrc" ".gem/" ".eslintrc" ".emacs.d/" ".DS_Store" ".config/" ".cocoapods/" ".chef/" ".CFUserTextEncoding" ".cache/" ".berkshelf/" ".bash_history" ".aws/" ".ansible/" "../" "./")
+
+ ("/Users/mmyoji/Documents/daily-reports/2015/07/" (21909 6808 0 0) "02.md" "01.md" "../" "./")
+
+ ("/Users/mmyoji/Documents/daily-reports/2015/06/" (21908 54612 0 0) "30.md" "29.md" "26.md" "25.md" "24.md" "23.md" "22.md" "19.md" "18.md" "17.md" "16.md" "15.md" "12.md" "11.md" "10.md" "09.md" "08.md" "06.md" "05.md" "04.md" "03.md" "02.md" "01.md" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/spec/cassettes/" (21908 44573 0 0) "welcome_message.yml" "user/" "shipping_label.yml" "seller_sold_message.yml" "salse_start.yml" "report_violation.yml" "remind_shipment.yml" "remind_arrived.yml" "receipt_with_valid_easypost_shipment.yml" "receipt_with_invalid_easypost_shipment.yml" "receipt_start_return.yml" "receipt_return_cancel.yml" "receipt_charge.yml" "receipt_cancel.yml" "offer_declined_message.yml" "offer_approved_message.yml" "offer_accepted_message.yml" "message_received.yml" "item_repriced.yml" "get_offer.yml" "fetch_worker_invalid_instagram_media.yml" "easypost_tracking.yml" "easypost_shipment_buy.yml" "easypost_shipment.yml" "easypost_event_in_transit.yml" "commented.yml" "buyer_sold_message.yml" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/spec/" (21907 35872 0 0) "workers/" "validators/" "support/" "spec_helper.rb" "requests/" "rails_helper.rb" "policies/" "models/" "mailer/" "lib/" "fixtures/" "features/" "factories/" "decorators/" "cassettes/" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/" (21907 57997 0 0) "vendor/" "tmp/" "spec/" "README.md" "Rakefile" "public/" "package.json" "node_modules/" "log/" "lib/" "Guardfile" "Gemfile.lock" "Gemfile" "dump.rdb" "deploy/" "db/" "config.ru" "config/" "circle.yml" "bower.json" "bin/" "app/" ".ruby-version" ".rubocop_todo.yml" ".rubocop.yml" ".pryrc" ".irbrc" ".gitignore" ".git/" ".DS_Store" ".bundle/" ".bowerrc" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/" (21891 31433 0 0) "web_detail/" "tw_server/" "server/" "playbook/" "embulktest/" "chef-repo/" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/opsworks_tensec/" (21904 65533 0 0) "Vagrantfile" "Thorfile" "redis/" "README.md" "opsworks_sidekiq/" "nginx/" "logrotate/" "LICENSE" "Gemfile.lock" "Gemfile" "chefignore" "CHANGELOG.md" "Berksfile" "apn/" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/" (21907 23011 0 0) "test/" "server/" "opsworks_tensec/" "bot/" "../" "./")
+
+ ("/Users/mmyoji/Documents/" (21874 37472 0 0) "Screen Shot 2015-03-03 at 10.25.21 PM.png" "memo/" "lyrics/" "images/" "hatena/" "daily-reports/" "10sec給与/" ".localized" ".DS_Store" "../" "./")
+
+ ("/Users/mmyoji/Documents/daily-reports/" (21763 21356 0 0) "2015/" ".DS_Store" "../" "./")
+
+ ("/Users/mmyoji/Documents/daily-reports/2015/" (21906 33152 0 0) "07/" "06/" "05/" "04/" "03/" "02/" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/config/" (21904 65226 0 0) "unicorn/" "sidekiq.yml" "settings.yml" "settings/" "secrets.yml" "schedule.rb" "routes.rb" "pre_commit.yml" "newrelic.yml" "locales/" "initializers/" "google_api.p12" "environments/" "environment.rb" "elasticsearch.yml" "dialogs.yml" "database.yml.default" "database.yml" "cloudinary.yml" "boot.rb" "aws.yml" "application.rb" "apn.pem" ".DS_Store" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/config/initializers/" (21904 65115 0 0) "zencoder.rb" "wrap_parameters.rb" "session_store.rb" "sendwithus.rb" "schema_migration.rb" "redis.rb" "raven.rb" "ransnack.rb" "public_activity.rb" "normailize.rb" "multi_json.rb" "mime_types.rb" "kaminari_config.rb" "invalid_user.rb" "instagram.rb" "inflections.rb" "filter_parameter_logging.rb" "elasticsearch.rb" "easypost.rb" "doorkeeper.rb" "devise_async.rb" "devise.rb" "cookies_serializer.rb" "backtrace_silencers.rb" "assets.rb" "apn.rb" "acts_as_taggable_on.rb" "activerecord.rb" "active_admin.rb" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/app/models/" (21904 62387 0 0) "user.rb" "user/" "task.rb" "tag.rb" "system_notification.rb" "review.rb" "receipt.rb" "permitting.rb" "permission.rb" "offer.rb" "message.rb" "like.rb" "item.rb" "dimension.rb" "device.rb" "credit_balance.rb" "concerns/" "comment.rb" "category.rb" "campaign.rb" "brand.rb" "attachment.rb" "admin_user.rb" "activity_thread.rb" ".keep" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/config/deploy/" (21891 31513 0 0) "production.rb" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/lib/" (21904 54913 0 0) "tasks/" "google_api/" "exceptions.rb" "doorkeeper/" "constraint/" "assets/" "active_admin/" "action_notifier.rb" "action_notifier/" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/lib/public_activity/" (21891 31513 0 0) "callback.rb" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/app/validators/" (21904 44389 0 0) "phone_number_validator.rb" "clean_words_validator.rb" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/app/helpers/" (21900 54862 0 0) "receipt_helper.rb" "notification_helper.rb" "application_helper.rb" "active_admin/" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/app/decorators/" (21900 54862 0 0) "item_decorator.rb" "comment_decorator.rb" ".keep" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/app/controllers/users/" (21891 31513 0 0) "passwords_controller.rb" "confirmations_controller.rb" "callbacks_controller.rb" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/app/controllers/concerns/" (21891 31513 0 0) "search_requestable.rb" ".keep" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/app/models/user/" (21904 44389 0 0) "facebook_authenticator.rb" "address.rb" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/app/controllers/v1/" (21904 44389 0 0) "zencoder_callbacks_controller.rb" "withdrawals_controller.rb" "withdrawal_accounts_controller.rb" "users_controller.rb" "tokens_controller.rb" "tags_controller.rb" "shares_controller.rb" "settings_controller.rb" "receipts_controller.rb" "profiles_controller.rb" "offers_controller.rb" "messages_controller.rb" "likes_controller.rb" "items_controller.rb" "easypost_trackings_controller.rb" "drafts_controller.rb" "dialogs_controller.rb" "credit_cards_controller.rb" "comments_controller.rb" "categories_controller.rb" "campaigns_controller.rb" "base_controller.rb" "activity_threads_controller.rb" "activities_controller.rb" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/app/controllers/" (21900 54862 0 0) "v1/" "users/" "profiles_controller.rb" "ping_controller.rb" "pages_controller.rb" "items_controller.rb" "errors_controller.rb" "concerns/" "application_controller.rb" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/tmp/" (21901 8434 0 0) "users.json" "sockets/" "sessions/" "sample_user.json" "receipts.csv" "pids/" "offers.csv" "items.json" "cache/" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/lib/google_api/" (21901 8645 0 0) "schemata/" "cloud_storage.rb" "big_query.rb" "base.rb" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/lib/tasks/" (21901 8420 0 0) "tensec.rake" "gems.rake" "dev.rake" "deploy.rake" "databases.rake" ".keep" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/tmp/cache/" (21898 29720 0 0) "assets/" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/lib/google_api/schemata/" (21900 58614 0 0) "users.json" "receipts.json" "items.json" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/spec/models/" (21900 57559 0 0) "user_spec.rb" "user/" "task_spec.rb" "system_notification_spec.rb" "review_spec.rb" "receipt_spec.rb" "permitting_spec.rb" "permission_spec.rb" "offer_spec.rb" "message_spec.rb" "like_spec.rb" "item_spec.rb" "factories_spec.rb" "credit_balance_spec.rb" "conversation_spec.rb" "concerns/" "comment_spec.rb" "campaign_spec.rb" "activity_thread_spec.rb" "activity_spec.rb" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/config/locales/" (21900 57546 0 0) "views/" "en.yml" "doorkeeper.en.yml" "devise.en.yml" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/db/" (21900 54863 0 0) "seeds.rb" "schema.rb" "migrate/" "fixtures/" "csvs/" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/app/views/v1/users/" (21900 54863 0 0) "show.json.jbuilder" "reviews.json.jbuilder" "index.json.jbuilder" "_watch_user.json.jbuilder" "_user.json.jbuilder" "_payment_methods.json.jbuilder" "_address.json.jbuilder" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/app/uploaders/" (21900 54500 0 0) "product_video_uploader.rb" "product_image_uploader.rb" "campaign_image_uploader.rb" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/spec/requests/v1/" (21900 51984 0 0) "withdrawals_spec.rb" "withdrawal_accounts_spec.rb" "users_spec.rb" "tokens_spec.rb" "tags_spec.rb" "shares_spec.rb" "settings_spec.rb" "receipts_spec.rb" "profiles_spec.rb" "offers_spec.rb" "messages_spec.rb" "likes_spec.rb" "items_spec.rb" "easypost_trackings_spec.rb" "drafts_spec.rb" "dialogs_spec.rb" "credit_cards_spec.rb" "comments_spec.rb" "categories_spec.rb" "campaigns_spec.rb" "activity_threads_spec.rb" "activities_spec.rb" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/playbook/roles/users/tasks/" (21741 63562 0 0) "main.yml" "../" "./")
+
+ ("/Users/mmyoji/dev/ruby/single_files/" (21899 38507 0 0) "test.rb" "resue_test.rb" "public.html" "offer_decline.rb" "json_test.rb" "json_test/" "httpserver1.rb" "Gemfile.lock" "Gemfile" "foo.erb" "case_when_test.rb" "bq.rb" ".bundle/" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/config/settings/" (21900 48073 0 0) "test.yml" "staging.yml" "production.yml" "development.yml" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/spec/support/" (21900 48073 0 0) "rake.rb" "policies/" "models/" "lib/" "instagram_helper.rb" "easypost.rb" "autodoc/" "api_helper.rb" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/app/views/layouts/" (21900 40333 0 0) "ios_transition.html.erb" "application.html.erb" "_open_app_popup.html.erb" "_header.html.erb" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/app/views/items/" (21900 40333 0 0) "show.html.erb" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/app/views/v1/messages/" (21900 40297 0 0) "create.json.jbuilder" "_message.json.jbuilder" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/spec/factories/" (21900 48073 0 0) "users.rb" "task.rb" "tag.rb" "system_notifications.rb" "reviews.rb" "receipts.rb" "permittings.rb" "permissions.rb" "offers.rb" "messages.rb" "likes.rb" "items.rb" "doorkeeper.rb" "dimensions.rb" "devices.rb" "credit_balances.rb" "conversations.rb" "comments.rb" "categories.rb" "campaigns.rb" "brands.rb" "attachments.rb" "admin_users.rb" "activities.rb" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/db/migrate/" (21900 48073 0 0) "20150625095231_remove_payment_columns.rb" "20150625093856_remove_stripe_columns.rb" "20150623111043_remove_paylaod_from_message.rb" "20150623105707_integrate_firstname_and_lastname_to_name_for_users.rb" "20150612101401_init_schema.rb" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/app/notifiers/" (21900 40297 0 0) "support_notifier.rb" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/app/views/v1/comments/" (21900 40297 0 0) "index.json.jbuilder" "destroy.json.jbuilder" "_comment.json.jbuilder" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/app/views/v1/items/" (21900 40297 0 0) "watch.json.jbuilder" "violation.json.jbuilder" "show.json.jbuilder" "search.json.jbuilder" "relatives.json.jbuilder" "mentionable_users.json.jbuilder" "index.json.jbuilder" "draft.json.jbuilder" "destroy.json.jbuilder" "create.json.jbuilder" "count.json.jbuilder" "_watch_item.json.jbuilder" "_item.json.jbuilder" "../" "./")
+
+ ("/Users/" (21721 33149 0 0) "Shared/" "mmyoji/" ".localized" "../" "./")
+
+ ("/Users/mmyoji/dev/" (21899 57025 0 0) "Xcode/" "Terraform/" "ruby/" "packages/" "js/" "cookbooks/" "c/" "Atlas/" "10sec/" ".DS_Store" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/spec/workers/" (21891 31513 0 0) "push_notification_worker_spec.rb" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/app/views/v1/activities/receipt/" (21891 31513 0 0) "_transfer_prepared.json.jbuilder" "_shipped.json.jbuilder" "_ship.json.jbuilder" "_locked_as_seller.json.jbuilder" "_locked_as_buyer.json.jbuilder" "_expiring.json.jbuilder" "_delivered.json.jbuilder" "_deliver.json.jbuilder" "_created.json.jbuilder" "_create.json.jbuilder" "_cancel.json.jbuilder" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/app/views/v1/activities/user/" (21891 31513 0 0) "_joined.json.jbuilder" "_invited.json.jbuilder" "_invite.json.jbuilder" "_camera_roll_unlocked.json.jbuilder" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/app/views/v1/offers/" (21891 31513 0 0) "show.json.jbuilder" "index.json.jbuilder" "decline.json.jbuilder" "accept.json.jbuilder" "_offer.json.jbuilder" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/app/views/v1/profiles/" (21891 31513 0 0) "show.json.jbuilder" "device.json.jbuilder" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/app/views/v1/receipt_messages/" (21891 31513 0 0) "read.json.jbuilder" "index.json.jbuilder" "create.json.jbuilder" "count.json.jbuilder" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/app/views/v1/receipts/" (21891 31513 0 0) "show.json.jbuilder" "review.json.jbuilder" "index.json.jbuilder" "_receipt.json.jbuilder" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/app/views/v1/withdrawals/" (21891 31513 0 0) "create.json.jbuilder" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/spec/models/user/" (21891 31513 0 0) "credit_card_spec.rb" "bank_account_spec.rb" "address_spec.rb" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/spec/lib/tasks/" (21899 54580 0 0) "tensec_spec.rb" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/app/admin/" (21898 9366 0 0) "user.rb" "system_notification.rb" "receipt.rb" "offer.rb" "message.rb" "item.rb" "dashboard.rb" "credit_balance.rb" "conversation.rb" "comment.rb" "category.rb" "campaign.rb" "brand.rb" "activity_thread.rb" "../" "./")
+
+ ("/Users/mmyoji/.emacs.d/" (21899 29324 0 0) "recentf" "README.md" "places" "init.el" "ido.last" "history" "elpa/" "auto-save-list/" "ac-comphist.dat" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/embulktest/chef_repo/" (21886 43567 0 0) "site-cookbooks/" "roles/" "nodes/" "environments/" "data_bags/" "cookbooks/" "Berksfile.lock" "Berksfile" ".gitignore" ".chef/" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/config/locales/views/" (21898 37084 0 0) "en.yml" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/embulktest/chef_repo/site-cookbooks/embulk/recipes/" (21886 46421 0 0) "load_to_bq.rb" "default.rb" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/app/views/devise/passwords/" (21891 31513 0 0) "new.html.erb" "edit.html.erb" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/app/views/devise/confirmations/" (21891 31513 0 0) "new.html.erb" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/app/queries/" (21891 31513 0 0) "similar_tag_query.rb" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/app/policies/" (21891 31513 0 0) "receipt_policy.rb" "purchase_policy.rb" "offer_policy.rb" "message_policy.rb" "item_policy.rb" "comment_policy.rb" "application_policy.rb" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/app/mailers/" (21891 31513 0 0) "mailer.rb" "devise_mailer.rb" ".keep" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/app/helpers/active_admin/" (21891 31513 0 0) "views_helper.rb" "stripe_router_helper.rb" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/bin/" (21898 32698 0 0) "spring" "setup" "rspec" "rake" "rails" "circleci_rspec_parallel" "circleci_hub" "circleci_bundle_update" "circleci_api_doc" "bundle" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/app/models/concerns/" (21891 31513 0 0) "tokenizable.rb" "timestamp_pageable.rb" "searchable.rb" "ownable.rb" "item_restrictable.rb" "credit_acceptable.rb" ".keep" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/app/views/v1/shared/" (21898 9366 0 0) "_pagination.json.jbuilder" "_meta.json.jbuilder" "_common.json.jbuilder" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/app/views/v1/activities/message/" (21891 31513 0 0) "_created.json.jbuilder" "_create.json.jbuilder" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/app/views/v1/activity_threads/" (21891 31513 0 0) "show.json.jbuilder" "index.json.jbuilder" "_activity_thread.json.jbuilder" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/app/views/v1/" (21898 9366 0 0) "withdrawals/" "users/" "tasks/" "tags/" "system_notifications/" "shared/" "settings/" "reviews/" "receipts/" "receipt_messages/" "public_activity/" "profiles/" "offers/" "messages/" "likes/" "items/" "drafts/" "comments/" "categories/" "campaigns/" "brands/" "attachments/" "activity_threads/" "activities/" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/server/app/mailers/" (21898 11521 0 0) "mailer.rb" "devise_mailer.rb" ".keep" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/server/config/" (21898 9670 0 0) "unicorn/" "sidekiq.yml" "settings.yml" "settings/" "secrets.yml" "schedule.rb" "routes.rb" "redis.yml" "pre_commit.yml" "newrelic.yml" "maintenance.yml" "locales/" "initializers/" "environments/" "environment.rb" "elasticsearch.yml" "ec2.yml" "dialogs.yml" "deploy.rb" "deploy/" "database.yml.default" "database.yml" "cloudinary.yml" "boot.rb" "aws.yml" "application.rb" "apn.pem" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/server/db/migrate/" (21886 22583 0 0) "20150612101401_delete_invalid_activities.rb" "20150611031617_recover_activities.rb" "20150610234451_add_deleted_at_to_activities.rb" "20150610114800_recreate_deleted_activities.rb" "20150608090044_fix_item_liked_activities.rb" "20150608084842_fill_trackable_to_activities.rb" "20150608065905_migrate_address_identical_in_users.rb" "20150608062727_add_address_identical_to_users.rb" "20150603203947_migrate_existing_slugs_in_items.rb" "20150603194907_rename_token_to_slug_in_items.rb" "20150603052404_change_limitation_of_description_to_comments.rb" "20150601070958_migrate_tracking_code_activities.rb" "20150520063444_add_system_notification_benefit.rb" "20150519043747_rename_auth_columns_from_users.rb" "20150519042844_add_gender_to_users.rb" "20150518053131_add_null_false_to_attachments.rb" "20150515060915_remove_billing_address_columns_from_users.rb" "20150514231752_restore_published_from_items.rb" "20150512041206_add_flagged_at_to_comments.rb" "20150508052953_fix_usernames.rb" "20150430074759_remove_card_columns_from_users.rb" "20150428035218_remove_bank_columns_from_users.rb" "20150424085829_convert_billing_address.rb" "20150424085618_add_billing_address_to_users.rb" "20150424043925_add_cancel_requested_at_to_receipts.rb" "20150423024739_migrate_stripe_card_id_in_users.rb" "20150422224914_add_payment_method_to_receipts.rb" "20150422204944_add_apple_pay_columns_to_users.rb" "20150422093334_convert_card_info.rb" "20150422093124_add_card_columns_to_users.rb" "20150422082506_migrate_bank_account_to_users.rb" "20150422082218_add_bank_account_to_users.rb" "20150420225121_migrate_users_credit_amounts.rb" "20150420224556_add_credit_amount_to_users.rb" "20150420201308_remove_old_addresses_from_receipts.rb" "20150420084741_add_impressions_count_to_item.rb" "20150420083755_create_impressions_table.rb" "20150418021522_migrate_shipment_addresses_in_receipts.rb" "20150418020950_add_user_address_to_receipts.rb" "20150418013340_remove_easypost_columns_from_receipts.rb" "20150417113601_add_status_to_task.rb" "20150417092108_add_permissions_to_new_users.rb" "20150416115202_add_read_at_to_activity_thread.rb" "20150414144455_rename_activity_key_of_message.rb" "20150414134335_remove_columns_from_activities.rb" "20150414125050_add_item_to_message.rb" "20150414124807_rename_conversation_columns.rb" "20150414030257_set_default_migrations_to_users.rb" "20150414024229_create_permittings.rb" "20150414024052_create_permissions.rb" "20150413060336_fix_system_notification.rb" "20150413025518_remove_rating_from_receipts.rb" "20150411013640_add_charge_failed_attempts_to_users.rb" "20150410095820_create_activity_threads.rb" "20150409182301_add_score_to_items.rb" "20150409093342_add_thread_and_latest_to_activity.rb" "20150409081657_fix_activity_migration.rb" "20150409075134_convert_ratings.rb" "20150408114325_create_reviews.rb" "20150408113927_drop_ex_reviews.rb" "20150407131428_add_context_to_system_notification.rb" "20150407004612_add_return_columns_to_receipts.rb" "20150407002941_organize_columns_in_receipts.rb" "20150403200336_force_lowercase_tag_names.rb" "20150401162033_rename_notifications_to_activities.rb" "20150401082154_remove_recoverable_columns_from_admin_users.rb" "20150331065720_add_bank_routing_number_to_users.rb" "20150331001339_add_scheduled_at_to_system_notifications.rb" "20150330105621_add_first_like_marked_to_users.rb" "20150327075244_rename_camera_roll_unlocked_of_user.rb" "20150326172307_add_activity_read_at_to_user.rb" "20150326090518_add_billing_address_to_user.rb" "20150326051127_add_suspended_at_to_users.rb" "20150325230828_fill_withdrawal_status_for_receipt.rb" "20150323084101_remove_active_from_brands.rb" "20150323081324_add_deleted_at_to_brands.rb" "20150323081137_remove_active_from_categories.rb" "20150323075013_remove_profile_version_from_users.rb" "20150323071155_change_average_rating_of_user_to_float.rb" "20150317133920_add_camera_role_unlocked_to_user.rb" "20150317094956_migrate_review_to_receipt.rb" "20150317094407_add_review_rating_to_receipt.rb" "20150313170358_add_suspicious_to_users.rb" "20150313111821_add_online_at_to_users.rb" "20150312202324_add_uuid_to_users.rb" "20150311050749_add_zendesk_check_to_items.rb" "20150307030638_create_active_admin_comments.rb" "20150306035433_add_deleted_at_to_categories.rb" "20150306034823_remove_ancestry_from_categories.rb" "20150306021207_add_expired_at_to_system_notifications.rb" "20150305203814_add_complex_index_to_users.rb" "20150305192337_remove_ancestry_from_brands.rb" "20150305133408_add_republishing_disabled_to_items.rb" "20150304085818_add_user_id_index_to_items.rb" "20150304020649_add_sold_out_count_to_user.rb" "20150227183008_init_schema.rb" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/server/app/views/v1/users/" (21886 46432 0 0) "show.json.jbuilder" "reviews.json.jbuilder" "index.json.jbuilder" "_watch_user.json.jbuilder" "_user.json.jbuilder" "_payment_methods.json.jbuilder" "_address.json.jbuilder" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/server/app/controllers/v1/" (21886 46432 0 0) "zencoder_callbacks_controller.rb" "withdrawals_controller.rb" "withdrawal_accounts_controller.rb" "users_controller.rb" "tokens_controller.rb" "tasks_controller.rb" "tags_controller.rb" "stripe_webhooks_controller.rb" "shares_controller.rb" "settings_controller.rb" "sample_controller.rb" "receipts_controller.rb" "profiles_controller.rb" "offers_controller.rb" "notifications_controller.rb" "messages_controller.rb" "likes_controller.rb" "items_controller.rb" "easypost_trackings_controller.rb" "drafts_controller.rb" "dialogs_controller.rb" "credit_cards_controller.rb" "comments_controller.rb" "categories_controller.rb" "campaigns_controller.rb" "base_controller.rb" "activity_threads_controller.rb" "activities_controller.rb" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/server/spec/models/" (21882 45228 0 0) "user_spec.rb" "user/" "task_spec.rb" "system_notification_spec.rb" "review_spec.rb" "receipt_spec.rb" "permitting_spec.rb" "permission_spec.rb" "offer_spec.rb" "message_spec.rb" "like_spec.rb" "item_spec.rb" "factories_spec.rb" "credit_balance_spec.rb" "conversation_spec.rb" "concerns/" "comment_spec.rb" "campaign_spec.rb" "activity_thread_spec.rb" "activity_spec.rb" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/server/spec/requests/v1/" (21886 46432 0 0) "withdrawals_spec.rb" "withdrawal_accounts_spec.rb" "users_spec.rb" "tokens_spec.rb" "tasks_spec.rb" "tags_spec.rb" "stripe_webhook_spec.rb" "shares_spec.rb" "settings_spec.rb" "receipts_spec.rb" "profiles_spec.rb" "offers_spec.rb" "notifications_spec.rb" "messages_spec.rb" "likes_spec.rb" "items_spec.rb" "easypost_trackings_spec.rb" "drafts_spec.rb" "dialogs_spec.rb" "credit_cards_spec.rb" "comments_spec.rb" "categories_spec.rb" "campaigns_spec.rb" "activity_threads_spec.rb" "activities_spec.rb" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/server/config/initializers/" (21886 46432 0 0) "zencoder.rb" "wrap_parameters.rb" "stripe.rb" "session_store.rb" "sendwithus.rb" "schema_migration.rb" "redis.rb" "raven.rb" "ransnack.rb" "public_activity.rb" "paperclip.rb" "normailize.rb" "multi_json.rb" "mime_types.rb" "kaminari_config.rb" "invalid_user.rb" "instagram.rb" "inflections.rb" "filter_parameter_logging.rb" "elasticsearch.rb" "easypost.rb" "doorkeeper.rb" "devise_async.rb" "devise.rb" "cookies_serializer.rb" "backtrace_silencers.rb" "assets.rb" "apn.rb" "acts_as_taggable_on.rb" "activerecord.rb" "active_admin.rb" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/server/app/models/" (21890 9847 0 0) "user.rb" "user/" "task.rb" "tag.rb" "system_notification.rb" "review.rb" "receipt.rb" "permitting.rb" "permission.rb" "offer.rb" "message.rb" "like.rb" "item.rb" "dimension.rb" "device.rb" "credit_balance.rb" "conversation.rb" "concerns/" "comment.rb" "category.rb" "campaign.rb" "brand.rb" "attachment.rb" "admin_user.rb" "activity_thread.rb" ".keep" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/server/db/" (21887 56024 0 0) "seeds.rb" "schema.rb" "migrate/" "fixtures/" "csvs/" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/embulktest/chef_repo/cookbooks/emacs/recipes/" (21886 43567 0 0) "default.rb" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/embulktest/chef_repo/nodes/" (21886 43529 0 0) "default.json" ".gitkeep" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/opsworks_tensec/logrotate/recipes/" (21887 39198 0 0) "default.rb" "../" "./")
+
+ ("/Users/mmyoji/dev/ruby/yaml_test/" (21887 34481 0 0) "users.yml" "test.rb" "defaults_out.yml" "defaults_in.yml" "defaults.yml" "../" "./")
+
+ ("/Users/mmyoji/Downloads/" (21898 4449 0 0) "users.csv" "tw_tensec_staging.csr" "slack_icons/" "sample.json" "RecordIt.app/" "OpsWorks/" "iTerm2-Color-Schemes-master/" "instamall.key" "icon.png" "High Performance MySQL, 3rd Edition.pdf" "credentials.csv" "BigQuery/" "AppCleaner.app/" "2014.02.20-US_with_10sec/" ".localized" ".DS_Store" "../" "./")
+
+ ("/Users/mmyoji/Downloads/BigQuery/" (21897 11241 0 0) "users.json" "bigquery_2.p12" "bigquery.p12" "bigquery.json" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/playbook/roles/bower/tasks/" (21890 36124 0 0) "main.yml" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/playbook/roles/utility/tasks/" (21890 36124 0 0) "main.yml" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/playbook/roles/dbtier/tasks/" (21890 36124 0 0) "main.yml" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/playbook/galaxy_roles/rvm_io.rvm1-ruby/tasks/" (21890 36124 0 0) "rvm.yml" "rubies.yml" "main.yml" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/playbook/" (21890 36245 0 0) "vars/" "Vagrantfile" "staging" "spec/" "setup_vagrant.sh" "roles/" "requirements.yml" "README.md" "Rakefile" "production" "playbook.yml" "Gemfile.lock" "Gemfile" "galaxy_roles/" "circle.yml" ".vagrant/" ".rspec" ".gitignore" ".git/" ".bundle/" "../" "./")
+
+ ("/Users/mmyoji/dev/10sec/server/tw_server/deploy/" (21898 9366 0 0) "before_restart.rb" "before_migrate.rb" "after_restart.rb" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
