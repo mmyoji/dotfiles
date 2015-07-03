@@ -194,6 +194,8 @@
 (require 'rubocop)
 (add-hook 'ruby-mode-hook 'rubocop-mode)
 
+;; elixir
+(require 'elixir-mode)
 
 ;; Haskell ;;
 (require 'haskell-mode)
