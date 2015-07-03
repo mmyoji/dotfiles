@@ -29,6 +29,9 @@
 ;; C-u C-SPC C-SPC ...でどんどん過去のマークを遡る
 (setq set-mark-command-repeat-pop t)
 
+(define-key global-map (kbd "C-c l") 'toggle-truncate-lines)
+(define-key global-map (kbd "C-t") 'other-window)
+
 ;; Arrange the name of files when the files have the same name in different directories
 (require 'uniquify)
 ;; filename<dir> style
@@ -82,9 +85,6 @@
 ;; Ignore upper-case and lower-case input in mini buffer
 (setq read-buffer-completion-ignore-case t)
 (setq read-file-name-completion-ignore-case t)
-
-;; Replace C-j with RET
-(define-key global-map (kbd "RET") 'newline-and-indent)
 
 (require 'ido)
 (ido-mode t)
@@ -326,3 +326,6 @@
  ;; If there is more than one, they won't work right.
  '(erb-face ((t (:background "color-20"))))
  '(fringe ((t (:background "color-20")))))
+
+(provide 'init)
+;;; init.el ends here
