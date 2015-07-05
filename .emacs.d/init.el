@@ -97,6 +97,9 @@
 (require 'auto-complete)
 (global-auto-complete-mode t)
 
+(when (require 'undohist nil t)
+  (undohist-initialize))
+
 (require 'yasnippet)
 
 (require 'ag)
