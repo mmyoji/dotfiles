@@ -1,0 +1,3 @@
+
+((digest . "73a01ac3b5968687c6c4a01e90a7ef43") (undo-list nil ("offer" . -541) (546 . 551) nil ("offer" . -408) (413 . 418) nil ("offer" . -310) (315 . 320) nil ("offer" . -270) (275 . 280) nil ("offer" . -202) (207 . 212) nil (144 . 149) ("order" . -144) (nil fontified t 144 . 149) (nil face font-lock-type-face 144 . 149) ("Offer" . -144) (149 . 154) nil ("offer" . -135) (140 . 145) nil (nil rear-nonsticky nil 563 . 564) (nil fontified nil 55 . 564) (55 . 564) (t 21919 32019 0 0) nil ("\"" . -22) (23 . 24) ("\"" . -9) (t 21919 32012 0 0) (10 . 11) 1 (t 21919 32012 0 0) nil ("
+" . 55) ((marker) . -1) ((marker) . -1) ((marker) . -1) nil ("  it_behaves_like \"purchase_policy\"" . 55) ((marker) . -35) (t 21917 56940 0 0)))

@@ -86,6 +86,10 @@
 (setq read-buffer-completion-ignore-case t)
 (setq read-file-name-completion-ignore-case t)
 
+;; wdired.el
+(require 'wdired)
+(define-key dired-mode-map "r" 'wdired-change-to-wdired-mode)
+
 (require 'ido)
 (ido-mode t)
 
@@ -146,6 +150,9 @@
       (process-send-eof proc))))
 (setq interprogram-cut-function 'paste-to-osx)
 (setq interprogram-paste-function 'copy-from-osx)
+
+;; view folders tree structure
+(require 'neotree)
 
 
 ;;; Programming Languages ;;;

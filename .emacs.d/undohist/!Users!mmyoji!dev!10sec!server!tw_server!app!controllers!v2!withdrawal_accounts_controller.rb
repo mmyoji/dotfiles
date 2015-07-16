@@ -1,0 +1,2 @@
+
+((digest . "78fa258eec0ffcf6d814a99b289d584d") (undo-list nil (198 . 199) nil ("1" . 198) nil (137 . 138) nil ("1" . 137) (t 21923 27941 0 0) nil (nil fontified nil 42 . 44) (nil face font-lock-type-face 42 . 44) ("V1" . -42) (44 . 46) (nil fontified t 7 . 9) (t 21904 44389 0 0) (nil face font-lock-type-face 7 . 9) (t 21904 44389 0 0) ("V1" . -7) (t 21904 44389 0 0) (9 . 11) 1 (t 21904 44389 0 0)))

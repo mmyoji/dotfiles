@@ -1,0 +1,2 @@
+
+((digest . "84bc63c020f5dfac2da66994573f2b03") (undo-list nil (139 . 156) ("V2::Or" . -139) ((marker*) . 6) nil (143 . 145) nil ("ReviewResource" . 143) ((marker) . -14) nil (" " . -120) nil (119 . 121) nil (112 . 117) nil ("w" . 112) nil ("e" . 112) nil ("i" . 112) nil ("v" . 112) nil ("e" . 112) nil ("r" . 112) nil (nil rear-nonsticky nil 157 . 158) (nil fontified nil 100 . 158) (100 . 158) (t 21924 53623 0 0)))

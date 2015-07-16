@@ -1,0 +1,30 @@
+
+((digest . "dabc80033c53cb256ea55186641d6998") (undo-list nil (279 . 291) nil ("_" . -279) nil ("j" . -280) nil (277 . 281) nil ("k" . -277) nil ("s" . -278) nil (275 . 279) nil (275 . 276) nil (274 . 275) nil (270 . 274) nil (269 . 270) (t 21923 8474 0 0) nil (268 . 269) nil ("'" . -268) nil (257 . 258) nil ("'" . 257) ((marker) . -1) (t 21923 8464 0 0) nil (258 . 268) nil (258 . 259) nil (257 . 258) nil (253 . 257) nil ("#" . -253) nil (253 . 254) nil (252 . 253) nil (251 . 252) (t 21923 8457 0 0) nil ("
+" . 252) ((marker) . -1) (t 21923 8453 0 0) nil ("
+" . 347) (t 21923 8451 0 0) nil ("
+  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+" . 328) ((marker) . -132) 460 nil ("
+  # Access an IRB console on exception pages or by using <%= console %> in views
+" . 298) ((marker) . -82) 380 nil ("
+" . 283) nil ("  # Call 'byebug' anywhere in the code to stop execution and get a debugger console" . 283) nil ("# Use ActiveModel has_secure_password
+# gem 'bcrypt', '~> 3.1.7'
+
+# Use Unicorn as the app server
+# gem 'unicorn'
+
+# Use Capistrano for deployment
+# gem 'capistrano-rails', group: :development
+" . 253) ((marker) . -193) 446 nil (213 . 214) nil (214 . 215) nil (213 . 214) nil ("
+" . 213) nil ("# bundle exec rake doc:rails generates the API under doc/api." . 213) nil ("
+" . 188) nil ("# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder" . 188) nil ("
+" . 171) nil ("# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks" . 171) nil ("# See https://github.com/rails/execjs#readme for more supported runtimes
+# gem 'therubyracer', platforms: :ruby
+
+# Use jquery as the JavaScript library
+" . 152) ((marker) . -152) 304 nil ("
+" . 121) nil ("# Use CoffeeScript for .coffee assets and views" . 121) nil ("
+" . 94) nil ("# Use Uglifier as compressor for JavaScript assets" . 94) nil ("
+" . 67) nil ("# Use SCSS for stylesheets" . 67) nil ("
+" . 53) nil ("# Use sqlite3 as the database for Active Record" . 53) nil ("
+" . 32) nil ("
+" . 33) nil ("# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'" . 33) (t 21923 8401 0 0)))

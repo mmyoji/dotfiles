@@ -1,0 +1,2 @@
+
+((digest . "c967490948d207cb4d23334784a7a4e6") (undo-list nil ("receipt" . -1433) (1440 . 1445) ("receipt" . -1084) (1091 . 1096) ("receipt" . -910) (917 . 922) (nil fontified t 903 . 908) (nil face font-lock-constant-face 903 . 908) ("receipt" . -903) (910 . 915) ("receipt" . -882) (889 . 894) ("receipt" . -850) (857 . 862) ("receipt" . -745) (752 . 757) ("receipt" . -716) (723 . 728) ("receipt" . -420) (427 . 432) ("receipt" . -200) (t 21908 57317 0 0) (207 . 212) 174 (t 21908 57317 0 0)))

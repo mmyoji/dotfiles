@@ -1,0 +1,2 @@
+
+((digest . "32637977533425fb1f0c5a5f4a2c9c42") (undo-list nil (22 . 25) nil (21 . 23) nil (20 . 23) nil (13 . 20) ("re" . -13) ((marker*) . 2) nil (1 . 15) nil (1 . 3) nil (8 . 15) ("ex" . -8) ((marker*) . 2) nil (5 . 10) nil ("e" . -5) nil (1 . 6) nil ("v" . 1) nil ("a" . 1) nil ("n" . 1) nil (" " . 1) nil ("r" . 1) nil ("a" . 1) nil ("v" . 1) nil (nil rear-nonsticky nil 81 . 82) (nil fontified nil 1 . 82) (1 . 82) (t . -1)))

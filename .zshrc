@@ -93,3 +93,5 @@ export GIT_MERGE_AUTOEDIT=no
 # elasticsearch
 export PATH=$PATH:/Users/mmyoji/dev/packages/elasticsearch/bin
 # export TEST_CLUSTER_COMMAND=/Users/mmyoji/dev/packages/elasticsearch/bin/elasticsearch
+
+export ATLAS_TOKEN="xyv-8-GLSXtC3EVSBKxqkYv89_YxmHny3qHBoP2t6BRui8ynCJneygjcTz-Fxzx4NyM"

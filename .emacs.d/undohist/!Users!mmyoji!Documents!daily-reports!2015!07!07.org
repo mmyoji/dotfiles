@@ -1,0 +1,4 @@
+
+((digest . "717880bd6a35970eb025a25ae5b05201") (undo-list nil (86 . 94) nil ("update html/css/js" . 86) ((marker) . -18) nil (nil rear-nonsticky nil 104 . 105) (nil fontified nil 77 . 105) (77 . 105) (t 21915 39009 0 0) nil (90 . 103) (t 21915 38097 0 0) nil (90 . 91) 86 nil (86 . 90) (t 21915 38092 0 0) nil (53 . 58) (t 21915 38089 0 0) nil (53 . 71) (t 21915 16006 0 0) nil (62 . 63) nil (54 . 55) nil ("　" . -61) nil (54 . 62) nil (53 . 54) nil (34 . 53) ("  * 
+  * rename key" . 34) (34 . 39) 48 nil (" " . -48) nil ("f" . -49) nil ("i" . -50) nil ("l" . -51) nil ("e" . -52) nil ("s" . -53) nil (37 . 54) nil (" " . -37) nil ("c" . -38) nil ("h" . -39) nil ("e" . -40) nil ("c" . -41) nil ("k" . -42) nil (" " . -43) nil (38 . 44) nil (18 . 38) ("  * 
+  * check Slack" . 18) (18 . 23) 33 nil (28 . 33) nil ("s" . -28) nil (18 . 29) nil (17 . 18) nil (10 . 17) nil (8 . 10) nil (4 . 8) nil ("6" . -4) nil (1 . 5) (t . -1)))
