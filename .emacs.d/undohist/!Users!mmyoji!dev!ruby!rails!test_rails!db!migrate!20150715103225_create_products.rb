@@ -1,2 +1,0 @@
-
-((digest . "7eaf2ffd84fcaf47024b318f4cff86ba") (undo-list nil (290 . 292) nil ("a" . -290) nil ("s" . -291) nil (289 . 292) nil ("s" . -289) nil ("l" . -290) nil ("e" . -291) (t 21926 14051 0 0) nil (283 . 292) nil (263 . 283) nil (243 . 263) nil (223 . 243) nil (219 . 223) ("    " . 218) (222 . 223) nil (217 . 222) (t 21926 14029 0 0) nil (", foreign_key: true" . 132) ((marker) . -19) (t 21926 14009 0 0) nil (121 . 134) nil ("index: true, " . 121) ((marker) . -13) ((marker) . -13) 134 (t 21926 14009 0 0)))

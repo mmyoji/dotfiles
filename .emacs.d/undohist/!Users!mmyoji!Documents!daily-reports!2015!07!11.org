@@ -1,5 +1,0 @@
-
-((digest . "3a3ede76e5c29ac4123ecea84c4ff1f8") (undo-list nil ("
-** 
-" . 39) ((marker) . -1) ((marker) . -1) ((marker) . -5) ((marker) . -5) 44 (t 21921 10274 0 0) nil (43 . 44) 40 nil (40 . 43) nil (39 . 40) (t 21921 10267 0 0) nil (38 . 39) 18 nil (27 . 38) nil ("p" . -27) nil (24 . 28) nil ("g" . -24) nil (18 . 25) nil ("
-" . -18) nil (17 . 19) nil (10 . 17) nil (8 . 10) nil (1 . 8) (t . -1)))

@@ -1,3 +1,0 @@
-
-((digest . "0610644282de2f3be5f533d1cce90678") (undo-list nil (59 . 61) nil ("k" . -59) nil ("d" . -60) nil (51 . 61) nil (51 . 52) nil (50 . 51) nil ("'" . -50) nil ("\"" . -51) nil (51 . 52) nil (50 . 51) nil (46 . 50) nil ("# gem \"rails\"" . 46) ((marker) . -13) nil (44 . 45) nil (38 . 43) nil (38 . 39) nil (37 . 38) nil ("'" . -37) nil ("'" . -38) nil (38 . 39) nil (37 . 38) nil (35 . 37) nil ("u" . -35) nil (" " . -36) nil (32 . 37) nil (31 . 32) nil ("
-" . 1) nil ("# A sample Gemfile" . 1) (t 21916 62205 0 0)))

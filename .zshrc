@@ -95,3 +95,4 @@ export PATH=$PATH:/Users/mmyoji/dev/packages/elasticsearch/bin
 # export TEST_CLUSTER_COMMAND=/Users/mmyoji/dev/packages/elasticsearch/bin/elasticsearch
 
 export ATLAS_TOKEN="xyv-8-GLSXtC3EVSBKxqkYv89_YxmHny3qHBoP2t6BRui8ynCJneygjcTz-Fxzx4NyM"
+export ESA_ACCESS_TOKEN = "0662db2f55b7291ad75624ed6db7dce4ab43b01c74bf54db35ae93b658bc40c2"
