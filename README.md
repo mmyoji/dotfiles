@@ -3,7 +3,6 @@
 ## Content
 
 * .emacs.d
-* .zshrc
 
 ## Install
 
@@ -21,7 +20,6 @@ $ cd
 
 # create symbolic links
 $ ln -s ./projects/dotfiles/.emacs.d ~/
-$ ln -s ./projects/dotfiles/.zshrc ~/
 ```
 
 :relieved:
