@@ -1,3 +1,0 @@
-
-((digest . "ad73c7497ee1860e1be757cbd159d543") (undo-list nil (", \"assets\", \"fonts\"" . 1444) ((marker) . -19) ((marker) . -19) 1463 nil (1431 . 1443) nil (1431 . 1432) nil ("\"" . 1431) nil ("p" . 1431) nil ("p" . 1431) nil ("a" . 1431) nil ("
-" . 1456) ((marker) . -1) ((marker) . -1) ((marker) . -1) nil ("    condig.a" . 1456) ((marker) . -12) nil ("Rails.application." . 1391) ((marker) . -18) ((marker) . -18) 1409 nil (1387 . 1391) nil (nil rear-nonsticky nil 1469 . 1470) (nil fontified nil 1387 . 1470) (1387 . 1470) nil ("s" . -1399) nil (1391 . 1400) nil (1387 . 1391) ("    " . 1386) (1390 . 1391) nil ("c" . -1390) nil (1390 . 1391) nil (1385 . 1390) (t 21927 27332 0 0)))

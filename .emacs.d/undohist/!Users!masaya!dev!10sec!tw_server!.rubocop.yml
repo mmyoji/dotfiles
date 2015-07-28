@@ -1,3 +1,0 @@
-
-((digest . "0938b844248afd8a8cb00f70a4510bce") (undo-list nil ("
-" . 220) ((marker . 1295) . -1) ((marker . 1295) . -1) ((marker) . -1) nil ("    - 'config/initializers/**/*'" . 220) ((marker) . -32) nil (nil rear-nonsticky nil 252 . 253) (nil fontified nil 220 . 253) (220 . 253) nil (214 . 217) nil (201 . 213) nil ("*" . 201) nil ("*" . 201) (t 21927 4885 0 0)))

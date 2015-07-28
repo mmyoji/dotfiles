@@ -1,4 +1,0 @@
-
-((digest . "eaac4a68db896bd92f9845618890b7bd") (undo-list nil ("
-" . 2069) ((marker) . -1) ((marker) . -1) ((marker) . -1) nil ("  # js spec" . 2069) ((marker) . -11) (t 21927 42260 0 0) nil (2101 . 2104) nil ("e" . -2101) nil (2088 . 2102) nil (2088 . 2089) nil ("konacha'" . 2088) ((marker) . -8) (t 21927 42224 0 0) nil ("
-" . 2097) nil ("  gem 'teaspoon-mocha'" . 2097) nil (2095 . 2096) nil (2088 . 2095) nil ("teaspoon'" . 2088) (t 21927 26937 0 0) nil (2116 . 2119) nil ("t" . -2116) nil (2113 . 2117) nil (2071 . 2080) nil (2069 . 2071) ("  " . 2068) (2070 . 2071) nil (2067 . 2070) nil (nil rear-nonsticky nil 2101 . 2102) (nil fontified nil 2085 . 2102) (2085 . 2102) (t 21927 18725 0 0) nil (2075 . 2083) nil (2075 . 2076) nil (2074 . 2075) nil (2070 . 2074) nil (2067 . 2070) (t 21927 18697 0 0)))
