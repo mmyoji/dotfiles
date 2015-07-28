@@ -14,7 +14,7 @@ $ mkdir ./projects
 
 $ cd ./projects
 
-$ git clone git@github.com:masaya-myojin/dotfiles.git
+$ git clone git@github.com:mmyoji/dotfiles.git
 
 $ cd
 
