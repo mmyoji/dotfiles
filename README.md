@@ -1,25 +1,28 @@
 # mmyoji's dotfiles
 
+
+
 ## Content
 
 * .emacs.d
+* .rubocop.yml: static analysis for Ruby
+* .railsrc: config for `rails new` command
+* .eslintrc: static analysis for JavaScript
+* .gemrc: Gem config file
+
+
 
 ## Install
 
 ```sh
-# move your home path
-$ cd
-
-$ mkdir ./projects
-
-$ cd ./projects
+$ cd ~/path/to/install
 
 $ git clone git@github.com:mmyoji/dotfiles.git
 
 $ cd
 
 # create symbolic links
-$ ln -s ./projects/dotfiles/.emacs.d ~/
+$ ln -s ./path/to/install/dotfiles/.emacs.d ~/
 ```
 
 :relieved:
