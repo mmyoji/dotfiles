@@ -1,2 +1,0 @@
-
-((digest . "1e8c7a0ed484bb3b5c467b38238b8af9") (undo-list nil (2673 . 2678) ("order" . -2673) (nil fontified t 2673 . 2678) (nil face font-lock-type-face 2673 . 2678) ("Receipt" . -2673) (2680 . 2685) (2619 . 2624) ("order" . -2619) (nil fontified t 2619 . 2624) (t 21915 20498 0 0) (nil face font-lock-type-face 2619 . 2624) (t 21915 20498 0 0) ("Receipt" . -2619) (t 21915 20498 0 0) (2626 . 2631) 2612 (t 21915 20498 0 0)))
