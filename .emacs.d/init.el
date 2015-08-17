@@ -249,7 +249,7 @@
 (require 'web-mode)
 (add-to-list 'auto-mode-alist '("\\.ejs$" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.ejs.jst$" . web-mode))
-(add-to-list 'auto-mode-alist '("\\.js.jsx$" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.jsx$" . web-mode))
 
 ;; turn on flychecking globally
 (add-hook 'after-init-hook #'global-flycheck-mode)
