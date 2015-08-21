@@ -115,7 +115,10 @@
  '(ag-highlight-search t)
  '(ag-reuse-buffers (quote nil))
  '(ag-reuse-window (quote nil))
- '(js-indent-level 2))
+ '(js-indent-level 2)
+ '(terraform-indent-level 2)
+ '(wakatime-api-key "3dc56227-f00c-46e1-a88e-1be22e76714a")
+ '(wakatime-cli-path "/usr/local/bin/wakatime"))
 (require 'wgrep-ag)
 (autoload 'wgrep-ag-setup "wgrep-ag")
 (add-hook 'ag-mode-hook 'wgrep-ag-setup)
@@ -153,6 +156,10 @@
 
 ;; view folders tree structure
 (require 'neotree)
+
+;; wakatime
+(require 'wakatime-mode)
+(global-wakatime-mode t)
 
 
 ;;; Programming Languages ;;;
@@ -239,8 +246,6 @@
 (require 'terraform-mode)
 (add-to-list 'auto-mode-alist '("\\.tf$" . terraform-mode))
 (add-to-list 'auto-mode-alist '("\\.tfvars$" . terraform-mode))
-(custom-set-variables
-  '(terraform-indent-level 2))
 
 
 ;;;  Front end ;;;
