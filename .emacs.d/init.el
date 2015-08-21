@@ -116,9 +116,7 @@
  '(ag-reuse-buffers (quote nil))
  '(ag-reuse-window (quote nil))
  '(js-indent-level 2)
- '(terraform-indent-level 2)
- '(wakatime-api-key "3dc56227-f00c-46e1-a88e-1be22e76714a")
- '(wakatime-cli-path "/Users/mmyoji/.pyenv/shims/wakatime"))
+ '(terraform-indent-level 2))
 (require 'wgrep-ag)
 (autoload 'wgrep-ag-setup "wgrep-ag")
 (add-hook 'ag-mode-hook 'wgrep-ag-setup)
@@ -156,10 +154,6 @@
 
 ;; view folders tree structure
 (require 'neotree)
-
-;; wakatime
-(require 'wakatime-mode)
-(global-wakatime-mode t)
 
 
 ;;; Programming Languages ;;;
