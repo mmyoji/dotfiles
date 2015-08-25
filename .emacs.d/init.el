@@ -330,11 +330,6 @@
 (add-hook 'coffee-mode-hook 'flymake-coffee-load)
 
 
-;;; SmartPhone app ;;;
-
-(require 'swift-mode)
-
-
 ;;; Others ;;;
 
 (when (require 'yaml-mode nil t)
