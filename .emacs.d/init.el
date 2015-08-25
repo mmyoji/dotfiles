@@ -15,6 +15,36 @@
 (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
 (package-initialize)
 
+;;; Activate this when you install this file for the first time.
+;; (package-refresh-contents)
+
+(defvar my/favorite-packages
+  '(
+    auto-complete
+    undohist
+    yasnippet
+    ag wgrep-ag
+    anything
+    neotree
+    smartparens
+    flycheck flycheck-color-mode-line s jump pkg-info
+    ruby-electric ruby-block rinari rhtml-mode rubocop
+    elixir-mode
+    haskell-mode
+    go-mode
+    terraform-mode
+    web-mode emmet-mode
+    scss-mode
+    slim-mode markdown-mode
+    coffee-mode flymake-coffee
+    yaml-mode
+    json-mode
+    ))
+
+(dolist (package my/favorite-packages)
+  (unless (package-installed-p package)
+    (package-install package)))
+
 (setq inhibit-startup-message t)
 
 ;; Speed up for drawing due to not respond to languages that read right to left
@@ -298,12 +328,6 @@
 (add-to-list 'auto-mode-alist '("\\.md$" . markdown-mode))
 
 
-;; js ;;
-;; (autoload 'js2-mode "js2-mode" nil t)
-;; (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
-;; (add-to-list 'auto-mode-alist '("\\.js.erb$" . js2-mode))
-;; (setq-default c-basic-offset 2)
-
 ;; coffee ;;
 (require 'coffee-mode)
 (defun coffee-custom ()
@@ -323,9 +347,8 @@
           `(lambda()
              (setq flycheck-checker 'coffee)
              (flycheck-mode 1)))
-;; TODO: Place coffeelint
-;; (setq flymake-coffee-coffeelint-configuration-file
-;;       (expand-file-name "~/.coffeelint.json"))
+(setq flymake-coffee-coffeelint-configuration-file
+      (expand-file-name "~/.coffeelint.json"))
 (require 'flymake-coffee)
 (add-hook 'coffee-mode-hook 'flymake-coffee-load)
 
