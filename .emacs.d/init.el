@@ -197,6 +197,7 @@
 (require 'flycheck)
 (setq flycheck-check-syntax-automatically '(mode-enabled save))
 (add-hook 'ruby-mode-hook 'flycheck-mode)
+(add-hook 'elixir-mode-hook 'flycheck-mode)
 
 (require 'flycheck-color-mode-line)
 (eval-after-load "flycheck"
