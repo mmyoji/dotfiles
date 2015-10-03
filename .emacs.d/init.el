@@ -334,27 +334,20 @@
 
 ;; coffee ;;
 (require 'coffee-mode)
+(require 'flymake-coffee)
+(add-to-list 'auto-mode-alist '("\\.coffee$" . coffee-mode))
+(add-to-list 'auto-mode-alist '("\\.coffee.erb$" . coffee-mode))
+(add-to-list 'auto-mode-alist '("Cakefile$" . coffee-mode))
 (defun coffee-custom ()
   "coffee-mode-hook"
   (and (set (make-local-variable 'tab-width) 2)
        (set (make-local-variable 'coffee-tab-width) 2)))
 (add-hook 'coffee-mode-hook
           '(lambda () (coffee-custom)))
-(add-hook 'coffee-mode-hook
-          `(lambda () (flymake-mode)))
-(autoload 'coffee-mode "coffee-mode" "Major mode for editing CoffeeScript." t)
-(add-to-list 'auto-mode-alist '("\\.coffee$" . coffee-mode))
-(add-to-list 'auto-mode-alist '("\\.coffee.erb$" . coffee-mode))
-(add-to-list 'auto-mode-alist '("Cakefile$" . coffee-mode))
-;; coffee-lint
-(add-hook 'coffee-mode-hook
-          `(lambda()
-             (setq flycheck-checker 'coffee)
-             (flycheck-mode 1)))
+(add-hook 'coffee-mode-hook 'flymake-coffee-load)
+(add-hook 'coffee-mode-hook 'auto-complete-mode)
 (setq flymake-coffee-coffeelint-configuration-file
       (expand-file-name "~/.coffeelint.json"))
-(require 'flymake-coffee)
-(add-hook 'coffee-mode-hook 'flymake-coffee-load)
 
 
 ;;; Others ;;;
