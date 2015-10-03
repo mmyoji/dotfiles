@@ -4,11 +4,13 @@
 
 ## Content
 
+* .coffeelint.json
 * .emacs.d
-* .rubocop.yml: static analysis for Ruby
-* .railsrc: config for `rails new` command
 * .eslintrc: static analysis for JavaScript
 * .gemrc: Gem config file
+* .railsrc: config for `rails new` command
+* .rubocop.yml: static analysis for Ruby
+* .tmux.conf
 
 
 
