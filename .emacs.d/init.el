@@ -35,7 +35,7 @@
     terraform-mode
     web-mode emmet-mode
     scss-mode
-    slim-mode markdown-mode
+    slim-mode markdown-mode haml-mode
     coffee-mode flymake-coffee
     yaml-mode
     json-mode
@@ -327,6 +327,9 @@
 
 (require 'slim-mode)
 (add-to-list 'auto-mode-alist '("\\.slim$" . slim-mode))
+
+(require 'haml-mode)
+(add-to-list 'auto-mode-alist '("\\.haml$" . haml-mode))
 
 (require 'markdown-mode)
 (add-to-list 'auto-mode-alist '("\\.md$" . markdown-mode))
