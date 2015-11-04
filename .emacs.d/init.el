@@ -213,6 +213,7 @@
 (autoload 'ruby-mode "ruby-mode" "Mode for editing ruby source file" t)
 (add-to-list 'auto-mode-alist '("\\.rb$latex " . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.json.jbuilder$" . ruby-mode))
+(add-to-list 'auto-mode-alist '("\\.rabl$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("Capfile$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("Gemfile$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("Guardfile$" . ruby-mode))
@@ -223,6 +224,7 @@
 ;; Automatically insert "do..end", etc.
 (require 'ruby-electric)
 (add-hook 'ruby-mode-hook '(lambda () (ruby-electric-mode t)))
+(add-hook 'ruby-mode-hook '(lambda () (smartparens t)))
 (setq ruby-electric-expand-delimiters-list nil)
 ;; Highlight matching block
 (require 'ruby-block)
