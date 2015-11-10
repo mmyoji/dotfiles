@@ -251,6 +251,7 @@
                  :when '(("SPC" "RET"))
                  :post-handlers '(sp-ruby-def-post-handler)
                  :actions '(insert navigate)))
+(add-hook 'elixir-mode-hook 'auto-complete-mode)
 
 ;; Haskell ;;
 (require 'haskell-mode)
