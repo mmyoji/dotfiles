@@ -6,6 +6,7 @@
 
 * .coffeelint.json
 * .emacs.d
+* .vimrc
 * .eslintrc: static analysis for JavaScript
 * .gemrc: Gem config file
 * .railsrc: config for `rails new` command
