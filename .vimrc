@@ -97,6 +97,7 @@ if !exists(":DiffOrig")
 endif
 " Vim sample script ends here
 
+set nobackup
 set title
 set expandtab
 set number
@@ -105,6 +106,8 @@ set smartindent
 set tabstop=2
 set shiftwidth=2
 set smarttab
+
+colorscheme koehler
 
 if has('vim_starting')
   set rtp+=~/.vim/plugged/vim-plug
@@ -124,7 +127,6 @@ call plug#begin('~/.vim/plugged')
   Plug 'tpope/vim-rails'
   Plug 'nathanaelkane/vim-indent-guides'
   Plug 'bronson/vim-trailing-whitespace'
-  Plug 'kana/vim-smartinput'
 call plug#end()
 
 let g:indent_guides_enable_on_vim_startup = 1
