@@ -1,0 +1,24 @@
+[user]
+  name = Masaya Myojin
+  email = m.myojin0425@gmail.com
+[core]
+  editor = vi
+[push]
+  default = simple
+[alias]
+  a = add
+  aa = add --all
+  b = branch
+  co = checkout
+  cob = checkout -b
+  cma = commit --amend
+  com = commit
+  d = diff
+  fc = fetch --prune
+  l = log --graph
+  ps = push -u
+  s = status
+[filter "lfs"]
+  clean = git-lfs clean %f
+  smudge = git-lfs smudge %f
+  required = true
