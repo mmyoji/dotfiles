@@ -1,10 +1,7 @@
 # mmyoji's dotfiles
 
-
-
 ## Content
 
-* .coffeelint.json
 * .emacs.d
 * .vimrc
 * .eslintrc: static analysis for JavaScript
@@ -12,7 +9,6 @@
 * .railsrc: config for `rails new` command
 * .rubocop.yml: static analysis for Ruby
 * .tmux.conf
-
 
 
 ## Install
