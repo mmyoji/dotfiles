@@ -25,7 +25,6 @@
     yasnippet
     ag wgrep-ag
     anything
-    neotree
     smartparens
     flycheck flycheck-color-mode-line s jump pkg-info
     ruby-electric ruby-block rinari rhtml-mode rubocop
@@ -182,9 +181,6 @@
 (when (eq system-type 'darwin)
   (setq interprogram-cut-function 'paste-to-osx)
   (setq interprogram-paste-function 'copy-from-osx))
-
-;; view folders tree structure
-(require 'neotree)
 
 
 ;;; Programming Languages ;;;
