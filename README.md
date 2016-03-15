@@ -1,18 +1,15 @@
 # mmyoji's dotfiles
 
-
-
 ## Content
 
-* .coffeelint.json
 * .emacs.d
 * .vimrc
 * .eslintrc: static analysis for JavaScript
 * .gemrc: Gem config file
+* .gitconfig
 * .railsrc: config for `rails new` command
 * .rubocop.yml: static analysis for Ruby
 * .tmux.conf
-
 
 
 ## Install

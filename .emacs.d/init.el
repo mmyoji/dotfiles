@@ -25,7 +25,6 @@
     yasnippet
     ag wgrep-ag
     anything
-    neotree
     smartparens
     flycheck flycheck-color-mode-line s jump pkg-info
     ruby-electric ruby-block rinari rhtml-mode rubocop
@@ -36,7 +35,7 @@
     web-mode emmet-mode
     scss-mode
     slim-mode markdown-mode haml-mode
-    coffee-mode flymake-coffee
+    coffee-mode
     yaml-mode
     json-mode
     ))
@@ -179,11 +178,9 @@
     (let ((proc (start-process "pbcopy" "*Messages*" "pbcopy")))
       (process-send-string proc text)
       (process-send-eof proc))))
-(setq interprogram-cut-function 'paste-to-osx)
-(setq interprogram-paste-function 'copy-from-osx)
-
-;; view folders tree structure
-(require 'neotree)
+(when (eq system-type 'darwin)
+  (setq interprogram-cut-function 'paste-to-osx)
+  (setq interprogram-paste-function 'copy-from-osx))
 
 
 ;;; Programming Languages ;;;
@@ -339,21 +336,15 @@
 
 ;; coffee ;;
 (require 'coffee-mode)
-(require 'flymake-coffee)
 (add-to-list 'auto-mode-alist '("\\.coffee$" . coffee-mode))
 (add-to-list 'auto-mode-alist '("\\.coffee.erb$" . coffee-mode))
-(add-to-list 'auto-mode-alist '("Cakefile$" . coffee-mode))
 (defun coffee-custom ()
   "coffee-mode-hook"
   (and (set (make-local-variable 'tab-width) 2)
        (set (make-local-variable 'coffee-tab-width) 2)))
 (add-hook 'coffee-mode-hook
           '(lambda () (coffee-custom)))
-(add-hook 'coffee-mode-hook 'flymake-coffee-load)
 (add-hook 'coffee-mode-hook 'auto-complete-mode)
-(setq flymake-coffee-coffeelint-configuration-file
-      (expand-file-name "~/.coffeelint.json"))
-
 
 ;;; Others ;;;
 
