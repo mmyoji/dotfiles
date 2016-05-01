@@ -127,6 +127,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'tpope/vim-rails'
   Plug 'nathanaelkane/vim-indent-guides'
   Plug 'bronson/vim-trailing-whitespace'
+  Plug 'fatih/vim-go'
 call plug#end()
 
 let g:indent_guides_enable_on_vim_startup = 1
