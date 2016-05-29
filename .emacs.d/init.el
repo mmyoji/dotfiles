@@ -27,7 +27,7 @@
     anything
     smartparens
     flycheck flycheck-color-mode-line s jump pkg-info
-    ruby-end ruby-block rinari rhtml-mode
+    ruby-block rinari rhtml-mode
     elixir-mode
     haskell-mode
     go-mode
@@ -218,8 +218,6 @@
 (add-to-list 'auto-mode-alist '("Berksfile$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.gemspec$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("Rakefile$" . ruby-mode))
-;; Automatically insert "do..end", etc.
-(require 'ruby-end)
 ;; Highlight matching block
 (require 'ruby-block)
 (ruby-block-mode t)
