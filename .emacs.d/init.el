@@ -27,7 +27,7 @@
     anything
     smartparens
     flycheck flycheck-color-mode-line s jump pkg-info
-    ruby-electric ruby-block rinari rhtml-mode rubocop
+    ruby-electric ruby-block rinari rhtml-mode
     elixir-mode
     haskell-mode
     go-mode
@@ -233,10 +233,6 @@
 (require 'rhtml-mode)
 (add-hook 'rhtml-mode-hook
           (lambda () (rinari-launch)))
-
-;; Static analize
-(require 'rubocop)
-(add-hook 'ruby-mode-hook 'rubocop-mode)
 
 ;; elixir
 (require 'elixir-mode)
