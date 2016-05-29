@@ -1,5 +1,6 @@
-;;; package --- Emacs config files
-
+;;; package --- Summary
+;;; Commentary:
+;;; Code:
 ;;; Mac settings
 (when (eq system-type 'darwin)
   (setq default-input-method "MacOSX"))
