@@ -27,7 +27,7 @@
     anything
     smartparens
     flycheck flycheck-color-mode-line s jump pkg-info
-    ruby-block rinari rhtml-mode
+    ruby-block rhtml-mode
     elixir-mode
     haskell-mode
     go-mode
@@ -225,8 +225,6 @@
 (setq ruby-block-highlight-toggle t)
 
 ;; Ruby on Rails
-(require 'rinari)
-(add-hook 'ruby-mode-hook 'rinari-minor-mode)
 (require 'rhtml-mode)
 (add-hook 'rhtml-mode-hook
           (lambda () (rinari-launch)))
