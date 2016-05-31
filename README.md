@@ -9,6 +9,9 @@
 * .gitconfig
 * .railsrc: config for `rails new` command
 * .tmux.conf
+* .tmuxp: tmux management tool config files
+  * need to install `pip` and `pip install tmuxp`
+  * then start with `tmuxp load <file_name>.yaml`
 
 
 ## Install
