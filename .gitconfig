@@ -2,6 +2,7 @@
   name = Masaya Myojin
   email = m.myojin0425@gmail.com
 [core]
+  excludesfile = /Users/mmyoji/.gitignore_global
   editor = vi
 [push]
   default = simple
@@ -13,12 +14,11 @@
   cob = checkout -b
   cma = commit --amend
   com = commit
-  d = diff
+  d = diff --compaction-heuristic
+  show-conflicted = diff --name-only --diff-filter=U
   fc = fetch --prune
   l = log --graph
   ps = push -u
   s = status
-[filter "lfs"]
-  clean = git-lfs clean %f
-  smudge = git-lfs smudge %f
-  required = true
+  pl = !"git pull && git fetch --prune"
+  vtree = log --pretty=oneline --graph --decorate --all
