@@ -252,11 +252,12 @@
 (require 'go-mode)
 (add-to-list 'auto-mode-alist '("\\.go$" . go-mode))
 (add-hook 'go-mode-hook
-  (lambda ()
-    (setq-default)
-    (setq tab-width 2)
-    (setq standard-indent 2)
-    (setq indent-tabs-mode nil)))
+          (lambda ()
+            (add-hook 'before-save-hook 'gofmt-before-save)
+            (setq-default)
+            (setq tab-width 2)
+            (setq indent-tabs-mode t)))
+
 
 ;; terraform ;;
 (require 'terraform-mode)
