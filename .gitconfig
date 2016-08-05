@@ -22,3 +22,5 @@
   s = status
   pl = !"git pull && git fetch --prune"
   vtree = log --pretty=oneline --graph --decorate --all
+[rebase]
+  autosquash = true
