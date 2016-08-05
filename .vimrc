@@ -125,6 +125,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle'] }
   Plug 'tpope/vim-endwise'
   Plug 'tpope/vim-rails'
+  Plug 'tpope/vim-haml'
   Plug 'nathanaelkane/vim-indent-guides'
   Plug 'bronson/vim-trailing-whitespace'
   Plug 'fatih/vim-go'
