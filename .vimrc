@@ -10,6 +10,11 @@
 "  for MS-DOS and Win32:  $VIM\_vimrc
 "	    for OpenVMS:  sys$login:.vimrc
 
+" see:
+" http://stackoverflow.com/questions/12230290/vim-errors-on-vim-startup-when-run-in-fish-shell
+set shell=/bin/sh
+
+
 " When started as "evim", evim.vim will already have done these settings.
 if v:progname =~? "evim"
   finish
@@ -98,6 +103,7 @@ endif
 " Vim sample script ends here
 
 set nobackup
+set noswapfile
 set title
 set expandtab
 set number
@@ -106,6 +112,7 @@ set smartindent
 set tabstop=2
 set shiftwidth=2
 set smarttab
+set nowrap
 
 colorscheme koehler
 
@@ -129,7 +136,17 @@ call plug#begin('~/.vim/plugged')
   Plug 'nathanaelkane/vim-indent-guides'
   Plug 'bronson/vim-trailing-whitespace'
   Plug 'fatih/vim-go'
+  Plug 'othree/yajs.vim'
+  Plug 'junegunn/vim-easy-align'
+  Plug 'elmcast/elm-vim'
 call plug#end()
 
 let g:indent_guides_enable_on_vim_startup = 1
 
+""""""""""""""""""
+" vim-easy-align "
+""""""""""""""""""
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
