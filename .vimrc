@@ -140,6 +140,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'nathanaelkane/vim-indent-guides'
   Plug 'bronson/vim-trailing-whitespace'
   Plug 'junegunn/vim-easy-align'
+  Plug 'scrooloose/syntastic'
 
   "" languages
   Plug 'elixir-lang/vim-elixir'
