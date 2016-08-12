@@ -129,6 +129,8 @@ if has('vim_starting')
   endif
 endif
 
+" run `:so ~/.vimrc` and `:PlugInstall`
+" after adding a new plug.
 call plug#begin('~/.vim/plugged')
   Plug 'junegunn/vim-plug',
     \ {'dir': '~/.vim/plugged/vim-plug/autoload'}
@@ -150,6 +152,11 @@ call plug#begin('~/.vim/plugged')
   Plug 'othree/yajs.vim'
   Plug 'elmcast/elm-vim'
   Plug 'docker/docker', { 'rtp': '/contrib/syntax/vim/' }
+  " markdown
+  Plug 'godlygeek/tabular'
+  Plug 'plasticboy/vim-markdown'
+  Plug 'kannokanno/previm'
+  Plug 'tyru/open-browser.vim'
 
 call plug#end()
 
