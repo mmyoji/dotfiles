@@ -135,7 +135,6 @@ call plug#begin('~/.vim/plugged')
   Plug 'Shougo/unite.vim'
   Plug 'Shougo/neomru.vim'
   Plug 'elixir-lang/vim-elixir'
-  Plug 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle'] }
   Plug 'tpope/vim-endwise'
   Plug 'tpope/vim-rails'
   Plug 'tpope/vim-haml'
