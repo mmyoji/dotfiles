@@ -132,30 +132,36 @@ endif
 call plug#begin('~/.vim/plugged')
   Plug 'junegunn/vim-plug',
     \ {'dir': '~/.vim/plugged/vim-plug/autoload'}
+
+  "" Utils
   Plug 'Shougo/unite.vim'
   Plug 'Shougo/neomru.vim'
-  Plug 'elixir-lang/vim-elixir'
   Plug 'tpope/vim-endwise'
-  Plug 'tpope/vim-rails'
-  Plug 'tpope/vim-haml'
   Plug 'nathanaelkane/vim-indent-guides'
   Plug 'bronson/vim-trailing-whitespace'
+  Plug 'junegunn/vim-easy-align'
+
+  "" languages
+  Plug 'elixir-lang/vim-elixir'
+  Plug 'tpope/vim-rails'
+  Plug 'tpope/vim-haml'
   Plug 'fatih/vim-go'
   Plug 'othree/yajs.vim'
-  Plug 'junegunn/vim-easy-align'
   Plug 'elmcast/elm-vim'
   Plug 'docker/docker', { 'rtp': '/contrib/syntax/vim/' }
+
 call plug#end()
 
+"" vim-indent-guides
 let g:indent_guides_enable_on_vim_startup = 1
 
-" vim-easy-align "
+"" vim-easy-align
 " Start interactive EasyAlign in visual mode (e.g. vipga)
 xmap ga <Plug>(EasyAlign)
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
 
-" Unite.vim "
+"" unite.vim
 let g:unite_enable_start_insert = 1
 let g:unite_source_history_yank_enable = 1
 let g:unite_source_file_mru_limit = 200
