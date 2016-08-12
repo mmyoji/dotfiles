@@ -103,7 +103,6 @@ endif
 " Vim sample script ends here
 
 set nobackup
-set noswapfile
 set title
 set expandtab
 set number
@@ -113,6 +112,11 @@ set tabstop=2
 set shiftwidth=2
 set smarttab
 set nowrap
+set ignorecase
+set smartcase
+
+" set swapfiles directory
+set directory=$HOME/.vimbackup
 
 colorscheme koehler
 
