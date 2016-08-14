@@ -129,6 +129,9 @@ if has('vim_starting')
   endif
 endif
 
+" vimgrep, grep, Grep opens quickfix-window automatically
+autocmd QuickFixCmdPost *grep* cwindow
+
 " run `:so ~/.vimrc` and `:PlugInstall`
 " after adding a new plug.
 call plug#begin('~/.vim/plugged')
@@ -176,3 +179,6 @@ let g:unite_source_file_mru_limit = 200
 nnoremap <silent> ,uf :<C-u>Unite -buffer-name=file file<CR>
 nnoremap <silent> ,ub :<C-u>Unite buffer<CR>
 nnoremap <silent> ,uu :<C-u>Unite file_mru buffer<CR>
+
+"" vim-markdown
+let g:vim_markdown_folding_disabled = 1
