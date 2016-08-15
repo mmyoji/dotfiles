@@ -1,13 +1,4 @@
 " An example for a vimrc file.
-"
-" Maintainer:	Bram Moolenaar <Bram@vim.org>
-" Last change:	2008 Dec 17
-"
-" To use it, copy it to
-"     for Unix and OS/2:  ~/.vimrc
-"	      for Amiga:  s:.vimrc
-"  for MS-DOS and Win32:  $VIM\_vimrc
-"	    for OpenVMS:  sys$login:.vimrc
 
 " When started as "evim", evim.vim will already have done these settings.
 if v:progname =~? "evim"
@@ -21,11 +12,6 @@ set nocompatible
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
-if has("vms")
-  set nobackup		" do not keep a backup file, use versions instead
-else
-  set backup		" keep a backup file
-endif
 set history=50		" keep 50 lines of command line history
 set ruler		" show the cursor position all the time
 set showcmd		" display incomplete commands
@@ -116,9 +102,6 @@ set smartcase
 " set swapfiles directory
 set directory=$HOME/.vimbackup
 
-"" default colorschema:
-" - elflord
-" - koehler
 colorscheme elflord
 
 if has('vim_starting')
