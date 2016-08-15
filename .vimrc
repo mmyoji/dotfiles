@@ -117,8 +117,10 @@ set smartcase
 
 " set swapfiles directory
 set directory=$HOME/.vimbackup
-
-colorscheme koehler
+"" default colorschema:
+" - elflord
+" - koehler
+colorscheme elflord
 
 if has('vim_starting')
   set rtp+=~/.vim/plugged/vim-plug
@@ -139,8 +141,7 @@ call plug#begin('~/.vim/plugged')
     \ {'dir': '~/.vim/plugged/vim-plug/autoload'}
 
   "" Utils
-  Plug 'Shougo/unite.vim'
-  Plug 'Shougo/neomru.vim'
+  Plug 'ctrlpvim/ctrlp.vim'
   Plug 'tpope/vim-endwise'
   Plug 'nathanaelkane/vim-indent-guides'
   Plug 'bronson/vim-trailing-whitespace'
@@ -171,14 +172,6 @@ let g:indent_guides_enable_on_vim_startup = 1
 xmap ga <Plug>(EasyAlign)
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
-
-"" unite.vim
-let g:unite_enable_start_insert = 1
-let g:unite_source_history_yank_enable = 1
-let g:unite_source_file_mru_limit = 200
-nnoremap <silent> ,uf :<C-u>Unite -buffer-name=file file<CR>
-nnoremap <silent> ,ub :<C-u>Unite buffer<CR>
-nnoremap <silent> ,uu :<C-u>Unite file_mru buffer<CR>
 
 "" vim-markdown
 let g:vim_markdown_folding_disabled = 1
