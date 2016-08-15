@@ -1,4 +1,3 @@
-
 " An example for a vimrc file.
 "
 " Maintainer:	Bram Moolenaar <Bram@vim.org>
@@ -9,11 +8,6 @@
 "	      for Amiga:  s:.vimrc
 "  for MS-DOS and Win32:  $VIM\_vimrc
 "	    for OpenVMS:  sys$login:.vimrc
-
-" see:
-" http://stackoverflow.com/questions/12230290/vim-errors-on-vim-startup-when-run-in-fish-shell
-set shell=/bin/sh
-
 
 " When started as "evim", evim.vim will already have done these settings.
 if v:progname =~? "evim"
@@ -102,6 +96,10 @@ if !exists(":DiffOrig")
 endif
 " Vim sample script ends here
 
+" see:
+" http://stackoverflow.com/questions/12230290/vim-errors-on-vim-startup-when-run-in-fish-shell
+set shell=/bin/sh
+
 set nobackup
 set title
 set expandtab
@@ -117,6 +115,7 @@ set smartcase
 
 " set swapfiles directory
 set directory=$HOME/.vimbackup
+
 "" default colorschema:
 " - elflord
 " - koehler
@@ -149,7 +148,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'scrooloose/syntastic'
   Plug 'vim-scripts/grep.vim'
 
-  "" languages
+  "" Languages
   Plug 'elixir-lang/vim-elixir'
   Plug 'tpope/vim-rails'
   Plug 'tpope/vim-haml'
