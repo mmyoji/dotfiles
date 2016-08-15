@@ -147,6 +147,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'bronson/vim-trailing-whitespace'
   Plug 'junegunn/vim-easy-align'
   Plug 'scrooloose/syntastic'
+  Plug 'vim-scripts/grep.vim'
 
   "" languages
   Plug 'elixir-lang/vim-elixir'
@@ -175,3 +176,10 @@ nmap ga <Plug>(EasyAlign)
 
 "" vim-markdown
 let g:vim_markdown_folding_disabled = 1
+
+"" grep.vim
+nnoremap <expr> gr ':Rgrep<CR>'
+" use jvgrep
+if executable('jvgrep')
+  set grepprg=jvgrep
+endif
