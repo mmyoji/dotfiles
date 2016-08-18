@@ -137,6 +137,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'tpope/vim-haml'
   Plug 'fatih/vim-go'
   Plug 'othree/yajs.vim'
+  Plug 'mxw/vim-jsx'
   Plug 'elmcast/elm-vim'
   Plug 'docker/docker', { 'rtp': '/contrib/syntax/vim/' }
   " markdown
@@ -165,3 +166,7 @@ nnoremap <expr> gr ':Rgrep<CR>'
 if executable('jvgrep')
   set grepprg=jvgrep
 endif
+
+"" vim-jsx
+" enable jsx syntax highlight for *.js files
+let g:jsx_ext_required = 0
