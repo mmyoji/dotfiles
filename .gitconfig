@@ -20,6 +20,8 @@
   ps = push -u
   s = status
   vtree = log --pretty=oneline --graph --decorate --all
+
+  search = log -p -S
 [rebase]
   autosquash = true
 [fetch]
