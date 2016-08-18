@@ -16,11 +16,11 @@
   com = commit
   d = diff --compaction-heuristic
   show-conflicted = diff --name-only --diff-filter=U
-  fc = fetch --prune
   l = log --graph
   ps = push -u
   s = status
-  pl = !"git pull && git fetch --prune"
   vtree = log --pretty=oneline --graph --decorate --all
 [rebase]
   autosquash = true
+[fetch]
+  prune = true
