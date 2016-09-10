@@ -166,6 +166,9 @@ nnoremap <expr> gr ':Rgrep<CR>'
 if executable('jvgrep')
   set grepprg=jvgrep
 endif
+let Grep_Default_Filelist = '*.rb *.scss *.css *.js *.jsx *.erb *.rake *.haml'
+let Grep_Skip_Dirs = '.svn .git vendor spec/cassettes'
+let Grep_Default_Options = '-I' " ignore binary files
 
 "" vim-jsx
 " enable jsx syntax highlight for *.js files
