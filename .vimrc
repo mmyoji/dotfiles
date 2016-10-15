@@ -146,6 +146,8 @@ call plug#begin('~/.vim/plugged')
   Plug 'kannokanno/previm'
   Plug 'tyru/open-browser.vim'
 
+  Plug 'dag/vim-fish'
+
 call plug#end()
 
 "" vim-indent-guides
@@ -175,4 +177,4 @@ let Grep_Default_Options = '-I' " ignore binary files
 let g:jsx_ext_required = 0
 
 "" ctrlp
-let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard | grep -v "spec/cassettes/"']
