@@ -2,7 +2,6 @@
   name = Masaya Myojin
   email = m.myojin0425@gmail.com
 [core]
-  excludesfile = /Users/mmyoji/.gitignore_global
   editor = vi
 [push]
   default = simple
