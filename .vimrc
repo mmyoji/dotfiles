@@ -139,7 +139,6 @@ call plug#begin('~/.vim/plugged')
   Plug 'othree/yajs.vim'
   Plug 'mxw/vim-jsx'
   Plug 'elmcast/elm-vim'
-  Plug 'docker/docker', { 'rtp': '/contrib/syntax/vim/' }
   " markdown
   Plug 'godlygeek/tabular'
   Plug 'plasticboy/vim-markdown'
