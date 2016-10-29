@@ -102,7 +102,11 @@ set smartcase
 " set swapfiles directory
 set directory=$HOME/.vimbackup
 
-colorscheme elflord
+if has("mac")
+  colorscheme elflord
+else
+  colorscheme pablo
+endif
 
 if has('vim_starting')
   set rtp+=~/.vim/plugged/vim-plug
