@@ -27,6 +27,7 @@ brew 'elixir'
 brew 'go'
 
 # cask 'docker'
+# cask 'f.lux'
 # cask 'google-chrome'
 # cask 'iterm2'
 # cask 'slack'
