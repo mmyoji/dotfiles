@@ -26,8 +26,11 @@ brew 'wget'
 brew 'elixir'
 brew 'go'
 
+## Install GUI apps by yourself
+# Read this article: http://queryok.ikuwow.com/entry/stop-brew-cask/
 # cask 'docker'
 # cask 'f.lux'
 # cask 'google-chrome'
 # cask 'iterm2'
+# cast 'recordit'
 # cask 'slack'
