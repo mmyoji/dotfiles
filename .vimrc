@@ -105,7 +105,7 @@ set directory=$HOME/.vimbackup
 if has("mac")
   colorscheme elflord
 else
-  colorscheme pablo
+  colorscheme default
 endif
 
 if has('vim_starting')
