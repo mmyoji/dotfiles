@@ -22,6 +22,9 @@ brew 'vim'
 brew 'webp'
 brew 'wget'
 
+# https://yarnpkg.com/en/docs/install
+brew 'yarn'
+
 # Languages
 brew 'elixir'
 brew 'go'
