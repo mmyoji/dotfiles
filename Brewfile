@@ -1,9 +1,9 @@
-cask_args appdir: '/Applications'
+# cask_args appdir: '/Applications'
 
-tap 'caskroom/cask'
+# tap 'caskroom/cask'
 
 brew 'bash-completion'
-brew 'elasticsearch', restart_service: :changed
+# brew 'elasticsearch', restart_service: :changed
 brew 'git'
 brew 'icu4c'
 brew 'imagemagick'
