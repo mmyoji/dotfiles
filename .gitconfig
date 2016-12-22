@@ -14,8 +14,8 @@
   b   = branch
   co  = checkout
   cob = checkout -b
-  cma = commit --amend
-  com = commit
+  cma = commit --amend -v
+  com = commit -v
   d   = diff --compaction-heuristic
   l   = log --graph
   ps  = push -u
