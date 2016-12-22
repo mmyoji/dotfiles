@@ -1,27 +1,33 @@
 [user]
-  name = Masaya Myojin
+  name  = Masaya Myojin
   email = m.myojin0425@gmail.com
+
 [core]
   editor = vi
+
 [push]
   default = simple
+
 [alias]
-  a = add
-  aa = add --all
-  b = branch
-  co = checkout
+  a   = add
+  aa  = add --all
+  b   = branch
+  co  = checkout
   cob = checkout -b
   cma = commit --amend
   com = commit
-  d = diff --compaction-heuristic
-  show-conflicted = diff --name-only --diff-filter=U
-  l = log --graph
-  ps = push -u
-  s = status
-  vtree = log --pretty=oneline --graph --decorate --all
+  d   = diff --compaction-heuristic
+  l   = log --graph
+  ps  = push -u
+  r   = rebase
+  s   = status
 
-  search = log -p -S
+  search          = log -p -S
+  show-conflicted = diff --name-only --diff-filter=U
+  vtree           = log --pretty=oneline --graph --decorate --all
+
 [rebase]
   autosquash = true
+
 [fetch]
   prune = true
