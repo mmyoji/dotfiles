@@ -3,12 +3,10 @@
 # tap 'caskroom/cask'
 
 brew 'bash-completion'
-# brew 'elasticsearch', restart_service: :changed
 brew 'git'
 brew 'icu4c'
 brew 'imagemagick'
 brew 'jvgrep'
-# brew 'homebrew/versions/mysql56', restart_service: :changed
 brew 'node'
 brew 'postgresql'
 brew 'rbenv-binstubs'
