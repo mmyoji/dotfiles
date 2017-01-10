@@ -23,7 +23,6 @@ brew 'wget'
 brew 'yarn'
 
 # Languages
-brew 'elixir'
 brew 'go'
 
 ## Install GUI apps by yourself
