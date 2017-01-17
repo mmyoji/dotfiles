@@ -1,6 +1,6 @@
-# cask_args appdir: '/Applications'
+cask_args appdir: '/Applications'
 
-# tap 'caskroom/cask'
+tap 'caskroom/cask'
 
 brew 'bash-completion'
 brew 'git'
@@ -25,11 +25,14 @@ brew 'yarn'
 # Languages
 brew 'go'
 
-## Install GUI apps by yourself
-# Read this article: http://queryok.ikuwow.com/entry/stop-brew-cask/
-# cask 'docker'
-# cask 'f.lux'
-# cask 'google-chrome'
-# cask 'iterm2'
-# cast 'recordit'
-# cask 'slack'
+# GUI apps
+# Install by yourself
+# * 'f.lux'
+
+cask 'docker'
+cask 'dropbox'
+cask 'google-chrome'
+cask 'iterm2'
+cast 'recordit'
+cask 'slack'
+cask 'spotify'
