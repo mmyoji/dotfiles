@@ -181,4 +181,8 @@ let g:jsx_ext_required = 0
 
 "" ctrlp
 let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
-let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard | grep -v "spec/cassettes/"']
+if executable('ag')
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g "" --ignore "spec/cassettes"'
+else
+  let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard | grep -v "spec/cassettes/"']
+endif
