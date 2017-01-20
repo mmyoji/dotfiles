@@ -82,10 +82,6 @@ if !exists(":DiffOrig")
 endif
 " Vim sample script ends here
 
-" see:
-" http://stackoverflow.com/questions/12230290/vim-errors-on-vim-startup-when-run-in-fish-shell
-set shell=/bin/sh
-
 set nobackup
 set title
 set expandtab
@@ -147,8 +143,6 @@ call plug#begin('~/.vim/plugged')
   Plug 'plasticboy/vim-markdown'
   Plug 'kannokanno/previm'
   Plug 'tyru/open-browser.vim'
-
-  Plug 'dag/vim-fish'
 
 call plug#end()
 
