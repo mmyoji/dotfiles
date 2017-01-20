@@ -136,7 +136,6 @@ call plug#begin('~/.vim/plugged')
   Plug 'vim-scripts/grep.vim'
 
   "" Languages
-  Plug 'elixir-lang/vim-elixir'
   Plug 'tpope/vim-rails'
   Plug 'tpope/vim-haml'
   Plug 'fatih/vim-go'
