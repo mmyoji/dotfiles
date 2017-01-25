@@ -82,10 +82,6 @@ if !exists(":DiffOrig")
 endif
 " Vim sample script ends here
 
-" see:
-" http://stackoverflow.com/questions/12230290/vim-errors-on-vim-startup-when-run-in-fish-shell
-set shell=/bin/sh
-
 set nobackup
 set title
 set expandtab
@@ -136,7 +132,6 @@ call plug#begin('~/.vim/plugged')
   Plug 'vim-scripts/grep.vim'
 
   "" Languages
-  Plug 'elixir-lang/vim-elixir'
   Plug 'tpope/vim-rails'
   Plug 'tpope/vim-haml'
   Plug 'fatih/vim-go'
@@ -148,8 +143,6 @@ call plug#begin('~/.vim/plugged')
   Plug 'plasticboy/vim-markdown'
   Plug 'kannokanno/previm'
   Plug 'tyru/open-browser.vim'
-
-  Plug 'dag/vim-fish'
 
 call plug#end()
 
@@ -180,4 +173,9 @@ let Grep_Default_Options = '-I' " ignore binary files
 let g:jsx_ext_required = 0
 
 "" ctrlp
-let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard | grep -v "spec/cassettes/"']
+let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
+if executable('ag')
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g "" --ignore "spec/cassettes"'
+else
+  let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard | grep -v "spec/cassettes/"']
+endif
