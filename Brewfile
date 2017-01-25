@@ -1,7 +1,5 @@
 cask_args appdir: '/Applications'
 
-tap 'caskroom/cask'
-
 brew 'bash-completion'
 brew 'git'
 brew 'icu4c'
