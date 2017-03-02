@@ -16,7 +16,7 @@
   cob = checkout -b
   cma = commit --amend -v
   com = commit -v
-  d   = diff --compaction-heuristic
+  d   = diff
   l   = log --graph
   ps  = push -u
   r   = rebase
