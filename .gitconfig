@@ -26,6 +26,9 @@
   show-conflicted = diff --name-only --diff-filter=U
   vtree           = log --pretty=oneline --graph --decorate --all
 
+[diff]
+  indentHeuristic = true
+
 [rebase]
   autosquash = true
 
