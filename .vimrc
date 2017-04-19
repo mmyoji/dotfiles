@@ -138,6 +138,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'othree/yajs.vim'
   Plug 'mxw/vim-jsx'
   Plug 'elmcast/elm-vim'
+  Plug 'rust-lang/rust.vim'
   " markdown
   Plug 'godlygeek/tabular'
   Plug 'plasticboy/vim-markdown'
@@ -165,7 +166,7 @@ if executable('jvgrep')
   set grepprg=jvgrep
 endif
 let Grep_Default_Filelist = '*.rb *.scss *.css *.js *.jsx *.erb *.rake *.haml *.jbuilder'
-let Grep_Skip_Dirs = '.svn .git vendor spec/cassettes'
+let Grep_Skip_Dirs = '.svn .git vendor spec/cassettes node_modules coverage'
 let Grep_Default_Options = '-I' " ignore binary files
 
 "" vim-jsx
@@ -177,5 +178,5 @@ let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
 if executable('ag')
   let g:ctrlp_user_command = 'ag %s -l --nocolor -g "" --ignore "spec/cassettes"'
 else
-  let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard | grep -v "spec/cassettes/"']
+  let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard | grep -v -e "spec/cassettes/" -e "node_modules/" -e "coverage/"']
 endif
