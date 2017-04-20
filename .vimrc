@@ -139,6 +139,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'mxw/vim-jsx'
   Plug 'elmcast/elm-vim'
   Plug 'rust-lang/rust.vim'
+  Plug 'kchmck/vim-coffee-script'
   " markdown
   Plug 'godlygeek/tabular'
   Plug 'plasticboy/vim-markdown'
