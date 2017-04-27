@@ -82,6 +82,7 @@ if !exists(":DiffOrig")
 endif
 " Vim sample script ends here
 
+set ambiwidth=double
 set nobackup
 set title
 set expandtab
