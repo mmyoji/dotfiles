@@ -133,6 +133,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'fatih/vim-go'
   Plug 'othree/yajs.vim'
   Plug 'mxw/vim-jsx'
+  Plug 'leafgarland/typescript-vim'
   Plug 'elmcast/elm-vim'
   Plug 'rust-lang/rust.vim'
   Plug 'kchmck/vim-coffee-script'
