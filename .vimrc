@@ -119,7 +119,6 @@ call plug#begin('~/.vim/plugged')
     \ {'dir': '~/.vim/plugged/vim-plug/autoload'}
 
   "" Utils
-  Plug 'ctrlpvim/ctrlp.vim'
   Plug 'tpope/vim-endwise'
   Plug 'nathanaelkane/vim-indent-guides'
   Plug 'bronson/vim-trailing-whitespace'
@@ -170,11 +169,3 @@ let Grep_Default_Options = '-I' " ignore binary files
 "" vim-jsx
 " enable jsx syntax highlight for *.js files
 let g:jsx_ext_required = 0
-
-"" ctrlp
-let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
-if executable('ag')
-  let g:ctrlp_user_command = 'ag %s -l --nocolor -g "" --ignore "spec/cassettes"'
-else
-  let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard | grep -v -e "spec/cassettes/" -e "node_modules/" -e "coverage/"']
-endif
