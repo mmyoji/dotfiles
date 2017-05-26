@@ -146,6 +146,9 @@
  '(ag-reuse-buffers (quote nil))
  '(ag-reuse-window (quote nil))
  '(js-indent-level 2)
+ '(package-selected-packages
+   (quote
+    (json-mode yaml-mode coffee-mode haml-mode markdown-mode slim-mode scss-mode emmet-mode web-mode terraform-mode go-mode haskell-mode elixir-mode rhtml-mode ruby-block jump flycheck-color-mode-line flycheck smartparens anything wgrep-ag ag yasnippet undohist auto-complete)))
  '(terraform-indent-level 2))
 (require 'wgrep-ag)
 (autoload 'wgrep-ag-setup "wgrep-ag")
@@ -352,3 +355,9 @@
 ;;; init.el ends here
 (put 'upcase-region 'disabled nil)
 (put 'downcase-region 'disabled nil)
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
