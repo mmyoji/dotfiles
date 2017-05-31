@@ -15,6 +15,7 @@
   co  = checkout
   cob = checkout -b
   cma = commit --amend -v
+  cmv = commit -v --no-verify
   com = commit -v
   d   = diff
   l   = log --graph
