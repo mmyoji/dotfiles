@@ -126,6 +126,8 @@ call plug#begin('~/.vim/plugged')
   Plug 'scrooloose/syntastic'
   Plug 'vim-scripts/grep.vim'
   Plug 'tpope/vim-surround'
+  Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+  Plug 'junegunn/fzf.vim'
 
   "" Languages
   Plug 'tpope/vim-rails'
