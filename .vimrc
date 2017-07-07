@@ -125,6 +125,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'junegunn/vim-easy-align'
   Plug 'scrooloose/syntastic'
   Plug 'vim-scripts/grep.vim'
+  Plug 'tpope/vim-surround'
 
   "" Languages
   Plug 'tpope/vim-rails'
