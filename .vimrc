@@ -132,7 +132,7 @@ call plug#begin('~/.vim/plugged')
   "" Languages
   Plug 'tpope/vim-rails'
   Plug 'tpope/vim-haml'
-  Plug 'fatih/vim-go'
+  Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
   Plug 'othree/yajs.vim'
   Plug 'mxw/vim-jsx'
   Plug 'leafgarland/typescript-vim'
@@ -172,3 +172,7 @@ let Grep_Default_Options = '-I' " ignore binary files
 "" vim-jsx
 " enable jsx syntax highlight for *.js files
 let g:jsx_ext_required = 0
+
+let g:go_auto_sameids = 1
+let g:go_auto_type_info = 1
+let g:go_fmt_command = "goimports"
