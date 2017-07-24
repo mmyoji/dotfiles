@@ -183,6 +183,3 @@ au BufNewFile,BufRead *.rb set tags+=$HOME/ruby.tags
 "   $ go get -u github.com/jstemmer/gotags
 "   $ gotags -f ~/go.tags -R `pwd`
 au BufNewFile,BufRead *.go set tags+=$HOME/go.tags
-
-nnoremap <C-h> :vsp<CR> :exe("tjump ".expand('<cword>'))<CR>
-nnoremap <C-k> :split<CR> :exe("tjump ".expand('<cword>'))<CR>
