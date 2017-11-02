@@ -176,6 +176,9 @@ let g:jsx_ext_required = 0
 let g:go_auto_sameids = 1
 let g:go_auto_type_info = 1
 let g:go_fmt_command = "goimports"
+" Wrong warning appears in my office MacBookPro.
+" Then disable it.
+let g:go_version_warning = 0
 
 " Run command on the target dir
 "   $ ctags --languages=ruby -f ~/ruby.tags `pwd`
