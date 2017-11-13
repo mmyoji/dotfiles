@@ -1,0 +1,39 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+[[plugins]]
+repo = 'tpope/vim-endwise'
+
+[[plugins]]
+repo = 'Yggdroot/indentLine'
+
+[[plugins]]
+repo = 'bronson/vim-trailing-whitespace'
+
+[[plugins]]
+repo = 'junegunn/vim-easy-align'
+hook_add = '''
+  " Start interactive EasyAlign in visual mode (e.g. vipga)
+  xmap ga <Plug>(EasyAlign)
+  " Start interactive EasyAlign for a motion/text object (e.g. gaip)
+  nmap ga <Plug>(EasyAlign)
+'''
+
+[[plugins]]
+repo = 'scrooloose/syntastic'
+
+[[plugins]]
+repo = 'vim-scripts/grep.vim'
+hook_add = '''
+  nnoremap <expr> gr ':Rgrep<CR>'
+  " use jvgrep
+  if executable('jvgrep')
+    set grepprg=jvgrep
+  endif
+  let Grep_Default_Filelist = '*.rb *.scss *.css *.js *.jsx *.erb *.rake *.haml *.jbuilder'
+  let Grep_Skip_Dirs = '.svn .git vendor spec/cassettes node_modules coverage'
+  let Grep_Default_Options = '-I' " ignore binary files
+'''
+
+[[plugins]]
+repo = 'tpope/vim-surround'

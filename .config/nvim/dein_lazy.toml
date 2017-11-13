@@ -1,0 +1,51 @@
+[[plugins]]
+repo = 'fatih/vim-go'
+on_ft = ['go']
+on_cmd = '''
+  let g:go_auto_sameids = 1
+  let g:go_auto_type_info = 1
+  let g:go_fmt_command = "goimports"
+  " Wrong warning appears in my office MacBookPro.
+  " Then disable it.
+  let g:go_version_warning = 0
+'''
+
+# Markdown
+[[plugins]]
+repo = 'godlygeek/tabular'
+on_ft = ['md', 'markdown']
+
+# This depends on godlygeek/tabular
+[[plugins]]
+repo = 'plasticboy/vim-markdown'
+on_ft = ['md', 'markdown']
+
+[[plugins]]
+repo = 'tpope/vim-rails'
+on_ft = ['rb', 'ruby']
+
+[[plugins]]
+repo = 'tpope/vim-haml'
+
+[[plugins]]
+repo = 'othree/yajs.vim'
+
+[[plugins]]
+repo = 'mxw/vim-jsx'
+hook_add = '''
+  " enable jsx syntax highlight for *.js files
+  let g:jsx_ext_required = 0
+
+  let g:go_auto_sameids = 1
+  let g:go_auto_type_info = 1
+  let g:go_fmt_command = "goimports"
+  " Wrong warning appears in my office MacBookPro.
+  " Then disable it.
+  let g:go_version_warning = 0
+'''
+
+[[plugins]]
+repo = 'leafgarland/typescript-vim'
+
+[[plugins]]
+repo = 'kchmck/vim-coffee-script'
