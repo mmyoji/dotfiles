@@ -136,14 +136,10 @@ call plug#begin('~/.vim/plugged')
   Plug 'othree/yajs.vim'
   Plug 'mxw/vim-jsx'
   Plug 'leafgarland/typescript-vim'
-  Plug 'elmcast/elm-vim'
-  Plug 'rust-lang/rust.vim'
   Plug 'kchmck/vim-coffee-script'
   " markdown
   Plug 'godlygeek/tabular'
   Plug 'plasticboy/vim-markdown'
-  Plug 'kannokanno/previm'
-  Plug 'tyru/open-browser.vim'
 
 call plug#end()
 
