@@ -38,3 +38,12 @@ hook_add = '''
 
 [[plugins]]
 repo = 'tpope/vim-surround'
+
+[[plugins]]
+repo = 'fholgado/minibufexpl.vim'
+
+[[plugins]]
+repo = 'dracula/vim'
+hook_add = '''
+  colorscheme dracula
+'''
