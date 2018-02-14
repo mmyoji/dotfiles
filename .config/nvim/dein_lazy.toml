@@ -13,12 +13,16 @@ hook_add = '''
 # Markdown
 [[plugins]]
 repo = 'godlygeek/tabular'
+depends = ['plasticboy/vim-markdown']
 on_ft = ['md', 'markdown']
 
-# This depends on godlygeek/tabular
 [[plugins]]
 repo = 'plasticboy/vim-markdown'
 on_ft = ['md', 'markdown']
+hook_add = '''
+  let g:vim_markdown_folding_disabled = 1
+  let g:vim_markdown_conceal = 0
+'''
 
 [[plugins]]
 repo = 'tpope/vim-rails'
@@ -45,5 +49,5 @@ repo = 'leafgarland/typescript-vim'
 on_ft = ['ts']
 
 [[plugins]]
-repo = 'kchmck/vim-coffee-script'
-on_ft = ['coffee']
+repo = 'rust-lang/rust.vim'
+on_ft = ['rs']
