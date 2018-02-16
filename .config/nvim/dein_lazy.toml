@@ -13,7 +13,7 @@ hook_add = '''
 # Markdown
 [[plugins]]
 repo = 'godlygeek/tabular'
-depends = ['plasticboy/vim-markdown']
+depends = ['vim-markdown']
 on_ft = ['md', 'markdown']
 
 [[plugins]]

@@ -47,7 +47,7 @@ hook_add = '''
 
 [[plugins]]
 repo = 'mattn/gist-vim'
-depends = ['mattn/webapi-vim']
+depends = ['webapi-vim']
 
 [[plugins]]
 repo = 'mattn/webapi-vim'
