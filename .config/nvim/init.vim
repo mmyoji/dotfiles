@@ -51,3 +51,7 @@ syntax enable
 if has('vim_starting') && dein#check_install()
   call dein#install()
 endif
+
+""" For vim-indent-guides
+hi IndentGuidesOdd  ctermbg=black
+hi IndentGuidesEven ctermbg=darkgrey
