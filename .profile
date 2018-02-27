@@ -21,18 +21,19 @@ PATH="$HOME/bin:$HOME/.local/bin:$PATH"
 
 export HISTCONTROL=ignoreboth:erasedups
 
-# rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
-export PATH="$HOME/.rbenv/shims:$PATH"
-eval "(rbenv init -)" > /dev/null 2>&1
+# anyenv
+export PATH="$HOME/.anyenv/bin:$PATH"
+eval "$(anyenv init -)"
 
-export EDITOR=vim
-
+# goenv under anyenv
+GO_VERSION=1.10.0
+export GOROOT=$HOME/.anyenv/envs/goenv/versions/$GO_VERSION
 export GOPATH=$HOME/go
+export PATH=$HOME/.anyenv/envs/goenv/shims/bin:$PATH
+export PATH=$PATH:$GOROOT/bin
 export PATH=$PATH:$GOPATH/bin
 
-# https://golang.org/doc/install?download=go1.7.3.linux-amd64.tar.gz
-export PATH=$PATH:/usr/local/go/bin
+export EDITOR=vim
 
 # http://excid3.com/blog/how-to-fix-esc-in-your-terminal
 export LESS="-eirMX"
