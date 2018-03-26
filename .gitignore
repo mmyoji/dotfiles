@@ -1,8 +1,14 @@
-.emacs.d/auto-save-list/*
-.emacs.d/elpa/*
-.emacs.d/ido.last
-.emacs.d/history
-.emacs.d/places
-.emacs.d/ac-comphist.dat
-.emacs.d/recentf
-.emacs.d/undohist
+# Swap
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-v][a-z]
+[._]sw[a-p]
+
+# Session
+Session.vim
+
+# Temporary
+.netrwhist
+*~
+# Auto-generated tag files
+tags

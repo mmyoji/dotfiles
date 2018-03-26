@@ -78,21 +78,18 @@ endif
 " Vim sample script ends here
 
 set ambiwidth=double
-set nobackup
-set title
 set expandtab
-set number
-set showmatch
-set smartindent
-set tabstop=2
-set shiftwidth=2
-set smarttab
-set nowrap
 set ignorecase
+set nobackup
+set nowrap
+set number
+set shiftwidth=2
+set showmatch
 set smartcase
-
-" set swapfiles directory
-set directory=$HOME/.vimbackup
+set smartindent
+set smarttab
+set tabstop=2
+set title
 
 if has("mac")
   colorscheme elflord
@@ -136,7 +133,6 @@ call plug#begin('~/.vim/plugged')
   Plug 'othree/yajs.vim'
   Plug 'mxw/vim-jsx'
   Plug 'leafgarland/typescript-vim'
-  Plug 'kchmck/vim-coffee-script'
   " markdown
   Plug 'godlygeek/tabular'
   Plug 'plasticboy/vim-markdown'
@@ -161,8 +157,8 @@ nnoremap <expr> gr ':Rgrep<CR>'
 if executable('jvgrep')
   set grepprg=jvgrep
 endif
-let Grep_Default_Filelist = '*.rb *.scss *.css *.js *.jsx *.erb *.rake *.haml *.jbuilder'
-let Grep_Skip_Dirs = '.svn .git vendor spec/cassettes node_modules coverage'
+let Grep_Default_Filelist = '*.rb *.scss *.css *.js *.jsx *.erb *.rake *.haml *.jbuilder *.yml *.yaml'
+let Grep_Skip_Dirs = '.svn .git vendor spec/cassettes node_modules coverage public/packs public/packs-test'
 let Grep_Default_Options = '-I' " ignore binary files
 
 "" vim-jsx
@@ -175,10 +171,3 @@ let g:go_fmt_command = "goimports"
 " Wrong warning appears in my office MacBookPro.
 " Then disable it.
 let g:go_version_warning = 0
-
-" Run command on the target dir
-"   $ ctags --languages=ruby -f ~/ruby.tags `pwd`
-au BufNewFile,BufRead *.rb set tags+=$HOME/ruby.tags
-"   $ go get -u github.com/jstemmer/gotags
-"   $ gotags -f ~/go.tags -R `pwd`
-au BufNewFile,BufRead *.go set tags+=$HOME/go.tags
