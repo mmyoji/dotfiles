@@ -81,6 +81,7 @@ set ambiwidth=double
 set expandtab
 set ignorecase
 set nobackup
+set noswapfile
 set nowrap
 set number
 set shiftwidth=2
