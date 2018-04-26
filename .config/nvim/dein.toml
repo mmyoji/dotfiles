@@ -34,7 +34,7 @@ hook_add = '''
     set grepprg=jvgrep
   endif
   let Grep_Default_Filelist = '*.rb *.scss *.css *.js *.jsx *.erb *.rake *.haml *.jbuilder'
-  let Grep_Skip_Dirs = '.svn .git vendor spec/cassettes node_modules coverage'
+  let Grep_Skip_Dirs = '.svn .git vendor spec/cassettes node_modules coverage public/packs public/packs-test'
   " ignore binary files
   let Grep_Default_Options = '-I'
 '''
