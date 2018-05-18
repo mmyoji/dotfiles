@@ -92,11 +92,7 @@ set smarttab
 set tabstop=2
 set title
 
-if has("mac")
-  colorscheme elflord
-else
-  colorscheme default
-endif
+colorscheme elflord
 
 if has('vim_starting')
   set rtp+=~/.vim/plugged/vim-plug
