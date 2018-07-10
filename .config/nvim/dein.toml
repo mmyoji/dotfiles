@@ -55,3 +55,6 @@ depends = ['webapi-vim']
 
 [[plugins]]
 repo = 'mattn/webapi-vim'
+
+[[plugins]]
+repo = 'jiangmiao/auto-pairs'
