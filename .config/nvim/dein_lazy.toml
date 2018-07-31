@@ -55,3 +55,7 @@ on_ft = ['vue']
 [[plugins]]
 repo = 'rust-lang/rust.vim'
 on_ft = ['rs']
+
+[[plugins]]
+repo = 'ElmCast/elm-vim'
+on_ft = ['elm']
