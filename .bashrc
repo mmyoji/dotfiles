@@ -2,6 +2,16 @@
 
 alias pbcopy='xsel --clipboard --input'
 alias vim="nvim"
+alias ll="ls -la"
+
+# https://github.com/sharkdp/bat
+alias cat="bat"
+
+# npm i -g tldr
+alias help="tldr"
+
+# https://gitlab.com/mmyoji/whatidid
+alias did="vim +'normal Go' +'r!date' ~/did.md"
 
 ### git-completion
 # https://github.com/git/git/blob/master/contrib/completion/git-completion.bash
