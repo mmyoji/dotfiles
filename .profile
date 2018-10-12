@@ -25,19 +25,7 @@ export HISTCONTROL=ignoreboth:erasedups
 export PATH="$HOME/.anyenv/bin:$PATH"
 eval "$(anyenv init -)"
 
-# goenv under anyenv
-GO_VERSION=1.10.0
-export GOROOT=$HOME/.anyenv/envs/goenv/versions/$GO_VERSION
-export GOPATH=$HOME/go
-export PATH=$HOME/.anyenv/envs/goenv/shims/bin:$PATH
-export PATH=$PATH:$GOROOT/bin
-export PATH=$PATH:$GOPATH/bin
-
 export EDITOR=vim
 
 # http://excid3.com/blog/how-to-fix-esc-in-your-terminal
 export LESS="-eirMX"
-
-alias lc='colorls -a'
-
-export PATH="$HOME/.cargo/bin:$PATH"
