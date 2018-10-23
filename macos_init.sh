@@ -4,21 +4,24 @@
 #   $ xcode-select --install
 # 2. Install Homebrew:
 #   $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-# 3. Install packages by Homebrew Bundle:
-#   $ brew bundle
-# 4. Execute this file:
+# 3. Install dotfiles:
+#   $ git clone git@gitlab.com:mmyoji/dotfiles.git $HOME/src/gitlab.com/mmyoji/dotfiles
+# 3. Execute this file:
 #   $ bash macos_init.sh
-# 5. Install required programming languages by anyenv
-#   e.g.)
-#     $ anyenv install goenv
+# 4. Install required programming languages by anyenv
+#   ndenv and node is required for yarn installation:
 #     $ anyenv install ndenv
+#     $ ndenv install v10.12.0
+#     $ ndenv global v10.12.0
+#   if you want:
+#     $ anyenv install goenv
+#     $ goenv install 1.11.1
+#     $ goenv global 1.11.1
 #     $ anyenv install rbenv
 #     $ rbenv install 2.5.3
 #     $ rbenv global 2.5.3
-#     $ goenv install 1.11.1
-#     $ goenv global 1.11.1
-#     $ ndenv install v10.12.0
-#     $ ndenv global v10.12.0
+# 5. Install packages by Homebrew Bundle:
+#   $ brew bundle
 
 set -eux
 
@@ -31,8 +34,7 @@ mkdir -p $HOME/src/{github,gitlab}/mmyoji
 mkdir -p $HOME/{bin,pkg}
 mkdir -p $HOME/.config/nvim
 
-if [[ ! -d ${HOME}/src/gitlab.com/mmyoji/dotfiles ]]; then
-  git clone git@gitlab.com:mmyoji/dotfiles.git $HOME/src/gitlab.com/mmyoji/dotfiles
+if [[ ! -x ${HOME}/.gemrc ]]; then
   ln -s ~/src/gitlab.com/mmyoji/dotfiles/.gemrc ~/
   ln -s ~/src/gitlab.com/mmyoji/dotfiles/.gitconfig ~/
   ln -s ~/src/gitlab.com/mmyoji/dotfiles/.tmux.conf ~/
