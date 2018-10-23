@@ -1,36 +1,33 @@
 cask_args appdir: '/Applications'
 
-brew 'bash-completion'
+brew 'awscli'
+brew 'bash-completion@2'
+brew 'bash-git-prompt'
+brew 'bat'
+brew 'curl'
+brew 'direnv'
 brew 'git'
+brew 'hiredis'
+brew 'htop'
+brew 'hub'
 brew 'icu4c'
-brew 'imagemagick'
-brew 'jvgrep'
-brew 'node'
-brew 'postgresql'
-brew 'rbenv-binstubs'
+brew 'jq'
+brew 'mas'
+brew 'mysql'
+# brew 'postgresql'
 brew 'readline'
-brew 'redis'
 brew 'the_silver_searcher'
 brew 'tmux'
 brew 'tree'
-brew 'vim'
-brew 'webp'
+brew 'neovim'
 brew 'wget'
-
-# https://yarnpkg.com/en/docs/install
-brew 'yarn'
-
-# Languages
-brew 'go'
-
-# GUI apps
-# Install by yourself
-# * 'f.lux'
+brew 'yarn', args: ['without-node']
 
 cask 'docker'
 cask 'dropbox'
 cask 'google-chrome'
 cask 'iterm2'
 cast 'recordit'
-cask 'slack'
 cask 'spotify'
+
+mas '1Password', id: 443987910
