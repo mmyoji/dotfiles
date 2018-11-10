@@ -30,7 +30,7 @@ if [[ ! -x ${HOME}/.ssh/id_rsa ]]; then
   exit 1
 fi
 
-mkdir -p $HOME/src/{github,gitlab}/mmyoji
+mkdir -p $HOME/src/{github,gitlab}.com/mmyoji
 mkdir -p $HOME/{bin,pkg}
 mkdir -p $HOME/.config/nvim
 
