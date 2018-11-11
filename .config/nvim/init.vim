@@ -55,3 +55,6 @@ endif
 """ For vim-indent-guides
 hi IndentGuidesOdd  ctermbg=black
 hi IndentGuidesEven ctermbg=darkgrey
+
+""" tabnine
+set rtp+=~/src/github.com/zxqfl/tabnine-vim
