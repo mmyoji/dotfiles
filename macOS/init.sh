@@ -28,11 +28,11 @@ if [[ ! -x ${HOME}/.gemrc ]]; then
   cat ~/src/gitlab.com/mmyoji/dotfiles/macOS/.bash_profile >> ~/.bash_profile
 fi
 
-if [[ ! -x #{HOME}/git-completion.bash ]]; then
+if [[ ! -x ${HOME}/git-completion.bash ]]; then
   curl -sSL -o $HOME/git-completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
 fi
 
-if [[ ! -x #{HOME}/git-prompt.sh ]]; then
+if [[ ! -x ${HOME}/git-prompt.sh ]]; then
   curl -sSL -o $HOME/git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
 fi
 
