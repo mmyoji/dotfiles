@@ -4,50 +4,37 @@
 #   $ xcode-select --install
 # 2. Install Homebrew:
 #   $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-# 3. Install dotfiles:
-#   $ git clone git@gitlab.com:mmyoji/dotfiles.git $HOME/src/gitlab.com/mmyoji/dotfiles
-# 3. Execute this file:
-#   $ bash macos_init.sh
-# 4. Install required programming languages by anyenv
-#   ndenv and node is required for yarn installation:
-#     $ anyenv install ndenv
-#     $ ndenv install v10.12.0
-#     $ ndenv global v10.12.0
-#   if you want:
-#     $ anyenv install goenv
-#     $ goenv install 1.11.1
-#     $ goenv global 1.11.1
-#     $ anyenv install rbenv
-#     $ rbenv install 2.5.3
-#     $ rbenv global 2.5.3
-# 5. Install packages by Homebrew Bundle:
-#   $ brew bundle
+# 3. Generate ssh key
+#   $ ssh-kegen -t ed25519
+# 4. Execute this file:
+#   $ bash macOS/init.sh
 
 set -eux
-
-if [[ ! -x ${HOME}/.ssh/id_rsa ]]; then
-  echo "Run `ssh-keygen -t rsa` and register .ssh/id_rsa.pub to GitHub & GitLab"
-  exit 1
-fi
 
 mkdir -p $HOME/src/{github,gitlab}.com/mmyoji
 mkdir -p $HOME/{bin,pkg}
 mkdir -p $HOME/.config/nvim
+mkdir -p $HOME/.profile.d
+
+[[ -d ${HOME}/src/gitlab.com/mmyoji/dotfiles ]] || git clone git@gitlab.com:mmyoji/dotfiles.git $HOME/src/gitlab.com/mmyoji/dotfiles
 
 if [[ ! -x ${HOME}/.gemrc ]]; then
+  cd $HOME
   ln -s ~/src/gitlab.com/mmyoji/dotfiles/.gemrc ~/
   ln -s ~/src/gitlab.com/mmyoji/dotfiles/.gitconfig ~/
   ln -s ~/src/gitlab.com/mmyoji/dotfiles/.tmux.conf ~/
+  cp ~/src/gitlab.com/mmyoji/dotfiles/.profile.d/{aliases,completion,direnv,others,prompt} ~/.profile.d/
   cp ~/src/gitlab.com/mmyoji/dotfiles/.config/nvim/* ~/.config/nvim/
+  cat ~/src/gitlab.com/mmyoji/dotfiles/macOS/.bash_profile >> ~/.bash_profile
 fi
 
-if [[ ! -d ${HOME}/.anyenv ]]; then
-  git clone https://github.com/riywo/anyenv ~/.anyenv
-  echo 'export PATH="$HOME/.anyenv/bin:$PATH"' >> ~/.bash_profile
-  echo 'eval "$(anyenv init -)"' >> ~/.bash_profile
+if [[ ! -x #{HOME}/git-completion.bash ]]; then
+  curl -sSL -o $HOME/git-completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
 fi
 
-if [[ ! -d ${HOME}/.anyenv/plugins/anyenv-update ]]; then
-  mkdir -p ~/.anyenv/plugins
-  git clone https://github.com/znz/anyenv-update.git ~/.anyenv/plugins/anyenv-update
+if [[ ! -x #{HOME}/git-prompt.sh ]]; then
+  curl -sSL -o $HOME/git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
 fi
+
+brew bundle --file=${HOME}/src/gitlab.com/mmyoji/dotfiles/macOS/Brewfile
+
