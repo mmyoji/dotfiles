@@ -11,14 +11,14 @@
 
 set -eux
 
-mkdir -p $HOME/src/{github,gitlab}.com/mmyoji
-mkdir -p $HOME/{bin,pkg}
-mkdir -p $HOME/.config/nvim
-mkdir -p $HOME/.profile.d
+mkdir -p ~/src/{github,gitlab}.com/mmyoji
+mkdir -p ~/{bin,pkg}
+mkdir -p ~/.config/nvim
+mkdir -p ~/.profile.d
 
 [[ -d ${HOME}/src/gitlab.com/mmyoji/dotfiles ]] || git clone git@gitlab.com:mmyoji/dotfiles.git $HOME/src/gitlab.com/mmyoji/dotfiles
 
-if [[ ! -x ${HOME}/.gemrc ]]; then
+if [[ ! -h ${HOME}/.gemrc ]]; then
   cd $HOME
   ln -s ~/src/gitlab.com/mmyoji/dotfiles/.gemrc ~/
   ln -s ~/src/gitlab.com/mmyoji/dotfiles/.gitconfig ~/
@@ -28,11 +28,11 @@ if [[ ! -x ${HOME}/.gemrc ]]; then
   cat ~/src/gitlab.com/mmyoji/dotfiles/macOS/.bash_profile >> ~/.bash_profile
 fi
 
-if [[ ! -x ${HOME}/git-completion.bash ]]; then
+if [[ ! -f ${HOME}/git-completion.bash ]]; then
   curl -sSL -o $HOME/git-completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
 fi
 
-if [[ ! -x ${HOME}/git-prompt.sh ]]; then
+if [[ ! -f ${HOME}/git-prompt.sh ]]; then
   curl -sSL -o $HOME/git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
 fi
 
