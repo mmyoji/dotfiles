@@ -7,6 +7,3 @@ alias cat="bat"
 
 # https://gitlab.com/mmyoji/whatidid
 alias did="vim +'normal Go' +'r!date' ~/did.md"
-
-# npm i -g tldr
-alias help="tldr"
