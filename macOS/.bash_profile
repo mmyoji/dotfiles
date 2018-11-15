@@ -1,3 +1,5 @@
+[ -f ~/.bashrc ] && source ~/.bashrc
+
 for file in ~/.profile.d/*
 do
   source $file
