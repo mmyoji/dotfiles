@@ -8,6 +8,9 @@
 #   $ ssh-kegen -t ed25519
 # 4. Execute this file:
 #   $ bash macOS/init.sh
+# 5. Additional instructions
+#   # Install fzf useful commands
+#   $ $(brew --prefix)/opt/fzf/install
 
 set -eux
 
