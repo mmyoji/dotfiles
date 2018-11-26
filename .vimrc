@@ -156,7 +156,7 @@ nnoremap <expr> gr ':Rgrep<CR>'
 if executable('jvgrep')
   set grepprg=jvgrep
 endif
-let Grep_Default_Filelist = '*.rb *.scss *.css *.js *.jsx *.erb *.rake *.haml *.jbuilder *.yml *.yaml'
+let Grep_Default_Filelist = '*.rb *.scss *.css *.js *.jsx *.erb *.rake *.haml *.jbuilder *.json *.yml *.yaml'
 let Grep_Skip_Dirs = '.svn .git vendor spec/cassettes node_modules coverage public/packs public/packs-test'
 let Grep_Default_Options = '-I' " ignore binary files
 
