@@ -55,3 +55,6 @@ endif
 """ For vim-indent-guides
 hi IndentGuidesOdd  ctermbg=black
 hi IndentGuidesEven ctermbg=darkgrey
+
+""" ctags
+nnoremap <C-]> g<C-]>

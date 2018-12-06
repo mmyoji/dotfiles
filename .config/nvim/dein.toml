@@ -58,3 +58,6 @@ repo = 'mattn/webapi-vim'
 
 [[plugins]]
 repo = 'jiangmiao/auto-pairs'
+
+[[plugins]]
+repo = 'szw/vim-tags'
