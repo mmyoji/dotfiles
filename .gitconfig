@@ -38,3 +38,6 @@
 
 [github]
 	user = mmyoji
+
+[ghq]
+	root = /home/mmyoji/src
