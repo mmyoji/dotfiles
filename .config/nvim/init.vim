@@ -64,3 +64,6 @@ hi IndentGuidesEven ctermbg=darkgrey
 
 """ ctags
 nnoremap <C-]> g<C-]>
+
+""" fzf.vim
+nnoremap <C-p> :Files<CR>
