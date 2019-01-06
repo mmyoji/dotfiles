@@ -1,2 +1,0 @@
-# goenv under anyenv
-export GOPATH=$HOME
