@@ -9,31 +9,11 @@ alias cat="bat"
 
 
 
-### anyenv ###
-
-export PATH="$HOME/.anyenv/bin:$PATH"
-eval "$(anyenv init -)"
-
-
-
 ### completion ###
 
-## git-completion
+## git-completion ##
 # https://github.com/git/git/blob/master/contrib/completion/git-completion.bash
 source $HOME/git-completion.bash
-
-
-
-### direnv ###
-
-eval "$(direnv hook bash)"
-
-
-
-### golang ###
-
-# goenv under anyenv
-export GOPATH=$HOME
 
 
 
@@ -54,7 +34,18 @@ PS1='\[\033[32m\]\u:\[\033[36m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\n\$ '
 
 
 
-### others ###
+### other configurations ###
+
+## anyenv ##
+export PATH="$HOME/.anyenv/bin:$PATH"
+eval "$(anyenv init -)"
+
+
+## direnv ##
+eval "$(direnv hook bash)"
+
+
+export GOPATH=$HOME
 
 if [ -d "$HOME/bin" ]; then
   export PATH="$HOME/bin:$PATH"
@@ -69,3 +60,4 @@ export HISTCONTROL=ignoreboth:erasedups
 
 # http://excid3.com/blog/how-to-fix-esc-in-your-terminal
 export LESS="-eirMX"
+
