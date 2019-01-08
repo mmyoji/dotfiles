@@ -16,6 +16,10 @@ alias cat="bat"
 # https://github.com/git/git/blob/master/contrib/completion/git-completion.bash
 source $HOME/git-completion.bash
 
+## z ##
+# https://github.com/rupa/z
+[ -f ~/z.sh ] && source ~/z.sh
+
 
 
 ### prompt ###
