@@ -39,8 +39,5 @@
 [github]
 	user = mmyoji
 
-[ghq]
-	root = /home/mmyoji/src
-
 [commit]
 	template = /home/mmyoji/.commit_template
