@@ -17,7 +17,7 @@
   cma = commit --amend -v
   cmv = commit -v --no-verify
   com = commit -v
-  d   = diff
+  d   = diff --word-diff-regex=. --word-diff=color
   l   = log --graph
   ps  = push -u
   r   = rebase
