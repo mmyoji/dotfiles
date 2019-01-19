@@ -99,8 +99,9 @@ fi
 # Apply my custom dotfiles
 [ -e ~/.commit_template ] || ln -s $DEV_HOME/src/gitlab.com/mmyoji/dotfiles/.commit_template  ~/
 [ -e ~/.gemrc ]           || ln -s $DEV_HOME/src/gitlab.com/mmyoji/dotfiles/.gemrc            ~/
-[ -e ~/.tmux.conf ]       || ln -s $DEV_HOME/src/gitlab.com/mmyoji/dotfiles/.tmux.conf        ~/
 [ -e ~/.gitconfig ]       || ln -s $DEV_HOME/src/gitlab.com/mmyoji/dotfiles/.gitconfig        ~/
+[ -e ~/.tmux.conf ]       || ln -s $DEV_HOME/src/gitlab.com/mmyoji/dotfiles/.tmux.conf        ~/
+
 [ -d ~/.config/nvim ]     || ln -s $DEV_HOME/src/gitlab.com/mmyoji/dotfiles/.config.d/nvim    ~/.config/nvim
 [ -d ~/.ctags.d ]         || ln -s $DEV_HOME/src/gitlab.com/mmyoji/dotfiles/.ctags.d          ~/.ctags.d
 
