@@ -3,8 +3,8 @@
 # 1. Before running:
 #
 # # Install:
-# #   - neovim
 # #   - docker (CLI)
+# #   - neovim
 # $ wlinux-setup
 #
 # # Generate .ssh files
@@ -55,23 +55,24 @@ sudo apt update -y && sudo apt install -y \
   tmux
 
 ## Clone git repos ##
-# Get anyenv
+
+# anyenv #
 #   - go
 #   - node
 if [ ! -d ~/.anyenv ]; then
   git clone https://github.com/riywo/anyenv.git      ~/.anyenv
   git clone https://github.com/znz/anyenv-update.git ~/.anyenv/plugins/anyenv-update
 fi
-# Get fzf
+# fzf #
 if [ ! -d ~/.fzf ]; then
   git clone https://github.com/junegunn/fzf.git      ~/.fzf
 fi
 
-# my dotfiles
+# dotfiles #
 if [ ! -d "$DEV_HOME/src/gitlab.com/mmyoji/dotfiles" ]; then
   git clone git@gitlab.com:mmyoji/dotfiles.git       $DEV_HOME/src/gitlab.com/mmyoji/dotfiles
 fi
-# Get ctags
+# ctags #
 if [ ! -d "$DEV_HOME/src/github.com/universal-ctags/ctags" ]; then
   git clone https://github.com/universal-ctags/ctags $DEV_HOME/src/github.com/universal-ctags/ctags
 fi
@@ -106,6 +107,7 @@ fi
 # Edit after running script:
 #   - Several $HOME to $DEV_HOME
 #   - Add $DEV_HOME/bin to $PATH
+#   - Set prompt setting to WLinux specific
 [ -e ~/.profile ]         || cp $DEV_HOME/src/gitlab.com/mmyoji/dotfiles/.profile ~/.profile
 
 
