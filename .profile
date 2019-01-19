@@ -29,13 +29,15 @@ if [ -f ~/git-prompt.sh ]; then
   source ~/git-prompt.sh
 
   GIT_PS1_SHOWDIRTYSTATE=true
-  GIT_PS1_SHOWUPSTREAM=1
-  GIT_PS1_SHOWUNTRACKEDFILES=
-  GIT_PS1_SHOWSTASHSTATE=1
+  GIT_PS1_SHOWUNTRACKEDFILES=true
+  GIT_PS1_SHOWSTASHSTATE=true
+  GIT_PS1_SHOWUPSTREAM=auto
   # Original
   # PS1='\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\n\$ '
   PROMPT_DIRTRIM=2
   PS1='\[\033[32m\]\u:\[\033[36m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\n\$ '
+  # For WLinux
+  # PS1='\[\033[92m\]\u@WLinux:\[\033[96m\]\w\[\033[91m\]$(__git_ps1)\[\033[00m\]\n\$ '
 fi
 
 
