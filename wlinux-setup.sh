@@ -43,15 +43,15 @@ set -eux
 ## Install apt packages ##
 # ref: https://gitlab.com/mmyoji/devenv-setup
 sudo apt update -y && sudo apt install -y \
-  git \
-  make \
-  build-essential \
-  libmysqlclient-dev \
-  libpq-dev \
   autoconf \ # for ctags
+  build-essential \
   direnv \
+  git \
   htop \
   jq \
+  libmysqlclient-dev \
+  libpq-dev \
+  make \
   tmux
 
 ## Clone git repos ##
