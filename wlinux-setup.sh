@@ -52,7 +52,8 @@ sudo apt update -y && sudo apt install -y \
   libmysqlclient-dev \
   libpq-dev \
   make \
-  tmux
+  tmux \
+  tree
 
 ## Clone git repos ##
 
