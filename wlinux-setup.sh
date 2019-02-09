@@ -112,7 +112,10 @@ fi
 #   - Set prompt setting to WLinux specific
 [ -e ~/.profile ]         || cp $DEV_HOME/src/gitlab.com/mmyoji/dotfiles/.profile ~/.profile
 
-
-# TODO
-echo "Install bat https://github.com/sharkdp/bat manually"
-
+bat_version=0.10.0
+type bat && sudo dpkg -P bat # Remove old package first
+curl -sSL -o /c/Users/mmyoj/Downloads/bat-musl_${bat_version}_amd64.deb \
+  https://github.com/sharkdp/bat/releases/download/v${bat_version}/bat-musl_${bat_version}_amd64.deb
+sudo dpkg -i /c/Users/mmyoj/Downloads/bat-musl_${bat_version}_amd64.deb
+sudo apt update && sudo apt install -y bat
+rm /c/Users/mmyoj/Downloads/bat-musl_${bat_version}_amd64.deb
