@@ -51,7 +51,6 @@ echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.profile
 ## Install brew fomula ##
 brew install \
   anyenv \
-  bash-git-prompt \
   bat \
   ctags \
   direnv \
@@ -66,14 +65,6 @@ brew install \
 # dotfiles #
 if [ ! -d "$DEV_HOME/src/gitlab.com/mmyoji/dotfiles" ]; then
   git clone git@gitlab.com:mmyoji/dotfiles.git $DEV_HOME/src/gitlab.com/mmyoji/dotfiles
-fi
-
-
-# Get single util files
-git_version=v2.20.1
-if [ ! -e ~/git-completion.bash ]; then
-  curl -sSL -o ~/git-completion.bash \
-    https://raw.githubusercontent.com/git/git/$git_version/contrib/completion/git-completion.bash
 fi
 
 
