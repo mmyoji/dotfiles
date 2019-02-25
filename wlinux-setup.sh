@@ -29,53 +29,43 @@
 # # Edit files for WLinux env
 # $ vim $HOME/.profile
 #
-# # Install fzf
-# $ ~/.fzf/install
-#
-# # Install ctags
-# $ cd $DEV_HOME/src/github.com/universal-ctags/ctags
-# $ ./autogen.sh && ./configure && make
-# $ sudo make install
-#
 
 set -eux
 
 ## Install apt packages ##
-# ref: https://gitlab.com/mmyoji/devenv-setup
 sudo apt update -y && sudo apt install -y \
-  autoconf \ # for ctags
   build-essential \
+  curl \
+  file \
+  git \
+  libmysqlclient-dev \
+  libpq-dev \
+  make
+
+## Install Linuxbrew ##
+# ref: http://linuxbrew.sh/
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
+test -d /home/linuxbrew/.linuxbrew && eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.profile
+
+## Install brew fomula ##
+brew install \
+  anyenv \
+  bash-git-prompt \
+  bat \
+  ctags \
   direnv \
+  fzf \
   git \
   htop \
   jq \
-  libmysqlclient-dev \
-  libpq-dev \
-  make \
   tmux \
-  tree
+  z
 
-## Clone git repos ##
-
-# anyenv #
-#   - go
-#   - node
-if [ ! -d ~/.anyenv ]; then
-  git clone https://github.com/riywo/anyenv.git      ~/.anyenv
-  git clone https://github.com/znz/anyenv-update.git ~/.anyenv/plugins/anyenv-update
-fi
-# fzf #
-if [ ! -d ~/.fzf ]; then
-  git clone https://github.com/junegunn/fzf.git      ~/.fzf
-fi
 
 # dotfiles #
 if [ ! -d "$DEV_HOME/src/gitlab.com/mmyoji/dotfiles" ]; then
-  git clone git@gitlab.com:mmyoji/dotfiles.git       $DEV_HOME/src/gitlab.com/mmyoji/dotfiles
-fi
-# ctags #
-if [ ! -d "$DEV_HOME/src/github.com/universal-ctags/ctags" ]; then
-  git clone https://github.com/universal-ctags/ctags $DEV_HOME/src/github.com/universal-ctags/ctags
+  git clone git@gitlab.com:mmyoji/dotfiles.git $DEV_HOME/src/gitlab.com/mmyoji/dotfiles
 fi
 
 
@@ -84,16 +74,6 @@ git_version=v2.20.1
 if [ ! -e ~/git-completion.bash ]; then
   curl -sSL -o ~/git-completion.bash \
     https://raw.githubusercontent.com/git/git/$git_version/contrib/completion/git-completion.bash
-fi
-if [ ! -e ~/git-prompt.sh ]; then
-  curl -sSL -o ~/git-prompt.sh \
-    https://github.com/git/git/blob/$git_version/contrib/completion/git-prompt.sh
-fi
-
-z_version=v1.11
-if [ ! -e ~/z.sh ]; then
-  curl -sSL -o ~/z.sh \
-    https://raw.githubusercontent.com/rupa/z/$z_version/z.sh
 fi
 
 
@@ -110,12 +90,5 @@ fi
 #   - Several $HOME to $DEV_HOME
 #   - Add $DEV_HOME/bin to $PATH
 #   - Set prompt setting to WLinux specific
-[ -e ~/.profile ]         || cp $DEV_HOME/src/gitlab.com/mmyoji/dotfiles/.profile ~/.profile
+[ -e ~/.profile ]         || cp $DEV_HOME/src/gitlab.com/mmyoji/dotfiles/.profile-brew ~/.profile
 
-bat_version=0.10.0
-type bat && sudo dpkg -P bat # Remove old package first
-curl -sSL -o /c/Users/mmyoj/Downloads/bat-musl_${bat_version}_amd64.deb \
-  https://github.com/sharkdp/bat/releases/download/v${bat_version}/bat-musl_${bat_version}_amd64.deb
-sudo dpkg -i /c/Users/mmyoj/Downloads/bat-musl_${bat_version}_amd64.deb
-sudo apt update && sudo apt install -y bat
-rm /c/Users/mmyoj/Downloads/bat-musl_${bat_version}_amd64.deb
