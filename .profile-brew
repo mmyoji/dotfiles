@@ -1,5 +1,10 @@
 # This file is for linuxbrew base environment.
 
+## linuxbrew ##
+eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+
+
+
 ### aliases ###
 
 alias ll="ls -la"
@@ -72,6 +77,3 @@ export HISTCONTROL=ignoreboth:erasedups
 
 # http://excid3.com/blog/how-to-fix-esc-in-your-terminal
 export LESS="-eirMX"
-
-## linuxbrew ##
-eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
