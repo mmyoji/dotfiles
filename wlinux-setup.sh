@@ -24,10 +24,22 @@
 # $ bash init.sh
 #
 #
-# 3. After running script:
+# 3. Then install linuxbrew
+# # ref: http://linuxbrew.sh/
+# $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
+# $ test -d /home/linuxbrew/.linuxbrew && eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+# $ echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.profile
+#
+#
+# 4. Restart init.sh from brew part
+#
+#
+# 5. After running script:
 #
 # # Edit files for WLinux env
 # $ vim $HOME/.profile
+#
+# $ echo "[ -f ~/.profile ] && source ~/.profile" >> ~/.bashrc
 #
 
 set -eux
@@ -41,12 +53,8 @@ sudo apt update -y && sudo apt install -y \
   libmysqlclient-dev \
   libpq-dev \
   make
+exit 0
 
-## Install Linuxbrew ##
-# ref: http://linuxbrew.sh/
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
-test -d /home/linuxbrew/.linuxbrew && eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
-echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.profile
 
 ## Install brew fomula ##
 brew install \
@@ -58,6 +66,7 @@ brew install \
   git \
   htop \
   jq \
+  neovim \
   tmux \
   z
 
@@ -74,6 +83,7 @@ fi
 [ -e ~/.gitconfig ]       || ln -s $DEV_HOME/src/gitlab.com/mmyoji/dotfiles/.gitconfig        ~/
 [ -e ~/.tmux.conf ]       || ln -s $DEV_HOME/src/gitlab.com/mmyoji/dotfiles/.tmux.conf        ~/
 
+mkdir -p ~/.config
 [ -d ~/.config/nvim ]     || ln -s $DEV_HOME/src/gitlab.com/mmyoji/dotfiles/.config.d/nvim    ~/.config/nvim
 [ -d ~/.ctags.d ]         || ln -s $DEV_HOME/src/gitlab.com/mmyoji/dotfiles/.ctags.d          ~/.ctags.d
 
