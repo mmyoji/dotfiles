@@ -59,6 +59,11 @@ eval "$(anyenv init -)"
 eval "$(direnv hook bash)"
 
 
+## z ##
+z_path=/home/linuxbrew/.linuxbrew/Cellar/z/1.9/etc/profile.d/z.sh
+[ -f $z_path ] && source $z_path
+
+
 export GOPATH=$HOME
 
 if [ -d "$HOME/bin" ]; then
