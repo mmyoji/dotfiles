@@ -68,6 +68,7 @@ brew install \
   jq \
   neovim \
   tmux \
+  tree \
   z
 
 
