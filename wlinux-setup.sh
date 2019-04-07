@@ -52,6 +52,7 @@ sudo apt update -y && sudo apt install -y \
   git \
   libmysqlclient-dev \
   libpq-dev \
+  libssl-dev \ # for ruby install
   make
 exit 0
 
