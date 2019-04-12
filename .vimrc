@@ -122,6 +122,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'tpope/vim-surround'
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
   Plug 'junegunn/fzf.vim'
+  Plug 'jiangmiao/auto-pairs'
   Plug 'mattn/webapi-vim'
   Plug 'mattn/gist-vim'
 
@@ -132,6 +133,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'othree/yajs.vim'
   Plug 'mxw/vim-jsx'
   Plug 'leafgarland/typescript-vim'
+  Plug 'posva/vim-vue'
   " markdown
   Plug 'godlygeek/tabular'
   Plug 'plasticboy/vim-markdown'
@@ -156,7 +158,7 @@ nnoremap <expr> gr ':Rgrep<CR>'
 if executable('jvgrep')
   set grepprg=jvgrep
 endif
-let Grep_Default_Filelist = '*.rb *.scss *.css *.js *.jsx *.erb *.rake *.haml *.jbuilder *.json *.yml *.yaml'
+let Grep_Default_Filelist = '*.rb *.scss *.css *.js *.jsx *.erb *.rake *.haml *.slim *.jbuilder *.json *.yml *.yaml'
 let Grep_Skip_Dirs = '.svn .git vendor spec/cassettes node_modules coverage public/packs public/packs-test'
 let Grep_Default_Options = '-I' " ignore binary files
 
@@ -170,3 +172,7 @@ let g:go_fmt_command = "goimports"
 " Wrong warning appears in my office MacBookPro.
 " Then disable it.
 let g:go_version_warning = 0
+
+""" fzf.vim
+nnoremap <C-p> :Files<CR>
+
