@@ -5,22 +5,22 @@
 # # Install:
 # #   - docker (CLI)
 # #   - neovim
-# $ wlinux-setup
+# $ pengwin-setup
 #
 # # Generate .ssh files
 # # And register the public keys in GitLab, GitHub, etc.
 # $ ssh-keygen -t ed25519
 #
-# $ mkdir -p /c/Users/<username>/Dev
+# $ mkdir -p /mnt/c/Users/<username>/Dev
 #
 # And add following to your `$HOME/.bashrc`
 # ```
-# export DEV_HOME=/c/Users/<username>/Dev
+# export DEV_HOME=/mnt/c/Users/<username>/Dev
 # ```
 #
 #
 # 2. Then run this script.
-# $ curl -sSL -o ./init.sh https://gitlab.com/mmyoji/dotfiles/raw/master/wlinux-setup.sh
+# $ curl -sSL -o ./init.sh https://gitlab.com/mmyoji/dotfiles/raw/master/pengwin-setup.sh
 # $ bash init.sh
 #
 #
