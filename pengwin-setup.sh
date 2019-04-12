@@ -78,8 +78,7 @@ fi
 [ -e ~/.gitconfig ]       || ln -s $HOME/src/gitlab.com/mmyoji/dotfiles/.gitconfig        ~/
 [ -e ~/.tmux.conf ]       || ln -s $HOME/src/gitlab.com/mmyoji/dotfiles/.tmux.conf        ~/
 
-mkdir -p ~/.config
-[ -d ~/.config/nvim ]     || ln -s $HOME/src/gitlab.com/mmyoji/dotfiles/.config.d/nvim    ~/.config/nvim
+mkdir -p ~/.config/nvim   || cp $HOME/src/gitlab.com/mmyoji/dotfiles/.vimrc               ~/.config/nvim/init.vim
 
 # Edit after running script:
 #   - Several $HOME to $HOME
