@@ -11,13 +11,6 @@
 # # And register the public keys in GitLab, GitHub, etc.
 # $ ssh-keygen -t ed25519
 #
-# $ mkdir -p /mnt/c/Users/<username>/Dev
-#
-# And add following to your `$HOME/.bashrc`
-# ```
-# export DEV_HOME=/mnt/c/Users/<username>/Dev
-# ```
-#
 #
 # 2. Then run this script.
 # $ curl -sSL -o ./init.sh https://gitlab.com/mmyoji/dotfiles/raw/master/pengwin-setup.sh
@@ -74,24 +67,23 @@ brew install \
 
 
 # dotfiles #
-if [ ! -d "$DEV_HOME/src/gitlab.com/mmyoji/dotfiles" ]; then
-  git clone git@gitlab.com:mmyoji/dotfiles.git $DEV_HOME/src/gitlab.com/mmyoji/dotfiles
+if [ ! -d "$HOME/src/gitlab.com/mmyoji/dotfiles" ]; then
+  git clone git@gitlab.com:mmyoji/dotfiles.git $HOME/src/gitlab.com/mmyoji/dotfiles
 fi
 
 
 # Apply my custom dotfiles
-[ -e ~/.commit_template ] || ln -s $DEV_HOME/src/gitlab.com/mmyoji/dotfiles/.commit_template  ~/
-[ -e ~/.gemrc ]           || ln -s $DEV_HOME/src/gitlab.com/mmyoji/dotfiles/.gemrc            ~/
-[ -e ~/.gitconfig ]       || ln -s $DEV_HOME/src/gitlab.com/mmyoji/dotfiles/.gitconfig        ~/
-[ -e ~/.tmux.conf ]       || ln -s $DEV_HOME/src/gitlab.com/mmyoji/dotfiles/.tmux.conf        ~/
+[ -e ~/.commit_template ] || ln -s $HOME/src/gitlab.com/mmyoji/dotfiles/.commit_template  ~/
+[ -e ~/.gemrc ]           || ln -s $HOME/src/gitlab.com/mmyoji/dotfiles/.gemrc            ~/
+[ -e ~/.gitconfig ]       || ln -s $HOME/src/gitlab.com/mmyoji/dotfiles/.gitconfig        ~/
+[ -e ~/.tmux.conf ]       || ln -s $HOME/src/gitlab.com/mmyoji/dotfiles/.tmux.conf        ~/
 
 mkdir -p ~/.config
-[ -d ~/.config/nvim ]     || ln -s $DEV_HOME/src/gitlab.com/mmyoji/dotfiles/.config.d/nvim    ~/.config/nvim
-[ -d ~/.ctags.d ]         || ln -s $DEV_HOME/src/gitlab.com/mmyoji/dotfiles/.ctags.d          ~/.ctags.d
+[ -d ~/.config/nvim ]     || ln -s $HOME/src/gitlab.com/mmyoji/dotfiles/.config.d/nvim    ~/.config/nvim
 
 # Edit after running script:
-#   - Several $HOME to $DEV_HOME
-#   - Add $DEV_HOME/bin to $PATH
+#   - Several $HOME to $HOME
+#   - Add $HOME/bin to $PATH
 #   - Set prompt setting to WLinux specific
-[ -e ~/.profile ]         || cp $DEV_HOME/src/gitlab.com/mmyoji/dotfiles/.profile-brew ~/.profile
+[ -e ~/.profile ]         || cp $HOME/src/gitlab.com/mmyoji/dotfiles/.profile-brew ~/.profile
 
