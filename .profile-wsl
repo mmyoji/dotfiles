@@ -1,8 +1,4 @@
-# This file is for linuxbrew base environment.
-
-## linuxbrew ##
-eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
-
+# This file is for WSL environment.
 
 
 ### aliases ###
@@ -11,19 +7,15 @@ alias ll="ls -la"
 alias tmux="tmux -u"
 alias vim="nvim"
 
-# https://github.com/sharkdp/bat
-alias cat="bat"
-
-
 
 ### completion ###
 
 ## git-completion ##
-gitcmpl_path=/home/linuxbrew/.linuxbrew/etc/bash_completion.d/git-completion.bash
+gitcmpl_path=$HOME/git-completion.bash
 [ -f $gitcmpl_path ] && source $gitcmpl_path
 
 ### git-prompt ###
-gitprpt_path=/home/linuxbrew/.linuxbrew/etc/bash_completion.d/git-prompt.sh
+gitprpt_path=$HOME/git-prompt.sh
 if [ -f $gitprpt_path ]; then
   source $gitprpt_path
 
@@ -52,6 +44,7 @@ fd() {
 ### other configurations ###
 
 ## anyenv ##
+export PATH="$HOME/.anyenv/bin:$PATH"
 eval "$(anyenv init -)"
 
 
@@ -60,7 +53,7 @@ eval "$(direnv hook bash)"
 
 
 ## z ##
-z_path=/home/linuxbrew/.linuxbrew/Cellar/z/1.9/etc/profile.d/z.sh
+z_path=$HOME/z.sh
 [ -f $z_path ] && source $z_path
 
 
