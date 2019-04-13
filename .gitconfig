@@ -3,7 +3,7 @@
   email = mmyoji@gmail.com
 
 [core]
-  editor = nvim
+  editor = vim
 
 [push]
   default = simple
