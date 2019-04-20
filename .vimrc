@@ -162,7 +162,7 @@ endif
 if !executable('rg')
   let Grep_Default_Filelist = '*.rb *.scss *.css *.js *.jsx *.erb *.rake *.haml *.slim *.jbuilder *.json *.yml *.yaml'
 endif
-let Grep_Skip_Dirs = '.svn .git vendor spec/cassettes tagsg log node_modules coverage public/packs public/packs-test'
+let Grep_Skip_Dirs = '.svn .git vendor spec/cassettes tags log node_modules coverage public/packs public/packs-test'
 let Grep_Default_Options = '-I' " ignore binary files
 
 "" vim-jsx
