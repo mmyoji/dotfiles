@@ -154,12 +154,15 @@ let g:vim_markdown_folding_disabled = 1
 
 "" grep.vim
 nnoremap <expr> gr ':Rgrep<CR>'
-" use jvgrep
-if executable('jvgrep')
+if executable('rg')
+  set grepprg=rg
+elseif executable('jvgrep')
   set grepprg=jvgrep
 endif
-let Grep_Default_Filelist = '*.rb *.scss *.css *.js *.jsx *.erb *.rake *.haml *.slim *.jbuilder *.json *.yml *.yaml'
-let Grep_Skip_Dirs = '.svn .git vendor spec/cassettes node_modules coverage public/packs public/packs-test'
+if !executable('rg')
+  let Grep_Default_Filelist = '*.rb *.scss *.css *.js *.jsx *.erb *.rake *.haml *.slim *.jbuilder *.json *.yml *.yaml'
+endif
+let Grep_Skip_Dirs = '.svn .git vendor spec/cassettes tagsg log node_modules coverage public/packs public/packs-test'
 let Grep_Default_Options = '-I' " ignore binary files
 
 "" vim-jsx
