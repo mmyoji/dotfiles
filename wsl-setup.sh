@@ -42,6 +42,7 @@ sudo apt update -y && sudo apt install -y \
   libssl-dev \
   make \
   neovim \
+  ripgrep \
   tmux \
   tree
 
