@@ -4,6 +4,7 @@
 
 [core]
   editor = vim
+  excludesfile = /home/mmyoji/.gitignore
 
 [push]
   default = simple
