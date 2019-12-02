@@ -4,7 +4,7 @@
 
 [core]
   editor = vim
-  excludesfile = /home/mmyoji/.gitignore
+  excludesfile = ~/.gitignore
 
 [push]
   default = simple
@@ -42,4 +42,4 @@
 	user = mmyoji
 
 [commit]
-	template = /home/mmyoji/.commit_template
+	template = ~/.commit_template
