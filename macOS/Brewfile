@@ -22,6 +22,6 @@ brew 'tree'
 brew 'wget'
 
 cask 'docker'
-cask 'iterm2'
+# cask 'iterm2'
 cask 'recordit'
 cask 'spotify'

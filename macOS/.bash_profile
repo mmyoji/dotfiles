@@ -1,9 +1,6 @@
 [ -f ~/.bashrc ] && source ~/.bashrc
 
-for file in ~/.profile.d/*
-do
-  source $file
-done
+source ~/.profile
 
 # for neovim
 export XDG_CONFIG_HOME="$HOME/.config"
