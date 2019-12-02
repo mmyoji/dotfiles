@@ -20,5 +20,9 @@ $ bash ~/src/gitlab.com/mmyoji/dotfiles/macOS/init.sh
 
 # 7. Additional instructions:
 # Install fzf useful commands
+# and you can override .bashrc
 $ $(brew --prefix)/opt/fzf/install
+
+# Init anyenv
+$ anyenv init
 ```
