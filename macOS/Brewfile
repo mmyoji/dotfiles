@@ -1,5 +1,6 @@
 cask_args appdir: '/Applications'
 
+brew 'anyenv'
 brew 'awscli'
 brew 'bash-completion@2'
 brew 'bat'
