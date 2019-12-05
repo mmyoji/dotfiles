@@ -20,5 +20,4 @@ brew 'tree'
 brew 'wget'
 
 cask 'docker'
-cask 'recordit'
 cask 'spotify'
