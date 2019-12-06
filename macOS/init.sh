@@ -10,7 +10,10 @@ if [[ ! -h ${HOME}/.gemrc ]]; then
   ln -s ~/src/gitlab.com/mmyoji/dotfiles/.gemrc ~/
   ln -s ~/src/gitlab.com/mmyoji/dotfiles/.gitconfig ~/
   ln -s ~/src/gitlab.com/mmyoji/dotfiles/.tmux.conf ~/
-  ln -s ~/src/gitlab.com/mmyoji/dotfiles/.profile ~/
+
+  # because these files sometimes need to be modified on macOS
+  cp ~/src/gitlab.com/mmyoji/dotfiles/.profile ~/.profile
+  mkdir -p ~/.config/nvim && cp ~/src/gitlab.com/mmyoji/dotfiles/.vimrc ~/.config/nvim/init.vim
   cat ~/src/gitlab.com/mmyoji/dotfiles/macOS/.bash_profile >> ~/.bash_profile
 fi
 
