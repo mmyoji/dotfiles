@@ -2,6 +2,25 @@ alias tmux="tmux -u"
 alias vim="nvim"
 
 
+## git prompt settings ##
+
+# Load useful modules
+autoload -Uz vcs_info
+precmd() { vcs_info }
+autoload -Uz colors
+colors
+
+# Format the vcs_info_msg_0_ variable
+zstyle ':vcs_info:git:*' formats "@${fg[red]}%b %c%u${reset_color}"
+zstyle ':vcs_info:git:*' check-for-changes true
+zstyle ':vcs_info:git:*' stagedstr "+"
+zstyle ':vcs_info:git:*' unstagedstr "-"
+
+# Set up the prompt (with git branch name)
+setopt PROMPT_SUBST
+PROMPT='${${fg[green]}}%n${reset_color}:${fg[cyan]}${PWD/#$HOME/~}${reset_color} ${vcs_info_msg_0_}'$'\n''$ '
+
+
 # https://github.com/junegunn/fzf/wiki/examples#changing-directory
 # fd - cd to selected directory
 fd() {
