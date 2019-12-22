@@ -41,3 +41,5 @@ export LESS="-eirMX"
 # for neovim
 export XDG_CONFIG_HOME="$HOME/.config"
 
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
