@@ -23,6 +23,12 @@ alias vim="nvim"
 # PROMPT='${${fg[green]}}%n${reset_color}:${fg[cyan]}${PWD/#$HOME/~}${reset_color} ${vcs_info_msg_0_}'$'\n''$ '
 
 
+## git-completion ##
+fpath=(~/.zsh/completion $fpath)
+autoload -U compinit
+compinit -u
+
+
 # https://github.com/junegunn/fzf/wiki/examples#changing-directory
 # fd - cd to selected directory
 fd() {
