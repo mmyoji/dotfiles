@@ -45,7 +45,7 @@ eval "$(anyenv init - zsh)"
 
 
 ## direnv ##
-eval "$(direnv hook bash)"
+eval "$(direnv hook $SHELL)"
 
 
 export GOPATH=$HOME
