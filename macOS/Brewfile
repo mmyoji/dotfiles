@@ -7,14 +7,13 @@ brew 'direnv'
 brew 'fzf'
 brew 'git'
 brew 'hugo'
-brew 'icu4c'
 brew 'jq'
 brew 'neovim'
-brew 'ripgrep'
-brew 'starship'
+brew 'ripgrep'  # for grep in (neo)vim
+brew 'starship' # for better zsh prompt
 brew 'tig'
 brew 'tree'
-brew 'watch'
+brew 'watch'    # linux 'watch' command
 brew 'wget'
 
 cask 'docker'
