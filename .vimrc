@@ -107,32 +107,17 @@ call plug#begin('~/.vim/plugged')
   Plug 'junegunn/vim-plug',
     \ {'dir': '~/.vim/plugged/vim-plug/autoload'}
 
-  "" Utils
   Plug 'tpope/vim-endwise'
   Plug 'nathanaelkane/vim-indent-guides'
   Plug 'bronson/vim-trailing-whitespace'
   Plug 'junegunn/vim-easy-align'
-  Plug 'scrooloose/syntastic'
+  Plug 'vim-syntastic/syntastic'
   Plug 'vim-scripts/grep.vim'
   Plug 'tpope/vim-surround'
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
   Plug 'junegunn/fzf.vim'
   Plug 'jiangmiao/auto-pairs'
-  Plug 'mattn/webapi-vim'
-  Plug 'mattn/gist-vim'
-
-  "" Languages
-  Plug 'tpope/vim-rails'
-  Plug 'tpope/vim-haml'
-  Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
-  Plug 'othree/yajs.vim'
-  Plug 'mxw/vim-jsx'
-  Plug 'leafgarland/typescript-vim'
-  Plug 'posva/vim-vue'
-  " markdown
   Plug 'godlygeek/tabular'
-  Plug 'plasticboy/vim-markdown'
-
 call plug#end()
 
 "" vim-indent-guides
@@ -144,33 +129,13 @@ xmap ga <Plug>(EasyAlign)
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
 
-"" vim-markdown
-let g:vim_markdown_folding_disabled = 1
-
 "" grep.vim
 nnoremap <expr> gr ':Rgrep<CR>'
 if executable('rg')
   set grepprg=rg
-elseif executable('jvgrep')
-  set grepprg=jvgrep
 endif
-if !executable('rg')
-  let Grep_Default_Filelist = '*.rb *.scss *.css *.js *.jsx *.erb *.rake *.haml *.slim *.jbuilder *.json *.yml *.yaml'
-endif
-let Grep_Skip_Dirs = join(['.svn', '.git', 'log', 'tags', 'tmp', 'coverage', 'spec/cassettes', 'vendor', 'node_modules', 'public/packs', 'public/packs-test'], ' ')
+let Grep_Skip_Dirs = join(['.svn', '.git', 'log', 'tags', 'coverage', 'vendor', 'node_modules'], ' ')
 let Grep_Default_Options = '-I' " ignore binary files
-
-"" vim-jsx
-" enable jsx syntax highlight for *.js files
-let g:jsx_ext_required = 0
-
-let g:go_auto_sameids = 1
-let g:go_auto_type_info = 1
-let g:go_fmt_command = "goimports"
-" Wrong warning appears in my office MacBookPro.
-" Then disable it.
-let g:go_version_warning = 0
 
 """ fzf.vim
 nnoremap <C-p> :Files<CR>
-
