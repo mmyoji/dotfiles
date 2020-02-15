@@ -38,6 +38,11 @@ if [ -d "$HOME/.local/bin" ]; then
   export PATH="$HOME/.local/bin:$PATH"
 fi
 
+mongo_ver="4.0.15"
+if [ -d "/usr/local/Cellar/mongodb-community@4.0/$mongo_ver/bin" ]; then
+  export PATH="$PATH:/usr/local/Cellar/mongodb-community@4.0/$mongo_ver/bin"
+fi
+
 export EDITOR=vim
 export HISTCONTROL=ignoreboth:erasedups
 
