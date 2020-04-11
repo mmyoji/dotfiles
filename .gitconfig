@@ -21,6 +21,7 @@
   d   = diff
   dw  = diff --word-diff-regex=. --word-diff=color
   l   = log --graph
+  lo  = log --oneline
   ps  = push -u
   r   = rebase
   s   = status
