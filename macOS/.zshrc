@@ -1,3 +1,7 @@
+setopt hist_ignore_all_dups
+setopt hist_ignore_dups
+setopt share_history
+
 alias ll="ls -la"
 alias tmux="tmux -u"
 alias vim="nvim"
@@ -44,7 +48,6 @@ if [ -d "/usr/local/Cellar/mongodb-community@4.0/$mongo_ver/bin" ]; then
 fi
 
 export EDITOR=vim
-export HISTCONTROL=ignoreboth:erasedups
 
 # http://excid3.com/blog/how-to-fix-esc-in-your-terminal
 export LESS="-eirMX"
