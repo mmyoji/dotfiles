@@ -9,6 +9,9 @@
 [push]
   default = simple
 
+[pull]
+  rebase = false
+
 [alias]
   a   = add
   aa  = add --all
