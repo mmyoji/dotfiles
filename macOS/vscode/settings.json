@@ -1,0 +1,38 @@
+{
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/**": true,
+        "**/Library/**": true
+    },
+    "files.trimTrailingWhitespace": true,
+    "editor.tabSize": 2,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
+    },
+    "[vue]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
+    },
+    "vetur.format.defaultFormatter.js": "prettier-eslint",
+    "files.insertFinalNewline": true,
+    "explorer.confirmDelete": false,
+    "terminal.integrated.shell.osx": "/bin/zsh",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "git.suggestSmartCommit": false,
+    "editor.fontSize": 11,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "window.zoomLevel": 0
+}
