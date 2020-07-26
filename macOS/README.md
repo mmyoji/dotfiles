@@ -33,4 +33,7 @@ $ anyenv install --init
 #   - iTerm2
 #   - VSCode
 #   - etc.
+
+# 9. Add VSCode settings files
+$ cp ~/src/gitlab.com/mmyoji/dotfiles/macOS/vscode/*.json $HOME/Library/Application\ Support/Code/User/
 ```
