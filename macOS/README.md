@@ -25,15 +25,12 @@ $ $(brew --prefix)/opt/fzf/install
 
 # Init anyenv
 # and install necessary *envs: goenv, nodenv, etc.
-$ anyenv init
+$ anyenv install --init
 
 # 8. Install some apps:
-#   - 1Password
+#   - Bitwarden
 #   - Google Chrome
 #   - iTerm2
-#   - Slack
 #   - VSCode
-#   - Discord
-#   - Firefox
 #   - etc.
 ```
