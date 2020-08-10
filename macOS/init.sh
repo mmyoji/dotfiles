@@ -14,8 +14,9 @@ if [[ ! -h ${HOME}/.gemrc ]]; then
   ln -s ~/src/gitlab.com/mmyoji/dotfiles/macOS/.zshrc      ~/
 
   # because these files sometimes need to be modified on macOS
-  cp ~/src/gitlab.com/mmyoji/dotfiles/.tmux.conf  ~/
-  cp ~/src/gitlab.com/mmyoji/dotfiles/.vimrc      ~/.config/nvim/init.vim
+  cp ~/src/gitlab.com/mmyoji/dotfiles/.tmux.conf       ~/
+  cp ~/src/gitlab.com/mmyoji/dotfiles/.vimrc           ~/.config/nvim/init.vim
+  cp ~/src/gitlab.com/mmyoji/dotfiles/macOS/gitignore  ~/.gitignore
 fi
 
 if [[ ! -f ${HOME}/.zsh/completion/git-completion.bash ]]; then
