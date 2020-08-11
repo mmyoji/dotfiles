@@ -47,6 +47,9 @@ if [ -d "/usr/local/Cellar/mongodb-community@4.0/$mongo_ver/bin" ]; then
   export PATH="$PATH:/usr/local/Cellar/mongodb-community@4.0/$mongo_ver/bin"
 fi
 
+# depends on: mysql@5.7 of homebrew
+export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
+
 export EDITOR=vim
 
 # http://excid3.com/blog/how-to-fix-esc-in-your-terminal

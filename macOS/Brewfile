@@ -17,5 +17,11 @@ brew 'tree'
 brew 'watch'    # linux 'watch' command
 brew 'wget'
 
+## For current workplace
+brew 'graphviz'
+brew 'lsof'
+brew 'mysql@5.7'
+brew 'mariadb'
+
 cask 'docker'
 cask 'spotify'
