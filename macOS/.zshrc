@@ -42,11 +42,6 @@ if [ -d "$HOME/.local/bin" ]; then
   export PATH="$HOME/.local/bin:$PATH"
 fi
 
-mongo_ver="4.0.19"
-if [ -d "/usr/local/Cellar/mongodb-community@4.0/$mongo_ver/bin" ]; then
-  export PATH="$PATH:/usr/local/Cellar/mongodb-community@4.0/$mongo_ver/bin"
-fi
-
 # depends on: mysql@5.7 of homebrew
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 
