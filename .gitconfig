@@ -44,7 +44,10 @@
   prune = true
 
 [github]
-	user = mmyoji
+  user = mmyoji
 
 [commit]
-	template = ~/.commit_template
+  template = ~/.commit_template
+
+[init]
+  defaultBranch = main
