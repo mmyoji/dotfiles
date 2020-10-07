@@ -42,8 +42,8 @@ sudo apt update -y && sudo apt install -y \
   neovim \
   ripgrep \
   tmux \
-  tree
-
+  tree \
+  unzip
 
 # dotfiles #
 if [ ! -d "$HOME/src/gitlab.com/mmyoji/dotfiles" ]; then
