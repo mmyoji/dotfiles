@@ -1,16 +1,10 @@
-[user]
-  name  = mmyoji
-  email = mmyoji@gmail.com
-
 [core]
   editor = vim
   excludesfile = ~/.gitignore
 
-[push]
-  default = simple
-
-[pull]
-  rebase = false
+[user]
+  name  = mmyoji
+  email = mmyoji@gmail.com
 
 [alias]
   a   = add
@@ -19,6 +13,7 @@
   co  = checkout
   cob = checkout -b
   cma = commit --amend -v
+  fix = commit --amend --no-edit
   cmv = commit -v --no-verify
   com = commit -v
   d   = diff
@@ -27,27 +22,42 @@
   lo  = log --oneline
   ps  = push -u
   r   = rebase
-  s   = status
+  s   = status -sb
 
   search          = log -p -S
   show-conflicted = diff --name-only --diff-filter=U
   vtree           = log --pretty=oneline --graph --decorate --all
 
+[commit]
+  template = ~/.commit_template
+
 [diff]
   indentHeuristic = true
+
+[fetch]
+  prune = true
+
+[init]
+  defaultBranch = main
+
+[log]
+  abbrevCommit = true
+
+[pager]
+  diff = diff-highlight | less
+  log = diff-highlight | less
+  show = diff-highlight | less
+
+[pull]
+  rebase = false
+
+[push]
+  default = simple
 
 [rebase]
   autosquash = true
   autostash  = true
 
-[fetch]
-  prune = true
-
 [github]
   user = mmyoji
 
-[commit]
-  template = ~/.commit_template
-
-[init]
-  defaultBranch = main
