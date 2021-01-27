@@ -13,7 +13,7 @@
 #
 # ### Then run this script ###
 # $ curl -sSL -o ./init.sh https://gitlab.com/mmyoji/dotfiles/raw/master/wsl-setup.sh
-# $ GIT_VERSION=v2.25.1 bash init.sh
+# $ GIT_VERSION=v2.29.2 bash init.sh
 #
 #
 # ### After running script ###
@@ -36,6 +36,7 @@ sudo apt update -y && sudo apt install -y \
   file \
   git \
   htop \
+  hugo \
   jq \
   libssl-dev \
   make \
@@ -44,6 +45,13 @@ sudo apt update -y && sudo apt install -y \
   tmux \
   tree \
   unzip
+
+# For current workplace
+sudo apt install -y \
+  default-libmysqlclient-dev \
+  libsqlite3-dev \
+  python3
+
 
 # dotfiles #
 if [ ! -d "$HOME/src/gitlab.com/mmyoji/dotfiles" ]; then
