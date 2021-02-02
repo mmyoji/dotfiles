@@ -56,3 +56,6 @@ export XDG_CONFIG_HOME="$HOME/.config"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 eval "$(starship init zsh)"
+
+export PATH="/usr/local/sbin:$PATH"
+
