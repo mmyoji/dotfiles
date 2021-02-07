@@ -12,16 +12,15 @@
 #
 #
 # ### Then run this script ###
-# $ curl -sSL -o ./init.sh https://gitlab.com/mmyoji/dotfiles/raw/master/wsl-setup.sh
-# $ GIT_VERSION=v2.29.2 bash init.sh
+# $ curl -sSL -o ./init.sh https://gitlab.com/mmyoji/dotfiles/raw/master/Pengwin/init.sh
+# $ GIT_VERSION=v2.30.0 bash init.sh
 #
 #
 # ### After running script ###
 #
 # # Edit files for WSL env
-# $ vim $HOME/.profile
-#
-# $ echo "[ -f ~/.profile ] && source ~/.profile" >> ~/.bashrc
+# $ cp ~/src/gitlab.com/mmyoji/dotfiles/Pengwin/.profile ~/.profile # or `ln -s`
+# $ cp ~/src/gitlab.com/mmyoji/dotfiles/Pengwin/.bashrc  ~/.bashrc  # or `ln -s`
 #
 # $ ~/.fzf/install
 #
