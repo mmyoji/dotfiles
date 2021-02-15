@@ -48,6 +48,7 @@ sudo apt update -y && sudo apt install -y \
 # For current workplace
 sudo apt install -y \
   default-libmysqlclient-dev \
+  graphviz \
   libreadline-dev \
   libsqlite3-dev \
   python3
