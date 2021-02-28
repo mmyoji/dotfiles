@@ -45,6 +45,9 @@ eval "$(direnv hook bash)"
 export DENO_INSTALL="$HOME/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
 
+## Golang ##
+export PATH=$PATH:/usr/local/go/bin
+
 
 export EDITOR=vim
 
