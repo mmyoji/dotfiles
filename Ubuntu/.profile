@@ -64,8 +64,6 @@ eval "$(anyenv init -)"
 eval "$(direnv hook bash)"
 
 
-export GOPATH=$HOME
-
 if [ -d "$HOME/bin" ]; then
   export PATH="$HOME/bin:$PATH"
 fi

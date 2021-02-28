@@ -32,8 +32,6 @@ eval "$(anyenv init - zsh)"
 eval "$(direnv hook $SHELL)"
 
 
-export GOPATH=$HOME
-
 if [ -d "$HOME/bin" ]; then
   export PATH="$HOME/bin:$PATH"
 fi
