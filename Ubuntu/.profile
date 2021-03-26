@@ -72,6 +72,14 @@ if [ -d "$HOME/.local/bin" ]; then
   export PATH="$HOME/.local/bin:$PATH"
 fi
 
+if [ -d "/usr/local/go/bin" ]; then
+  export PATH="$PATH:/usr/local/go/bin"
+fi
+
+if [ -d "$HOME/go/bin" ]; then
+  export PATH="$PATH:$HOME/go/bin"
+fi
+
 export EDITOR=vim
 export HISTCONTROL=ignoreboth:erasedups
 
