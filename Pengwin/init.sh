@@ -39,16 +39,16 @@ sudo apt update -y && sudo apt install -y \
   jq \
   libssl-dev \
   make \
-  neovim \
   ripgrep \
   tmux \
   tree \
-  unzip
+  unzip \
+  vim
 
 # For current workplace
 sudo apt install -y \
   default-libmysqlclient-dev \
-  graphviz \
+  imagemagick \
   libreadline-dev \
   libsqlite3-dev \
   python3
@@ -97,5 +97,4 @@ fi
 [ -e ~/.gitconfig ]       || ln -s $HOME/src/gitlab.com/mmyoji/dotfiles/.gitconfig        ~/
 [ -e ~/.tmux.conf ]       || ln -s $HOME/src/gitlab.com/mmyoji/dotfiles/.tmux.conf        ~/
 
-mkdir -p ~/.config/nvim   && cp $HOME/src/gitlab.com/mmyoji/dotfiles/.vimrc               ~/.config/nvim/init.vim
-
+cp $HOME/src/gitlab.com/mmyoji/dotfiles/.vimrc  ~/.vimrc

@@ -90,7 +90,6 @@ fi
 # Aliases
 alias ll="ls -la"
 alias tmux="tmux -u"
-alias vim="nvim"
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
