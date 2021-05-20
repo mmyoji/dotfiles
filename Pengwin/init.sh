@@ -2,25 +2,21 @@
 
 # ### Before running ###
 #
-# # Install:
-# #   - docker (CLI)
-# $ pengwin-setup
-#
 # # Generate .ssh files
-# # And register the public keys in GitLab, GitHub, etc.
+# # And register the public keys in GitLab and GitHub.
 # $ ssh-keygen -t ed25519
 #
 #
 # ### Then run this script ###
 # $ curl -sSL -o ./init.sh https://gitlab.com/mmyoji/dotfiles/raw/master/Pengwin/init.sh
-# $ GIT_VERSION=v2.30.0 bash init.sh
+# $ GIT_VERSION=v2.30.2 bash init.sh
 #
 #
 # ### After running script ###
 #
 # # Edit files for WSL env
-# $ cp ~/src/gitlab.com/mmyoji/dotfiles/Pengwin/.profile ~/.profile # or `ln -s`
-# $ cp ~/src/gitlab.com/mmyoji/dotfiles/Pengwin/.bashrc  ~/.bashrc  # or `ln -s`
+# $ cp ~/dev/dotfiles/Pengwin/.profile ~/.profile # or `ln -s`
+# $ cp ~/dev/dotfiles/Pengwin/.bashrc  ~/.bashrc  # or `ln -s`
 #
 # $ ~/.fzf/install
 #
@@ -34,7 +30,6 @@ sudo apt update -y && sudo apt install -y \
   direnv \
   file \
   git \
-  htop \
   hugo \
   jq \
   libssl-dev \
@@ -50,13 +45,12 @@ sudo apt install -y \
   default-libmysqlclient-dev \
   imagemagick \
   libreadline-dev \
-  libsqlite3-dev \
-  python3
+  libsqlite3-dev
 
 
 # dotfiles #
-if [ ! -d "$HOME/src/gitlab.com/mmyoji/dotfiles" ]; then
-  git clone git@gitlab.com:mmyoji/dotfiles.git       $HOME/src/gitlab.com/mmyoji/dotfiles
+if [ ! -d "$HOME/dev/dotfiles" ]; then
+  git clone git@gitlab.com:mmyoji/dotfiles.git       $HOME/dev/dotfiles
 fi
 
 # anyenv #
@@ -92,9 +86,9 @@ if [ ! -e /usr/local/bin/diff-highlight ]; then
 fi
 
 # Apply my custom dotfiles
-[ -e ~/.commit_template ] || ln -s $HOME/src/gitlab.com/mmyoji/dotfiles/.commit_template  ~/
-[ -e ~/.gemrc ]           || ln -s $HOME/src/gitlab.com/mmyoji/dotfiles/.gemrc            ~/
-[ -e ~/.gitconfig ]       || ln -s $HOME/src/gitlab.com/mmyoji/dotfiles/.gitconfig        ~/
-[ -e ~/.tmux.conf ]       || ln -s $HOME/src/gitlab.com/mmyoji/dotfiles/.tmux.conf        ~/
+[ -e ~/.commit_template ] || ln -s $HOME/dev/dotfiles/.commit_template  ~/
+[ -e ~/.gemrc ]           || ln -s $HOME/dev/dotfiles/.gemrc            ~/
+[ -e ~/.gitconfig ]       || ln -s $HOME/dev/dotfiles/.gitconfig        ~/
+[ -e ~/.tmux.conf ]       || ln -s $HOME/dev/dotfiles/.tmux.conf        ~/
 
-cp $HOME/src/gitlab.com/mmyoji/dotfiles/.vimrc  ~/.vimrc
+cp $HOME/dev/dotfiles/.vimrc  ~/.vimrc
