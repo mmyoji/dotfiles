@@ -40,13 +40,6 @@ sudo apt update -y && sudo apt install -y \
   unzip \
   vim
 
-# For current workplace
-sudo apt install -y \
-  default-libmysqlclient-dev \
-  imagemagick \
-  libreadline-dev \
-  libsqlite3-dev
-
 
 # dotfiles #
 if [ ! -d "$HOME/dev/dotfiles" ]; then
@@ -87,7 +80,6 @@ fi
 
 # Apply my custom dotfiles
 [ -e ~/.commit_template ] || ln -s $HOME/dev/dotfiles/.commit_template  ~/
-[ -e ~/.gemrc ]           || ln -s $HOME/dev/dotfiles/.gemrc            ~/
 [ -e ~/.gitconfig ]       || ln -s $HOME/dev/dotfiles/.gitconfig        ~/
 [ -e ~/.tmux.conf ]       || ln -s $HOME/dev/dotfiles/.tmux.conf        ~/
 
