@@ -13,19 +13,19 @@
   co  = checkout
   sw  = switch
   swc = switch --create
-  cma = commit --amend -v
+  cma = commit --amend --verbose
   fix = commit --amend --no-edit
-  cmv = commit -v --no-verify
-  com = commit -v
+  cmv = commit --verbose --no-verify
+  com = commit --verbose
   d   = diff
   dw  = diff --word-diff-regex=. --word-diff=color
   l   = log --graph
   lo  = log --oneline
-  ps  = push -u
+  ps  = push --set-upstream
   r   = rebase
-  s   = status -sb
+  s   = status --short --branch
 
-  search          = log -p -S
+  search          = log --perl-regexp -S
   show-conflicted = diff --name-only --diff-filter=U
   vtree           = log --pretty=oneline --graph --decorate --all
 
