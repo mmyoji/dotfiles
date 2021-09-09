@@ -1,16 +1,13 @@
 
 
-# ==== Emojis ====
-# ✨ :sparkles: when adding a new feature
-# 🎨 :art: when improving the format/structure of the code
-# 🚀 :rocket: when improving performance
-# 📝 :memo: when writing docs
-# 🐛 :bug: when fixing a bug
-# 🔥 :fire: when removing code or files
-# 🚮 :put_litter_in_its_place: when removing code or files
-# 💚 :green_heart: when fixing the CI build
-# ✅ :white_check_mark: when adding tests
-# 🔒 :lock: when dealing with security
-# 🆙 :up: when upgrading dependencies
-# 👕 :shirt: when removing linter warnings
-
+# <type>(<scope>): <subject>
+#
+# feat:     (new feature for the user, not a new feature for build script)
+# fix:      (bug fix for the user, not a fix to a build script)
+# docs:     (changes to the documentation)
+# style:    (formatting, missing semi colons, etc; no production code change)
+# refactor: (refactoring production code, eg. renaming a variable)
+# test:     (adding missing tests, refactoring tests; no production code change)
+# chore:    (updating grunt tasks etc; no production code change)
+#
+# ref: https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716
