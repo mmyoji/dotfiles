@@ -4,7 +4,7 @@
 #
 # # Generate .ssh files
 # # And register the public keys in GitLab and GitHub.
-# $ ssh-keygen -t ed25519
+# $ ssh-keygen -t ed25519 -C mmyoji@Pengwin-Ryzen9-3900XT
 #
 #
 # ### Then run this script ###

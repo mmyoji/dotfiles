@@ -8,7 +8,7 @@ $ xcode-select --install
 $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # 3. Generate ssh key:
-$ ssh-keygen -t ed25519
+$ ssh-keygen -t ed25519 -C mmyoji@MBP2021
 
 # 4. Register ssh public key on GitLab & GitHub
 
