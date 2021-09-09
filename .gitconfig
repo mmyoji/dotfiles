@@ -11,7 +11,8 @@
   aa  = add --all
   b   = branch
   co  = checkout
-  cob = checkout -b
+  sw  = switch
+  swc = switch --create
   cma = commit --amend -v
   fix = commit --amend --no-edit
   cmv = commit -v --no-verify
