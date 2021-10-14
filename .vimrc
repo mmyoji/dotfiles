@@ -107,7 +107,6 @@ call plug#begin('~/.vim/plugged')
   Plug 'junegunn/vim-plug',
     \ {'dir': '~/.vim/plugged/vim-plug/autoload'}
 
-  Plug 'tpope/vim-endwise'
   Plug 'nathanaelkane/vim-indent-guides'
   Plug 'bronson/vim-trailing-whitespace'
   Plug 'junegunn/vim-easy-align'
