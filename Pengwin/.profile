@@ -32,14 +32,12 @@ fi
 ### Customize from here ###
 ###########################
 
-## anyenv ##
-export PATH="$HOME/.anyenv/bin:$PATH"
-eval "$(anyenv init -)"
-
+## asdf ##
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
 
 ## direnv ##
 eval "$(direnv hook bash)"
-
 
 ## deno ##
 export DENO_INSTALL="$HOME/.deno"
@@ -48,7 +46,7 @@ export PATH="$DENO_INSTALL/bin:$PATH"
 ## Golang ##
 export PATH="$PATH:/usr/local/go/bin:$HOME/go/bin"
 
-
+## Others ##
 export EDITOR=vim
 
 # http://excid3.com/blog/how-to-fix-esc-in-your-terminal

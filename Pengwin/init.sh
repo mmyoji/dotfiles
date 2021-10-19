@@ -20,6 +20,10 @@
 #
 # $ ~/.fzf/install
 #
+# # Install required asdf plugins
+# $ asdf plugin add nodejs
+# $ asdf install nodejs latest
+#
 
 set -eux
 
@@ -40,21 +44,25 @@ sudo apt update -y && sudo apt install -y \
   unzip \
   vim
 
+## Install Node.js (asdf) deps
+sudo apt install -y \
+  dirmngr \
+  gawk \
+  gpg
 
 # dotfiles #
 if [ ! -d "$HOME/dev/dotfiles" ]; then
-  git clone git@gitlab.com:mmyoji/dotfiles.git       $HOME/dev/dotfiles
+  git clone git@gitlab.com:mmyoji/dotfiles.git   $HOME/dev/dotfiles
 fi
 
-# anyenv #
-if [ ! -d "$HOME/.anyenv" ]; then
-  git clone https://github.com/anyenv/anyenv         $HOME/.anyenv
-  git clone https://github.com/znz/anyenv-update.git $HOME/.anyenv/plugins/anyenv-update
+# asdf #
+if [ ! -d "$HOME/.asdf" ]; then
+  git clone https://github.com/asdf-vm/asdf.git  $HOME/.asdf --branch v0.8.1
 fi
 
 # fzf #
 if [ ! -d ~/.fzf ]; then
-  git clone https://github.com/junegunn/fzf.git      $HOME/.fzf
+  git clone https://github.com/junegunn/fzf.git  $HOME/.fzf
 fi
 
 # git-completion #
