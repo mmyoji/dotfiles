@@ -10,7 +10,8 @@
   a   = add
   aa  = add --all
   b   = branch
-  sw  = switch
+  sw  = !git branch    | fzf | xargs git switch
+  swr = !git branch -a | fzf | xargs git switch
   swc = switch --create
   cma = commit --amend --verbose
   fix = commit --amend --no-edit --no-verify
