@@ -10,7 +10,6 @@
   a   = add
   aa  = add --all
   b   = branch
-  co  = checkout
   sw  = switch
   swc = switch --create
   cma = commit --amend --verbose
