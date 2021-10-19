@@ -14,7 +14,7 @@
   sw  = switch
   swc = switch --create
   cma = commit --amend --verbose
-  fix = commit --amend --no-edit
+  fix = commit --amend --no-edit --no-verify
   cmv = commit --verbose --no-verify
   com = commit --verbose
   d   = diff
