@@ -36,6 +36,7 @@ sudo apt update -y && sudo apt install -y \
   git \
   hugo \
   jq \
+  libsqlite3-dev \
   libssl-dev \
   make \
   ripgrep \
@@ -44,11 +45,17 @@ sudo apt update -y && sudo apt install -y \
   unzip \
   vim
 
-## Install Node.js (asdf) deps
+## Node.js (asdf) deps
 sudo apt install -y \
   dirmngr \
   gawk \
   gpg
+
+# Ruby & Rails deps
+sudo apt install -y \
+  default-libmysqlclient-dev \
+  imagemagick \
+  libreadline-dev
 
 # dotfiles #
 if [ ! -d "$HOME/dev/dotfiles" ]; then
