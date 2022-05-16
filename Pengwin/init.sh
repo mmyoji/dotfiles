@@ -30,6 +30,7 @@ set -eux
 ## Install apt packages ##
 sudo apt update -y && sudo apt install -y \
   build-essential \
+  bat \
   curl \
   direnv \
   file \
@@ -56,6 +57,13 @@ sudo apt install -y \
   default-libmysqlclient-dev \
   imagemagick \
   libreadline-dev
+
+# bat
+if [ ! -e ~./local/bin/bat ]; then
+  # https://github.com/sharkdp/bat#on-ubuntu-using-apt
+  mkdir -p ~/.local/bin
+  ln -s /usr/bin/batcat  ~/.local/bin/bat
+fi
 
 # dotfiles #
 if [ ! -d "$HOME/dev/dotfiles" ]; then
