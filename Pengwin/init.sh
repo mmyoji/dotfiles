@@ -35,7 +35,6 @@ sudo apt update -y && sudo apt install -y \
   direnv \
   file \
   git \
-  hugo \
   jq \
   libsqlite3-dev \
   libssl-dev \
