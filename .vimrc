@@ -73,6 +73,7 @@ endif
 " Vim sample script ends here
 
 set ambiwidth=double
+set encoding=utf-8
 set expandtab
 set ignorecase
 set nobackup
