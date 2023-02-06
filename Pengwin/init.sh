@@ -20,9 +20,10 @@
 #
 # $ ~/.fzf/install
 #
-# # Install required asdf plugins
-# $ asdf plugin add nodejs
-# $ asdf install nodejs latest
+# # Install required programming language
+# # see: https://github.com/jdxcode/rtx
+# $ rtx install nodejs@18
+# $ rtx global nodejs@18
 #
 
 set -eux
@@ -45,18 +46,6 @@ sudo apt update -y && sudo apt install -y \
   unzip \
   vim
 
-## Node.js (asdf) deps
-sudo apt install -y \
-  dirmngr \
-  gawk \
-  gpg
-
-# Ruby & Rails deps
-sudo apt install -y \
-  default-libmysqlclient-dev \
-  imagemagick \
-  libreadline-dev
-
 # bat
 if [ ! -e ~./local/bin/bat ]; then
   # https://github.com/sharkdp/bat#on-ubuntu-using-apt
@@ -69,9 +58,9 @@ if [ ! -d "$HOME/dev/dotfiles" ]; then
   git clone git@gitlab.com:mmyoji/dotfiles.git   $HOME/dev/dotfiles
 fi
 
-# asdf #
-if [ ! -d "$HOME/.asdf" ]; then
-  git clone https://github.com/asdf-vm/asdf.git  $HOME/.asdf --branch v0.8.1
+# rtx #
+if [ ! -d "$HOME/.local/share/rtx" ]; then
+  curl https://rtx.jdxcode.com/install.sh | sh
 fi
 
 # fzf #
