@@ -79,16 +79,19 @@ set ignorecase
 set nobackup
 set noswapfile
 set nowrap
+set nowritebackup
 set number
 set shiftwidth=2
 set showmatch
+set signcolumn=yes
 set smartcase
 set smartindent
 set smarttab
 set tabstop=2
 set title
+set updatetime=300
 
-colorscheme elflord
+colorscheme industry
 
 if has('vim_starting')
   set rtp+=~/.vim/plugged/vim-plug
@@ -118,6 +121,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'junegunn/fzf.vim'
   Plug 'jiangmiao/auto-pairs'
   Plug 'godlygeek/tabular'
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
 "" vim-indent-guides
@@ -139,3 +143,31 @@ let Grep_Default_Options = '-I' " ignore binary files
 
 """ fzf.vim
 nnoremap <C-p> :Files<CR>
+
+""" coc.nvim
+function! CheckBackspace() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1] =~# '\s'
+endfunction
+
+inoremap <silent><expr> <TAB>
+      \ coc#pum#visible() ? coc#pum#next(1) :
+      \ CheckBackspace() ? "\<Tab>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
+
+if has('nvim')
+  inoremap <silent><expr> <c-space> coc#refresh()
+else
+  inoremap <silent><expr> <c-@> coc#refresh()
+endif
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+
+autocmd CursorHold * silent call CocActionAsync('highlight')
+
+nmap <leader>rn <Plug>(coc-rename)
+
+command! -nargs=0 Format :call CocActionAsync('format')
