@@ -118,7 +118,6 @@ call plug#begin('~/.vim/plugged')
   Plug 'tpope/vim-surround'
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
   Plug 'junegunn/fzf.vim'
-  Plug 'jiangmiao/auto-pairs'
   Plug 'godlygeek/tabular'
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
