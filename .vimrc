@@ -113,7 +113,6 @@ call plug#begin('~/.vim/plugged')
 
   Plug 'nathanaelkane/vim-indent-guides'
   Plug 'bronson/vim-trailing-whitespace'
-  Plug 'junegunn/vim-easy-align'
   Plug 'vim-syntastic/syntastic'
   Plug 'vim-scripts/grep.vim'
   Plug 'tpope/vim-surround'
@@ -126,12 +125,6 @@ call plug#end()
 
 "" vim-indent-guides
 let g:indent_guides_enable_on_vim_startup = 1
-
-"" vim-easy-align
-" Start interactive EasyAlign in visual mode (e.g. vipga)
-xmap ga <Plug>(EasyAlign)
-" Start interactive EasyAlign for a motion/text object (e.g. gaip)
-nmap ga <Plug>(EasyAlign)
 
 "" grep.vim
 nnoremap <expr> gr ':Rgrep<CR>'
