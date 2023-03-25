@@ -113,7 +113,6 @@ call plug#begin('~/.vim/plugged')
 
   Plug 'nathanaelkane/vim-indent-guides'
   Plug 'ntpeters/vim-better-whitespace'
-  Plug 'vim-syntastic/syntastic'
   Plug 'vim-scripts/grep.vim'
   Plug 'tpope/vim-surround'
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
