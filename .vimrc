@@ -133,6 +133,7 @@ let Grep_Default_Options = '-I' " ignore binary files
 
 """ fzf.vim
 nnoremap <C-p> :Files<CR>
+nnoremap <C-b> :Buffers<CR>
 
 """ coc.nvim
 function! CheckBackspace() abort
