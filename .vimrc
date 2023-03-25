@@ -132,7 +132,7 @@ let Grep_Skip_Dirs = join(['.svn', '.git', 'log', 'tags', 'coverage', 'vendor', 
 let Grep_Default_Options = '-I' " ignore binary files
 
 """ fzf.vim
-nnoremap <C-p> :Files<CR>
+nnoremap <C-p> :GFiles<CR>
 nnoremap <C-b> :Buffers<CR>
 
 """ coc.nvim
