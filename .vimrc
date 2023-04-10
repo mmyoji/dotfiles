@@ -91,8 +91,6 @@ set tabstop=2
 set title
 set updatetime=300
 
-colorscheme industry
-
 if has('vim_starting')
   set rtp+=~/.vim/plugged/vim-plug
   if !isdirectory(expand('~/.vim/plugged/vim-plug'))
@@ -111,6 +109,8 @@ call plug#begin('~/.vim/plugged')
   Plug 'junegunn/vim-plug',
     \ {'dir': '~/.vim/plugged/vim-plug/autoload'}
 
+  Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
+
   Plug 'nathanaelkane/vim-indent-guides'
   Plug 'ntpeters/vim-better-whitespace'
   Plug 'vim-scripts/grep.vim'
@@ -120,6 +120,8 @@ call plug#begin('~/.vim/plugged')
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'leafgarland/typescript-vim'
 call plug#end()
+
+colorscheme catppuccin
 
 "" vim-indent-guides
 let g:indent_guides_enable_on_vim_startup = 1
