@@ -121,7 +121,11 @@ call plug#begin('~/.vim/plugged')
   Plug 'leafgarland/typescript-vim'
 call plug#end()
 
-colorscheme catppuccin
+if v:progname =~? "nvim"
+  colorscheme catppuccin
+else
+  colorscheme industry
+endif
 
 "" vim-indent-guides
 let g:indent_guides_enable_on_vim_startup = 1
