@@ -1,6 +1,5 @@
 cask_args appdir: '/Applications'
 
-brew 'anyenv'
 brew 'awscli'
 brew 'curl'
 brew 'direnv'

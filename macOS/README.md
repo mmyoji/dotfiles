@@ -5,7 +5,7 @@
 $ xcode-select --install
 
 # 2. Install Homebrew:
-$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # 3. Generate ssh key:
 $ ssh-keygen -t ed25519 -C mmyoji@MBP2021
@@ -13,21 +13,20 @@ $ ssh-keygen -t ed25519 -C mmyoji@MBP2021
 # 4. Register ssh public key on GitLab & GitHub
 
 # 5. Fetch this repo:
-$ git clone git@github.com:mmyoji/dotfiles.git $HOME/src/github.com/mmyoji/dotfiles
+$ git clone git@github.com:mmyoji/dotfiles.git $HOME/dev/dotfiles
 
 # 6. Execute this file:
-$ bash ~/src/github.com/mmyoji/dotfiles/macOS/init.sh
+$ bash ~/dev/dotfiles/macOS/init.sh
 
 # 7. Additional instructions:
 # Install fzf useful commands
 # YOU DON'T NEED TO OVERWRITE .zshrc (it's already there!)
 $ $(brew --prefix)/opt/fzf/install
 
-# Init anyenv
-# and install necessary *envs: goenv, nodenv, etc.
-$ anyenv install --init
+# Init anyenv (use rtx instead)
+# $ rtx install nodejs@18
 
-# 8. Install some apps:
+# 8. Install apps:
 #   - Bitwarden
 #   - Google Chrome
 #   - iTerm2
@@ -35,5 +34,5 @@ $ anyenv install --init
 #   - etc.
 
 # 9. Add VSCode settings files
-$ cp ~/src/github.com/mmyoji/dotfiles/macOS/vscode/*.json $HOME/Library/Application\ Support/Code/User/
+$ cp ~/dev/dotfiles/macOS/vscode/*.json $HOME/Library/Application\ Support/Code/User/
 ```

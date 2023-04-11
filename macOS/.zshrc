@@ -24,9 +24,7 @@ fd() {
 
 
 ## anyenv ##
-export PATH="$HOME/.anyenv/bin:$PATH"
-eval "$(anyenv init - zsh)"
-
+eval "$(~/bin/rtx activate zsh)"
 
 ## direnv ##
 eval "$(direnv hook $SHELL)"
@@ -48,7 +46,7 @@ export EDITOR=vim
 # http://excid3.com/blog/how-to-fix-esc-in-your-terminal
 export LESS="-eirMX"
 
-# for neovim
+# for nvim
 export XDG_CONFIG_HOME="$HOME/.config"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
