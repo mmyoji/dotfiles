@@ -8,7 +8,7 @@
 #
 #
 # ### Then run this script ###
-# $ curl -sSL -o ./init.sh https://gitlab.com/mmyoji/dotfiles/raw/main/Pengwin/init.sh
+# $ curl -sSL -o ./init.sh https://github.com/mmyoji/dotfiles/raw/main/Pengwin/init.sh
 # $ GIT_VERSION=v2.30.2 bash init.sh
 #
 #
@@ -55,7 +55,7 @@ fi
 
 # dotfiles #
 if [ ! -d "$HOME/dev/dotfiles" ]; then
-  git clone git@gitlab.com:mmyoji/dotfiles.git   $HOME/dev/dotfiles
+  git clone git@github.com:mmyoji/dotfiles.git   $HOME/dev/dotfiles
 fi
 
 # rtx #

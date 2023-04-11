@@ -13,10 +13,10 @@ $ ssh-keygen -t ed25519 -C mmyoji@MBP2021
 # 4. Register ssh public key on GitLab & GitHub
 
 # 5. Fetch this repo:
-$ git clone git@gitlab.com:mmyoji/dotfiles.git $HOME/src/gitlab.com/mmyoji/dotfiles
+$ git clone git@github.com:mmyoji/dotfiles.git $HOME/src/github.com/mmyoji/dotfiles
 
 # 6. Execute this file:
-$ bash ~/src/gitlab.com/mmyoji/dotfiles/macOS/init.sh
+$ bash ~/src/github.com/mmyoji/dotfiles/macOS/init.sh
 
 # 7. Additional instructions:
 # Install fzf useful commands
@@ -35,5 +35,5 @@ $ anyenv install --init
 #   - etc.
 
 # 9. Add VSCode settings files
-$ cp ~/src/gitlab.com/mmyoji/dotfiles/macOS/vscode/*.json $HOME/Library/Application\ Support/Code/User/
+$ cp ~/src/github.com/mmyoji/dotfiles/macOS/vscode/*.json $HOME/Library/Application\ Support/Code/User/
 ```
