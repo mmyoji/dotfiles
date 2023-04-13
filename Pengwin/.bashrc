@@ -144,4 +144,4 @@ if [ -f $gitprpt_path ]; then
 fi
 
 # rtx
-eval "$($HOME/.local/share/rtx/bin/rtx activate -s bash)"
+eval "$($HOME/.local/share/rtx/bin/rtx activate bash)"

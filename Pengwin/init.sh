@@ -60,7 +60,8 @@ fi
 
 # rtx #
 if [ ! -d "$HOME/.local/share/rtx" ]; then
-  curl https://rtx.jdxcode.com/install.sh | sh
+  mkdir -p "$HOME/.local/share/rtx/bin"
+  curl https://rtx.pub/rtx-latest-linux-x64 > $HOME/.local/share/rtx/bin/rtx
 fi
 
 # fzf #
