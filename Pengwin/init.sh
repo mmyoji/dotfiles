@@ -64,6 +64,19 @@ if [ ! -d "$HOME/.local/share/rtx" ]; then
   curl https://rtx.pub/rtx-latest-linux-x64 > $HOME/.local/share/rtx/bin/rtx
 fi
 
+# nvim #
+if [ ! -d "$HOME/.config/nvim" ]; then
+  mkdir -p "$HOME/.config/nvim"
+  cp $HOME/dev/dotfiles/.vimrc $HOME/.config/nvim/init.vim
+
+  mkdir -p "$HOME/tmp"
+
+  curl -sSL -o ~/tmp/nvim.appimage https://github.com/neovim/neovim/releases/download/stable/nvim.appimage
+  # see: https://github.com/neovim/neovim/releases/tag/stable
+  ~/tmp/nvim.appimage --appimage-extract
+  ln -s $HOME/tmp/squashfs-root/usr/bin/nvim $HOME/.local/bin/nvim
+fi
+
 # fzf #
 if [ ! -d ~/.fzf ]; then
   git clone https://github.com/junegunn/fzf.git  $HOME/.fzf
@@ -94,5 +107,3 @@ fi
 [ -e ~/.commit_template ] || ln -s $HOME/dev/dotfiles/.commit_template  ~/
 [ -e ~/.gitconfig ]       || ln -s $HOME/dev/dotfiles/.gitconfig        ~/
 [ -e ~/.tmux.conf ]       || ln -s $HOME/dev/dotfiles/.tmux.conf        ~/
-
-cp $HOME/dev/dotfiles/.vimrc  ~/.vimrc
