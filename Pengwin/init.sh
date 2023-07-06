@@ -62,6 +62,7 @@ fi
 if [ ! -d "$HOME/.local/share/rtx" ]; then
   mkdir -p "$HOME/.local/share/rtx/bin"
   curl https://rtx.pub/rtx-latest-linux-x64 > $HOME/.local/share/rtx/bin/rtx
+  chmod +x $HOME/.local/share/rtx/bin/rtx
 fi
 
 # nvim #
@@ -72,6 +73,7 @@ if [ ! -d "$HOME/.config/nvim" ]; then
   mkdir -p "$HOME/tmp"
 
   curl -sSL -o ~/tmp/nvim.appimage https://github.com/neovim/neovim/releases/download/stable/nvim.appimage
+  chmod u+x ~/tmp/nvim.appimage
   # see: https://github.com/neovim/neovim/releases/tag/stable
   ~/tmp/nvim.appimage --appimage-extract
   ln -s $HOME/tmp/squashfs-root/usr/bin/nvim $HOME/.local/bin/nvim
