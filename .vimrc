@@ -100,6 +100,19 @@ if has('vim_starting')
   endif
 endif
 
+let g:clipboard = {
+            \   'name': 'WslClipboard',
+            \   'copy': {
+            \      '+': 'clip.exe',
+            \      '*': 'clip.exe',
+            \    },
+            \   'paste': {
+            \      '+': 'powershell.exe -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))',
+            \      '*': 'powershell.exe -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))',
+            \   },
+            \   'cache_enabled': 0,
+            \ }
+
 " vimgrep, grep, Grep opens quickfix-window automatically
 autocmd QuickFixCmdPost *grep* cwindow
 
@@ -126,6 +139,9 @@ if v:progname =~? "nvim"
 else
   colorscheme industry
 endif
+
+"" Copy current file path
+nnoremap <leader>cf :let @+=expand("%")<CR>
 
 "" vim-indent-guides
 let g:indent_guides_enable_on_vim_startup = 1
@@ -163,6 +179,7 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gf <Plug>(coc-references)
 
+" Use K to show documentation in preview window.
 nnoremap <silent> K :call ShowDocumentation()<CR>
 
 function! ShowDocumentation()
