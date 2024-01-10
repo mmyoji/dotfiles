@@ -21,9 +21,8 @@
 # $ ~/.fzf/install
 #
 # # Install required programming language
-# # see: https://github.com/jdxcode/rtx
-# $ rtx install nodejs@18
-# $ rtx global nodejs@18
+# # see: https://github.com/jdx/mise
+# $ mise use --global node@20
 #
 
 set -eux
@@ -58,11 +57,9 @@ if [ ! -d "$HOME/dev/dotfiles" ]; then
   git clone git@github.com:mmyoji/dotfiles.git   $HOME/dev/dotfiles
 fi
 
-# rtx #
-if [ ! -d "$HOME/.local/share/rtx" ]; then
-  mkdir -p "$HOME/.local/share/rtx/bin"
-  curl https://rtx.pub/rtx-latest-linux-x64 > $HOME/.local/share/rtx/bin/rtx
-  chmod +x $HOME/.local/share/rtx/bin/rtx
+# mise #
+if [ ! -e "$HOME/.local/bin/mise" ]; then
+  curl https://mise.jdx.dev/install.sh | sh
 fi
 
 # nvim #

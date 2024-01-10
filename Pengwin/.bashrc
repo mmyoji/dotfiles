@@ -145,5 +145,5 @@ if [ -f $gitprpt_path ]; then
   PS1='\[\033[92m\]\u@Pengwin:\[\033[96m\]\w\[\033[91m\]$(__git_ps1)\[\033[00m\]\n\$ '
 fi
 
-# rtx
-eval "$($HOME/.local/share/rtx/bin/rtx activate bash)"
+# mise
+eval "$($HOME/.local/bin/mise activate bash)"
