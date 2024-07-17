@@ -9,7 +9,7 @@
 #
 # ### Then run this script ###
 # $ curl -sSL -o ./init.sh https://github.com/mmyoji/dotfiles/raw/main/Pengwin/init.sh
-# $ GIT_VERSION=v2.30.2 bash init.sh
+# $ GIT_VERSION=2.45.2 bash init.sh
 #
 #
 # ### After running script ###
@@ -83,13 +83,13 @@ fi
 # git-completion #
 if [ ! -e ~/git-completion.bash ]; then
   curl -sSL -o ~/git-completion.bash \
-    https://raw.githubusercontent.com/git/git/$GIT_VERSION/contrib/completion/git-completion.bash
+    https://raw.githubusercontent.com/git/git/v$GIT_VERSION/contrib/completion/git-completion.bash
 fi
 
 # git-prompt #
 if [ ! -e $HOME/git-prompt.sh ]; then
   curl -sSL -o ~/git-prompt.sh \
-    https://raw.githubusercontent.com/git/git/$GIT_VERSION/contrib/completion/git-prompt.sh
+    https://raw.githubusercontent.com/git/git/v$GIT_VERSION/contrib/completion/git-prompt.sh
 fi
 
 # Apply my custom dotfiles
