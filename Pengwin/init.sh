@@ -40,7 +40,6 @@ sudo apt update -y && sudo apt install -y \
   libssl-dev \
   make \
   ripgrep \
-  tmux \
   tree \
   unzip \
   vim
@@ -105,4 +104,3 @@ fi
 # Apply my custom dotfiles
 [ -e ~/.commit_template ] || ln -s $HOME/dev/dotfiles/.commit_template  ~/
 [ -e ~/.gitconfig ]       || ln -s $HOME/dev/dotfiles/.gitconfig        ~/
-[ -e ~/.tmux.conf ]       || ln -s $HOME/dev/dotfiles/.tmux.conf        ~/

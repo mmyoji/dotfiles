@@ -91,7 +91,6 @@ fi
 alias dc="docker compose"
 alias dt="deno task"
 alias ll="ls -lav"
-alias tmux="tmux -u"
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like

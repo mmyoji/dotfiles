@@ -19,7 +19,6 @@ if [[ ! -h ${HOME}/.gemrc ]]; then
   ln -s ~/dev/dotfiles/macOS/.zshrc      ~/
 
   # because these files sometimes need to be modified on macOS
-  cp ~/dev/dotfiles/.tmux.conf       ~/
   cp ~/dev/dotfiles/.vimrc           ~/.config/nvim/init.vim
   cp ~/dev/dotfiles/macOS/gitignore  ~/.gitignore
 fi

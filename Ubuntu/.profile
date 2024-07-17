@@ -2,7 +2,6 @@
 
 alias ll="ls -la"
 alias pbcopy='xsel --clipboard --input'
-alias tmux="tmux -u"
 
 # https://github.com/sharkdp/bat
 alias cat="bat"
