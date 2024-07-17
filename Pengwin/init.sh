@@ -79,7 +79,7 @@ if [ ! -e ~/git-completion.bash ]; then
 fi
 
 # git-prompt #
-if [ ! -e $HOME/git-prompt.sh ]; then
+if [ ! -e ~/git-prompt.sh ]; then
   curl -sSL -o ~/git-prompt.sh \
     https://raw.githubusercontent.com/git/git/v$GIT_VERSION/contrib/completion/git-prompt.sh
 fi
