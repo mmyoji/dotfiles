@@ -92,15 +92,6 @@ if [ ! -e $HOME/git-prompt.sh ]; then
     https://raw.githubusercontent.com/git/git/$GIT_VERSION/contrib/completion/git-prompt.sh
 fi
 
-# Enable git diff-highlight
-if [ ! -e /usr/local/bin/diff-highlight ]; then
-  current_path=$(pwd)
-  cd /usr/share/doc/git/contrib/diff-highlight/
-  sudo make
-  sudo ln -s /usr/share/doc/git/contrib/diff-highlight/diff-highlight /usr/local/bin/diff-highlight
-  cd $current_path
-fi
-
 # Apply my custom dotfiles
 [ -e ~/.commit_template ] || ln -s $HOME/dev/dotfiles/.commit_template  ~/
 [ -e ~/.gitconfig ]       || ln -s $HOME/dev/dotfiles/.gitconfig        ~/

@@ -45,11 +45,6 @@
 [log]
   abbrevCommit = true
 
-[pager]
-  diff = diff-highlight | less
-  log  = diff-highlight | less
-  show = diff-highlight | less
-
 [pull]
   rebase = false
 

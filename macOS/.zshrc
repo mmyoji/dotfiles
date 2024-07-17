@@ -53,5 +53,4 @@ export XDG_CONFIG_HOME="$HOME/.config"
 eval "$(starship init zsh)"
 
 export PATH="/usr/local/sbin:$PATH"
-export PATH="/usr/local/share/git-core/contrib/diff-highlight:$PATH"
 
