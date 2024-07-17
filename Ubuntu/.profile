@@ -3,9 +3,6 @@
 alias ll="ls -la"
 alias pbcopy='xsel --clipboard --input'
 
-# https://github.com/sharkdp/bat
-alias cat="bat"
-
 
 
 ### completion ###
