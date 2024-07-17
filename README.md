@@ -2,5 +2,5 @@
 
 ## Install
 
-see: `Pengwin/init.sh`
+see: `Debian/init.sh`
 

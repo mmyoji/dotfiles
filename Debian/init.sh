@@ -15,8 +15,8 @@
 # ### After running script ###
 #
 # # Edit files for WSL env
-# $ cp ~/dev/dotfiles/Pengwin/.profile ~/.profile
-# $ cp ~/dev/dotfiles/Pengwin/.bashrc  ~/.bashrc
+# $ cp ~/dev/dotfiles/Debian/.profile ~/.profile
+# $ cp ~/dev/dotfiles/Debian/.bashrc  ~/.bashrc
 #
 # $ ~/.fzf/install
 #
