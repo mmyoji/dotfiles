@@ -15,8 +15,8 @@
 # ### After running script ###
 #
 # # Edit files for WSL env
-# $ cp ~/dev/dotfiles/Pengwin/.profile ~/.profile # or `ln -s`
-# $ cp ~/dev/dotfiles/Pengwin/.bashrc  ~/.bashrc  # or `ln -s`
+# $ cp ~/dev/dotfiles/Pengwin/.profile ~/.profile
+# $ cp ~/dev/dotfiles/Pengwin/.bashrc  ~/.bashrc
 #
 # $ ~/.fzf/install
 #
@@ -85,5 +85,5 @@ if [ ! -e $HOME/git-prompt.sh ]; then
 fi
 
 # Apply my custom dotfiles
-[ -e ~/.commit_template ] || ln -s $HOME/dev/dotfiles/.commit_template  ~/
-[ -e ~/.gitconfig ]       || ln -s $HOME/dev/dotfiles/.gitconfig        ~/
+[ -e ~/.commit_template ] || cp $HOME/dev/dotfiles/.commit_template  ~/
+[ -e ~/.gitconfig ]       || cp $HOME/dev/dotfiles/.gitconfig        ~/

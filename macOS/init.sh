@@ -13,10 +13,10 @@ if [[ ! -d ${HOME}/bin/rtx ]]; then
 fi
 
 if [[ ! -h ${HOME}/.gemrc ]]; then
-  ln -s ~/dev/dotfiles/.commit_template  ~/
-  ln -s ~/dev/dotfiles/.gemrc            ~/
-  ln -s ~/dev/dotfiles/.gitconfig        ~/
-  ln -s ~/dev/dotfiles/macOS/.zshrc      ~/
+  cp ~/dev/dotfiles/.commit_template  ~/
+  cp ~/dev/dotfiles/.gemrc            ~/
+  cp ~/dev/dotfiles/.gitconfig        ~/
+  cp ~/dev/dotfiles/macOS/.zshrc      ~/
 
   # because these files sometimes need to be modified on macOS
   cp ~/dev/dotfiles/.vimrc           ~/.config/nvim/init.vim
