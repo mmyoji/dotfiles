@@ -3,7 +3,6 @@ setopt hist_ignore_dups
 setopt share_history
 
 alias ll="ls -la"
-alias vim="nvim"
 
 
 ## git-completion ##

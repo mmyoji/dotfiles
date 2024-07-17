@@ -19,7 +19,7 @@ if [[ ! -h ${HOME}/.gemrc ]]; then
   cp ~/dev/dotfiles/macOS/.zshrc      ~/
 
   # because these files sometimes need to be modified on macOS
-  cp ~/dev/dotfiles/.vimrc           ~/.config/nvim/init.vim
+  cp ~/dev/dotfiles/init.vim         ~/.config/nvim/init.vim
   cp ~/dev/dotfiles/macOS/gitignore  ~/.gitignore
 fi
 
