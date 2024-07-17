@@ -112,15 +112,23 @@ call plug#begin('~/.vim/plugged')
   Plug 'junegunn/vim-plug',
     \ {'dir': '~/.vim/plugged/vim-plug/autoload'}
 
+  Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
+
   Plug 'nathanaelkane/vim-indent-guides'
   Plug 'ntpeters/vim-better-whitespace'
   Plug 'vim-scripts/grep.vim'
   Plug 'tpope/vim-surround'
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
   Plug 'junegunn/fzf.vim'
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  Plug 'leafgarland/typescript-vim'
 call plug#end()
 
-colorscheme industry
+if v:progname =~? "nvim"
+  colorscheme catppuccin
+else
+  colorscheme industry
+endif
 
 "" Copy current file path
 nnoremap <leader>cf :let @+=expand("%")<CR>
@@ -138,3 +146,42 @@ let Grep_Default_Options = '-I' " ignore binary files
 
 """ fzf.vim
 nnoremap <C-p> :GFiles<CR>
+
+""" coc.nvim
+function! CheckBackspace() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1] =~# '\s'
+endfunction
+
+inoremap <silent><expr> <TAB>
+      \ coc#pum#visible() ? coc#pum#next(1) :
+      \ CheckBackspace() ? "\<Tab>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
+
+if has('nvim')
+  inoremap <silent><expr> <c-r> coc#refresh()
+else
+  inoremap <silent><expr> <c-@> coc#refresh()
+endif
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gf <Plug>(coc-references)
+
+" Use K to show documentation in preview window.
+nnoremap <silent> K :call ShowDocumentation()<CR>
+
+function! ShowDocumentation()
+  if CocAction('hasProvider', 'hover')
+    call CocActionAsync('doHover')
+  else
+    call feedkeys('K', 'in')
+  endif
+endfunction
+
+autocmd CursorHold * silent call CocActionAsync('highlight')
+
+nmap <leader>rn <Plug>(coc-rename)
+
+command! -nargs=0 Format :call CocActionAsync('format')

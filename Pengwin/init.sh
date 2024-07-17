@@ -62,19 +62,19 @@ if [ ! -e "$HOME/.local/bin/mise" ]; then
   curl https://mise.jdx.dev/install.sh | sh
 fi
 
-# nvim #
-if [ ! -d "$HOME/.config/nvim" ]; then
-  mkdir -p "$HOME/.config/nvim"
-  cp $HOME/dev/dotfiles/.vimrc $HOME/.config/nvim/init.vim
-
-  mkdir -p "$HOME/tmp"
-
-  curl -sSL -o ~/tmp/nvim.appimage https://github.com/neovim/neovim/releases/download/stable/nvim.appimage
-  chmod u+x ~/tmp/nvim.appimage
-  # see: https://github.com/neovim/neovim/releases/tag/stable
-  ~/tmp/nvim.appimage --appimage-extract
-  ln -s $HOME/tmp/squashfs-root/usr/bin/nvim $HOME/.local/bin/nvim
-fi
+# # nvim #
+# if [ ! -d "$HOME/.config/nvim" ]; then
+#   mkdir -p "$HOME/.config/nvim"
+#   cp $HOME/dev/dotfiles/init.vim $HOME/.config/nvim/init.vim
+#
+#   mkdir -p "$HOME/tmp"
+#
+#   curl -sSL -o ~/tmp/nvim.appimage https://github.com/neovim/neovim/releases/download/stable/nvim.appimage
+#   chmod u+x ~/tmp/nvim.appimage
+#   # see: https://github.com/neovim/neovim/releases/tag/stable
+#   ~/tmp/nvim.appimage --appimage-extract
+#   ln -s $HOME/tmp/squashfs-root/usr/bin/nvim $HOME/.local/bin/nvim
+# fi
 
 # fzf #
 if [ ! -d ~/.fzf ]; then
