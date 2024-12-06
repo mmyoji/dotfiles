@@ -8,7 +8,7 @@
 #
 #
 # ### Then run this script ###
-# $ curl -sSL -o ./init.sh https://github.com/mmyoji/dotfiles/raw/main/Pengwin/init.sh
+# $ curl -sSL -o ./init.sh https://github.com/mmyoji/dotfiles/raw/main/Debian/init.sh
 # $ GIT_VERSION=2.45.2 bash init.sh
 #
 #
