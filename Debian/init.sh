@@ -20,10 +20,6 @@
 #
 # $ ~/.fzf/install
 #
-# # Install required programming language
-# # see: https://github.com/jdx/mise
-# $ mise use --global node@20
-#
 
 set -eux
 
@@ -45,12 +41,12 @@ sudo apt update -y && sudo apt install -y \
 
 # dotfiles #
 if [ ! -d "$HOME/dev/dotfiles" ]; then
-  git clone git@github.com:mmyoji/dotfiles.git   $HOME/dev/dotfiles
+  git clone git@github.com:mmyoji/dotfiles.git $HOME/dev/dotfiles
 fi
 
 # mise #
 if [ ! -e "$HOME/.local/bin/mise" ]; then
-  curl https://mise.jdx.dev/install.sh | sh
+  curl https://mise.run | sh
 fi
 
 # # nvim #
@@ -84,6 +80,9 @@ if [ ! -e ~/git-prompt.sh ]; then
     https://raw.githubusercontent.com/git/git/v$GIT_VERSION/contrib/completion/git-prompt.sh
 fi
 
-# Apply my custom dotfiles
-[ -e ~/.commit_template ] || cp $HOME/dev/dotfiles/.commit_template  ~/
-[ -e ~/.gitconfig ]       || cp $HOME/dev/dotfiles/.gitconfig        ~/
+if [ ! -d ~/.config/git ]; then
+  mkdir -p ~/.config/git
+
+  cp $HOME/dev/dotfiles/.config/git/config          ~/.config/git/config
+  cp $HOME/dev/dotfiles/.config/git/commit_template ~/.config/git/commit_template
+fi

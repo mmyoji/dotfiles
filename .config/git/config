@@ -1,21 +1,15 @@
 [core]
-  editor       = vim
-  excludesfile = ~/.gitignore
+  editor = vim
 
 [user]
   name  = mmyoji
-  email = mmyoji@gmail.com
+  email = mmyoji@example.com
 
 [alias]
   a   = add
   aa  = add --all
   b   = branch
-  sw  = !git branch    | fzf | xargs git switch
-  swr = !git branch -a | fzf | xargs git switch
-  swc = switch --create
   cma = commit --amend --verbose
-  fix = commit --amend --no-edit --no-verify
-  cmv = commit --verbose --no-verify
   com = commit --verbose
   d   = diff
   dw  = diff --word-diff-regex=. --word-diff=color
@@ -25,13 +19,15 @@
   ps  = push --set-upstream
   r   = rebase
   s   = status --short --branch
+  sw  = !git branch | fzf | xargs git switch
+  swc = switch --create
 
   search          = log --perl-regexp -S
   show-conflicted = diff --name-only --diff-filter=U
   vtree           = log --pretty=oneline --graph --decorate --all
 
 [commit]
-  template = ~/.commit_template
+  template = ~/.config/git/commit_template
 
 [diff]
   indentHeuristic = true
