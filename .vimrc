@@ -118,6 +118,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'tpope/vim-surround'
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
   Plug 'junegunn/fzf.vim'
+  Plug 'yegappan/lsp'
 call plug#end()
 
 colorscheme industry
@@ -138,3 +139,31 @@ let Grep_Default_Options = '-I' " ignore binary files
 
 """ fzf.vim
 nnoremap <C-p> :GFiles<CR>
+
+""" LSP
+function! s:SetupMyLSP() abort
+  let l:lspOpts = #{
+      \   autoHighlightDiags:   v:true,
+      \   showDiagOnStatusLine: v:true,
+      \ }
+  call LspOptionsSet(l:lspOpts)
+
+  " Register the TypeScript/JavaScript language server
+  " Ensure 'typescript-language-server' is available in your system $PATH
+  let l:lspServers = [#{
+    \   name: 'typescriptlang',
+    \   filetype: ['typescript', 'javascript', 'typescriptreact', 'javascriptreact'],
+    \   path: 'typescript-language-server',
+    \   args: ['--stdio']
+    \ }]
+  call LspAddServer(l:lspServers)
+endfunction
+autocmd User LspSetup call s:SetupMyLSP()
+
+" LSP commands
+nnoremap <silent> gd :LspGotoImpl<CR>
+nnoremap <silent> gr :LspShowReferences<CR>
+nnoremap <silent> K :LspHover<CR>
+nnoremap <silent> <leader>rn :LspRename<CR>
+nnoremap <silent> [d :LspDiag prev<CR>
+nnoremap <silent> ]d :LspDiag next<CR>
