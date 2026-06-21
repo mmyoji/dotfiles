@@ -1,77 +1,34 @@
-" Use Vim settings, rather than Vi settings (much better!).
-" This must be first, because it changes other options as a side effect.
+vim9script
+
+# Use Vim settings, rather than Vi settings (much better!).
+# This must be first, because it changes other options as a side effect.
 set nocompatible
 
-" allow backspacing over everything in insert mode
-set backspace=indent,eol,start
-set history=50 " keep 50 lines of command line history
-set ruler      " show the cursor position all the time
-set showcmd    " display incomplete commands
-set incsearch  " do incremental searching
+syntax on
 
-" Don't use Ex mode, use Q for formatting
+# Don't use Ex mode, use Q for formatting
 map Q gq
 
-" CTRL-U in insert mode deletes a lot.  Use CTRL-G u to first break undo,
-" so that you can undo CTRL-U after inserting a line break.
+# CTRL-U in insert mode deletes a lot.  Use CTRL-G u to first break undo,
+# so that you can undo CTRL-U after inserting a line break.
 inoremap <C-U> <C-G>u<C-U>
 
-" Switch syntax highlighting on, when the terminal has colors
-" Also switch on highlighting the last used search pattern.
-if &t_Co > 2 || has("gui_running")
-  syntax on
-  set hlsearch
-endif
-
-" Only do this part when compiled with support for autocommands.
-if has("autocmd")
-  " Enable file type detection.
-  " Use the default filetype settings, so that mail gets 'tw' set to 72,
-  " 'cindent' is on in C files, etc.
-  " Also load indent files, to automatically do language-dependent indenting.
-  filetype plugin indent on
-
-  " Put these in an autocmd group, so that we can delete them easily.
-  augroup vimrcEx
-  au!
-
-  " For all text files set 'textwidth' to 78 characters.
-  autocmd FileType text setlocal textwidth=78
-
-  " When editing a file, always jump to the last known cursor position.
-  " Don't do it when the position is invalid or when inside an event handler
-  " (happens when dropping a file on gvim).
-  " Also don't do it when the mark is in the first line, that is the default
-  " position when opening a file.
-  autocmd BufReadPost *
-    \ if line("'\"") > 1 && line("'\"") <= line("$") |
-    \   exe "normal! g`\"" |
-    \ endif
-
-  augroup END
-else
-  set autoindent " always set autoindenting on
-endif " has("autocmd")
-
-" Convenient command to see the difference between the current buffer and the
-" file it was loaded from, thus the changes you made.
-" Only define it when not defined already.
-if !exists(":DiffOrig")
-  command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
-		  \ | wincmd p | diffthis
-endif
-" Vim sample script ends here
-
 set ambiwidth=double
+set backspace=indent,eol,start
 set encoding=utf-8
 set expandtab
+set history=1000
+set hlsearch
 set ignorecase
+set incsearch
 set nobackup
 set noswapfile
 set nowrap
 set nowritebackup
 set number
+set ruler
 set shiftwidth=2
+set showcmd
 set showmatch
 set signcolumn=yes
 set smartcase
@@ -90,80 +47,73 @@ if has('vim_starting')
   endif
 endif
 
-let g:clipboard = {
-            \   'name': 'WslClipboard',
-            \   'copy': {
-            \      '+': 'clip.exe',
-            \      '*': 'clip.exe',
-            \    },
-            \   'paste': {
-            \      '+': 'powershell.exe -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))',
-            \      '*': 'powershell.exe -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))',
-            \   },
-            \   'cache_enabled': 0,
-            \ }
+g:clipboard = {
+  name: 'WslClipboard',
+  copy: {
+    '+': 'clip.exe',
+    '*': 'clip.exe',
+  },
+  paste: {
+    '+': 'powershell.exe -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))',
+    '*': 'powershell.exe -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))',
+  },
+  cache_enabled: 0,
+}
 
-" vimgrep, grep, Grep opens quickfix-window automatically
+# vimgrep, grep, Grep opens quickfix-window automatically
 autocmd QuickFixCmdPost *grep* cwindow
 
-" run `:so ~/.vimrc` and `:PlugInstall`
-" after adding a new plug.
-call plug#begin('~/.vim/plugged')
-  Plug 'junegunn/vim-plug',
-    \ {'dir': '~/.vim/plugged/vim-plug/autoload'}
+# Run `:so ~/.vimrc` and `:PlugInstall` whenever adding a new plug.
+legacy call plug#begin('~/.vim/plugged')
+legacy Plug 'junegunn/vim-plug', { 'dir': '~/.vim/plugged/vim-plug/autoload' }
+legacy Plug 'nathanaelkane/vim-indent-guides'
+legacy Plug 'ntpeters/vim-better-whitespace'
+legacy Plug 'vim-scripts/grep.vim'
+legacy Plug 'tpope/vim-surround'
+legacy Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+legacy Plug 'junegunn/fzf.vim'
+legacy Plug 'yegappan/lsp'
+legacy call plug#end()
 
-  Plug 'nathanaelkane/vim-indent-guides'
-  Plug 'ntpeters/vim-better-whitespace'
-  Plug 'vim-scripts/grep.vim'
-  Plug 'tpope/vim-surround'
-  Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-  Plug 'junegunn/fzf.vim'
-  Plug 'yegappan/lsp'
-call plug#end()
+colorscheme sorbet
 
-colorscheme industry
+# vim-indent-guides
+g:indent_guides_enable_on_vim_startup = 1
 
-"" Copy current file path
-nnoremap <leader>cf :let @+=expand("%")<CR>
-
-"" vim-indent-guides
-let g:indent_guides_enable_on_vim_startup = 1
-
-"" grep.vim
-nnoremap <expr> gr ':Rgrep<CR>'
+# grep.vim
+nmap <expr> gr ':Rgrep<CR>'
 if executable('rg')
   set grepprg=rg
 endif
-let Grep_Skip_Dirs = join(['.svn', '.git', 'log', 'tags', 'coverage', 'vendor', 'node_modules', 'dist'], ' ')
-let Grep_Default_Options = '-I' " ignore binary files
+var Grep_Skip_Dirs = join(['.svn', '.git', 'log', 'tags', 'coverage', 'vendor', 'node_modules', 'dist'], ' ')
+var Grep_Default_Options = '-I' # ignore binary files
 
-""" fzf.vim
-nnoremap <C-p> :GFiles<CR>
+# fzf.vim
+nmap <C-p> :GFiles<CR>
 
-""" LSP
-function! s:SetupMyLSP() abort
-  let l:lspOpts = #{
-      \   autoHighlightDiags:   v:true,
-      \   showDiagOnStatusLine: v:true,
-      \ }
-  call LspOptionsSet(l:lspOpts)
+# LSP
+var lspOpts = {
+  autoHighlightDiags:   v:true,
+  showDiagOnStatusLine: v:true,
+}
+autocmd User LspSetup g:LspOptionsSet(lspOpts)
+var lspServers = [
+  # for TypeScript/JavaScript
+  # Ensure 'typescript-language-server' is available in your system $PATH:
+  # e.g., `npm i -g typescript-langauge-server`
+  {
+    name: 'typescriptlang',
+    filetype: ['typescript', 'javascript', 'typescriptreact', 'javascriptreact'],
+    path: 'typescript-language-server',
+    args: ['--stdio'],
+  }
+]
+autocmd User LspSetup g:LspAddServer(lspServers)
 
-  " Register the TypeScript/JavaScript language server
-  " Ensure 'typescript-language-server' is available in your system $PATH
-  let l:lspServers = [#{
-    \   name: 'typescriptlang',
-    \   filetype: ['typescript', 'javascript', 'typescriptreact', 'javascriptreact'],
-    \   path: 'typescript-language-server',
-    \   args: ['--stdio']
-    \ }]
-  call LspAddServer(l:lspServers)
-endfunction
-autocmd User LspSetup call s:SetupMyLSP()
-
-" LSP commands
-nnoremap <silent> gd :LspGotoImpl<CR>
-nnoremap <silent> gr :LspShowReferences<CR>
-nnoremap <silent> K :LspHover<CR>
-nnoremap <silent> <leader>rn :LspRename<CR>
-nnoremap <silent> [d :LspDiag prev<CR>
-nnoremap <silent> ]d :LspDiag next<CR>
+# LSP commands
+nmap <buffer> <silent> gd :LspGotoImpl<CR>
+nmap <buffer> <silent> gl :LspShowReferences<CR>
+nmap <buffer> <silent> K :LspHover<CR>
+nmap <buffer> <silent> <leader>rn :LspRename<CR>
+nmap <buffer> <silent> [d :LspDiag prev<CR>
+nmap <buffer> <silent> ]d :LspDiag next<CR>
