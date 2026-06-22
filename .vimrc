@@ -73,6 +73,7 @@ legacy Plug 'vim-scripts/grep.vim'
 legacy Plug 'tpope/vim-surround'
 legacy Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 legacy Plug 'junegunn/fzf.vim'
+legacy Plug 'digitaltoad/vim-pug'
 legacy Plug 'yegappan/lsp'
 legacy call plug#end()
 
