@@ -108,6 +108,21 @@ var lspServers = [
     args: ['--stdio'],
   }
 ]
+var oxlintPath = getcwd() .. '/node_modules/.bin/oxlint'
+if executable(oxlintPath)
+  add(
+    lspServers,
+    {
+      name: 'oxlint',
+      filetype: ['typescript', 'javascript', 'typescriptreact', 'javascriptreact'],
+      path: oxlintPath,
+      args: ['--lsp'],
+      initializationOptions: {
+        settings: { typeAware: true },
+      },
+    }
+  )
+endif
 autocmd User LspSetup g:LspAddServer(lspServers)
 
 # LSP commands
