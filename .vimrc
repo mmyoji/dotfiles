@@ -111,9 +111,9 @@ var lspServers = [
 autocmd User LspSetup g:LspAddServer(lspServers)
 
 # LSP commands
-nmap <buffer> <silent> gd :LspGotoImpl<CR>
-nmap <buffer> <silent> gl :LspShowReferences<CR>
-nmap <buffer> <silent> K :LspHover<CR>
-nmap <buffer> <silent> <leader>rn :LspRename<CR>
-nmap <buffer> <silent> [d :LspDiag prev<CR>
-nmap <buffer> <silent> ]d :LspDiag next<CR>
+nmap <silent> gd :LspGotoImpl<CR>
+nmap <silent> gl :LspShowReferences<CR>
+nmap <silent> K :LspHover<CR>
+nmap <silent> <leader>rn :LspRename<CR>
+nmap <silent> [d :LspDiag prev<CR>
+nmap <silent> ]d :LspDiag next<CR>
