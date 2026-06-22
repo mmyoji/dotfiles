@@ -85,8 +85,8 @@ nmap <expr> gr ':Rgrep<CR>'
 if executable('rg')
   set grepprg=rg
 endif
-var Grep_Skip_Dirs = join(['.svn', '.git', 'log', 'tags', 'coverage', 'vendor', 'node_modules', 'dist'], ' ')
-var Grep_Default_Options = '-I' # ignore binary files
+g:Grep_Skip_Dirs       = join(['.svn', '.git', 'log', 'tags', 'coverage', 'vendor', 'node_modules', 'dist'], ' ')
+g:Grep_Default_Options = '-I' # ignore binary files
 
 # fzf.vim
 nmap <C-p> :GFiles<CR>
