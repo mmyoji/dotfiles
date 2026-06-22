@@ -66,6 +66,7 @@ autocmd QuickFixCmdPost *grep* cwindow
 # Run `:so ~/.vimrc` and `:PlugInstall` whenever adding a new plug.
 legacy call plug#begin('~/.vim/plugged')
 legacy Plug 'junegunn/vim-plug', { 'dir': '~/.vim/plugged/vim-plug/autoload' }
+legacy Plug 'ayu-theme/ayu-vim'
 legacy Plug 'nathanaelkane/vim-indent-guides'
 legacy Plug 'ntpeters/vim-better-whitespace'
 legacy Plug 'vim-scripts/grep.vim'
@@ -75,7 +76,9 @@ legacy Plug 'junegunn/fzf.vim'
 legacy Plug 'yegappan/lsp'
 legacy call plug#end()
 
-colorscheme sorbet
+# ayu
+g:ayucolor = "mirage"
+colorscheme ayu
 
 # vim-indent-guides
 g:indent_guides_enable_on_vim_startup = 1
