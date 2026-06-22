@@ -92,12 +92,12 @@ var Grep_Default_Options = '-I' # ignore binary files
 nmap <C-p> :GFiles<CR>
 
 # LSP
-var lspOpts = {
+const lspOpts = {
   autoHighlightDiags:   v:true,
   showDiagOnStatusLine: v:true,
 }
 autocmd User LspSetup g:LspOptionsSet(lspOpts)
-var lspServers = [
+final lspServers = [
   # for TypeScript/JavaScript
   # Ensure 'typescript-language-server' is available in your system $PATH:
   # e.g., `npm i -g typescript-langauge-server`
@@ -108,7 +108,7 @@ var lspServers = [
     args: ['--stdio'],
   }
 ]
-var oxlintPath = getcwd() .. '/node_modules/.bin/oxlint'
+const oxlintPath = getcwd() .. '/node_modules/.bin/oxlint'
 if executable(oxlintPath)
   add(
     lspServers,
