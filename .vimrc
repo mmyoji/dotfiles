@@ -131,8 +131,6 @@ nmap <silent> gd :LspGotoImpl<CR>
 nmap <silent> gl :LspShowReferences<CR>
 nmap <silent> K :LspHover<CR>
 nmap <silent> <leader>rn :LspRename<CR>
-nmap <silent> [d :LspDiag prev<CR>
-nmap <silent> ]d :LspDiag next<CR>
 
 augroup TSAutoOrganize
   autocmd!
