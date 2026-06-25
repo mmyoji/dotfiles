@@ -130,9 +130,5 @@ autocmd User LspSetup g:LspAddServer(lspServers)
 nmap <silent> gd :LspGotoImpl<CR>
 nmap <silent> gl :LspShowReferences<CR>
 nmap <silent> K :LspHover<CR>
+nmap <silent> <leader>oi :LspOrganizeImports<CR>
 nmap <silent> <leader>rn :LspRename<CR>
-
-augroup TSAutoOrganize
-  autocmd!
-  autocmd BufWritePre *.ts,*.tsx,*.js,*.jsx silent! LspOrganizeImports
-augroup END
