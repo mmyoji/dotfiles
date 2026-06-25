@@ -22,7 +22,7 @@
   sw  = !git branch | fzf | xargs git switch
   swc = switch --create
 
-  search          = log --perl-regexp -S
+  search          = log -p --perl-regexp -S
   show-conflicted = diff --name-only --diff-filter=U
   vtree           = log --pretty=oneline --graph --decorate --all
 
