@@ -35,6 +35,7 @@ sudo apt update -y && sudo apt install -y \
   libssl-dev \
   make \
   ripgrep \
+  tmux \
   tree \
   unzip \
   vim
@@ -44,28 +45,17 @@ if [ ! -d "$HOME/dev/dotfiles" ]; then
   git clone git@github.com:mmyoji/dotfiles.git $HOME/dev/dotfiles
 fi
 
-# mise #
-if [ ! -e "$HOME/.local/bin/mise" ]; then
-  curl https://mise.run | sh
-fi
-
-# # nvim #
-# if [ ! -d "$HOME/.config/nvim" ]; then
-#   mkdir -p "$HOME/.config/nvim"
-#   cp $HOME/dev/dotfiles/init.vim $HOME/.config/nvim/init.vim
-#
-#   mkdir -p "$HOME/tmp"
-#
-#   curl -sSL -o ~/tmp/nvim.appimage https://github.com/neovim/neovim/releases/download/stable/nvim.appimage
-#   chmod u+x ~/tmp/nvim.appimage
-#   # see: https://github.com/neovim/neovim/releases/tag/stable
-#   ~/tmp/nvim.appimage --appimage-extract
-#   ln -s $HOME/tmp/squashfs-root/usr/bin/nvim $HOME/.local/bin/nvim
-# fi
-
 # fzf #
 if [ ! -d ~/.fzf ]; then
   git clone https://github.com/junegunn/fzf.git  $HOME/.fzf
+fi
+
+# git #
+if [ ! -d ~/.config/git ]; then
+  mkdir -p ~/.config/git
+
+  cp $HOME/dev/dotfiles/.config/git/config          ~/.config/git/config
+  cp $HOME/dev/dotfiles/.config/git/commit_template ~/.config/git/commit_template
 fi
 
 # git-completion #
@@ -80,9 +70,13 @@ if [ ! -e ~/git-prompt.sh ]; then
     https://raw.githubusercontent.com/git/git/v$GIT_VERSION/contrib/completion/git-prompt.sh
 fi
 
-if [ ! -d ~/.config/git ]; then
-  mkdir -p ~/.config/git
-
-  cp $HOME/dev/dotfiles/.config/git/config          ~/.config/git/config
-  cp $HOME/dev/dotfiles/.config/git/commit_template ~/.config/git/commit_template
+# mise #
+if [ ! -e "$HOME/.local/bin/mise" ]; then
+  curl https://mise.run | sh
 fi
+
+# tmux #
+if [ ! -e "$HOME/.tmux.conf" ]; then
+  cp $HOME/dev/dotfiles/.tmux.conf ~/.tmux.conf
+fi
+
