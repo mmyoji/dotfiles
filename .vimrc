@@ -102,6 +102,7 @@ const lspOpts = {
   showDiagOnStatusLine: v:true,
 }
 autocmd User LspSetup g:LspOptionsSet(lspOpts)
+
 final lspServers = [
   # for TypeScript/JavaScript
   # Ensure 'typescript-language-server' is available in your system $PATH:
