@@ -35,6 +35,7 @@ set smartcase
 set smartindent
 set smarttab
 set tabstop=2
+set termguicolors
 set title
 set updatetime=300
 
