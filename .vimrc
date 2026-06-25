@@ -126,9 +126,14 @@ if executable(oxlintPath)
 endif
 autocmd User LspSetup g:LspAddServer(lspServers)
 
-# LSP commands
-nmap <silent> gd :LspGotoImpl<CR>
-nmap <silent> gl :LspShowReferences<CR>
-nmap <silent> K :LspHover<CR>
-nmap <silent> <leader>oi :LspOrganizeImports<CR>
-nmap <silent> <leader>rn :LspRename<CR>
+def OnLspBufferEnabled()
+  nmap <buffer> gd :LspGotoImpl<CR>
+  nmap <buffer> gl :LspShowReferences<CR>
+  nmap <buffer> K :LspHover<CR>
+  nmap <buffer> <leader>oi :LspOrganizeImports<CR>
+  nmap <buffer> <leader>rn :LspRename<CR>
+enddef
+augroup MyLspMappings
+  autocmd!
+  autocmd User LspAttached OnLspBufferEnabled()
+augroup END
